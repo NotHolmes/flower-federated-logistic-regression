@@ -20,12 +20,7 @@ def get_evaluate_fn(model: LogisticRegression):
     # dataset = fds.load_full("test").with_format("numpy")
     # X_test, y_test = dataset["image"].reshape((len(dataset), -1)), dataset["label"]
 
-    X_train, X_test, y_train, y_test = utils.load_train_test("dataset/test.csv")
-    X_train, X_test = utils.scale_data(X_train, X_test)
-    
-    # Combine train and test sets
-    X_test= np.concatenate((X_train, X_test))
-    y_test = np.concatenate((y_train, y_test))
+    X_test, y_test = utils.load_dataset("dataset/test.csv")
 
     # The `evaluate` function will be called after every round
     def evaluate(server_round, parameters: fl.common.NDArrays, config):
