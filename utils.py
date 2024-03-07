@@ -45,6 +45,8 @@ def set_initial_params(model: LogisticRegression):
 
 
 NUM_CLIENTS = 3
+
+
 def load_dataset_for_client(client_id: int, dataset_path: str):
     df = pd.read_csv(dataset_path)
     X = df.drop("Credit_Score", axis=1)
@@ -68,21 +70,23 @@ def load_dataset_for_client(client_id: int, dataset_path: str):
 
     return X_train, X_test, y_train, y_test
 
+
 def load_dataset(dataset_path: str):
     df = pd.read_csv(dataset_path)
-    
-    X = df.drop('Credit_Score', axis=1)
-    y = df['Credit_Score']
-    
+
+    X = df.drop("Credit_Score", axis=1)
+    y = df["Credit_Score"]
+
     return X, y
+
 
 def scale_data(X_train, X_test):
     """Scales the data using StandardScaler."""
     scaler = StandardScaler()
     features = X_train.columns
     X_train = scaler.fit_transform(X_train)
-    X_train = pd.DataFrame(X_train,columns=features)
+    X_train = pd.DataFrame(X_train, columns=features)
     X_test = scaler.transform(X_test)
-    X_test = pd.DataFrame(X_test,columns=features)
-    
+    X_test = pd.DataFrame(X_test, columns=features)
+
     return X_train, X_test

@@ -22,10 +22,12 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
     client_id = args.client_id
-    
-    X_train, X_test, y_train, y_test = utils.load_dataset_for_client(client_id=client_id, dataset_path="dataset/train.csv")
+
+    X_train, X_test, y_train, y_test = utils.load_dataset_for_client(
+        client_id=client_id, dataset_path="dataset/train.csv"
+    )
     X_train, X_test = utils.scale_data(X_train, X_test)
-    
+
     # Print the label distribution
     unique, counts = np.unique(y_train, return_counts=True)
     train_counts = dict(zip(unique, counts))

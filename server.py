@@ -4,7 +4,6 @@ from sklearn.metrics import log_loss
 from sklearn.linear_model import LogisticRegression
 from typing import Dict
 from joblib import dump
-import numpy as np
 
 
 def fit_round(server_round: int) -> Dict:
@@ -42,5 +41,5 @@ if __name__ == "__main__":
         strategy=strategy,
         config=fl.server.ServerConfig(num_rounds=10),
     )
-    
-    dump(model, 'model/model.joblib')
+
+    dump(model, "model/model.joblib")
