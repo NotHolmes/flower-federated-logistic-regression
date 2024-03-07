@@ -3,6 +3,7 @@ from sklearn.linear_model import LogisticRegression
 import pandas as pd
 from flwr.common import NDArrays
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
 
 
 def get_model_parameters(model: LogisticRegression) -> NDArrays:
@@ -53,3 +54,14 @@ def load_dataset(dataset_path: str):
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
     
     return X_train, X_test, y_train, y_test
+
+def scale_data(X_train, X_test):
+    """Scales the data using StandardScaler."""
+    scaler = StandardScaler()
+    features = X_train.columns
+    X_train = scaler.fit_transform(X_train)
+    X_train = pd.DataFrame(X_train,columns=features)
+    X_test = scaler.transform(X_test)
+    X_test = pd.DataFrame(X_test,columns=features)
+    
+    return X_train, X_test
