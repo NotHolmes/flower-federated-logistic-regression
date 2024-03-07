@@ -1,7 +1,7 @@
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 import pandas as pd
-from flwr.common import 
+from flwr.common import NDArrays
 from sklearn.model_selection import train_test_split
 
 
