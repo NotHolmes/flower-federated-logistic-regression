@@ -78,3 +78,7 @@ bash run.sh
 ```
 
 You will see that Flower is starting a federated training.
+
+Citation:
+- https://github.com/adap/flower/tree/main/examples/sklearn-logreg-mnist
+- https://www.kaggle.com/code/mohamedahmed10000/credit-score-eda-prediction-multi-class
