@@ -22,7 +22,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     partition_id = args.partition_id
     
-    X_train, X_test, y_train, y_test = utils.load_dataset("dataset/train.csv")
+    X_train, X_test, y_train, y_test = utils.load_train_test("dataset/train.csv")
     X_train, X_test = utils.scale_data(X_train, X_test)
 
     # Create LogisticRegression Model

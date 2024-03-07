@@ -3,6 +3,7 @@ import utils
 from sklearn.metrics import log_loss
 from sklearn.linear_model import LogisticRegression
 from typing import Dict
+from joblib import dump
 import numpy as np
 
 
@@ -19,7 +20,7 @@ def get_evaluate_fn(model: LogisticRegression):
     # dataset = fds.load_full("test").with_format("numpy")
     # X_test, y_test = dataset["image"].reshape((len(dataset), -1)), dataset["label"]
 
-    X_train, X_test, y_train, y_test = utils.load_dataset("dataset/test.csv")
+    X_train, X_test, y_train, y_test = utils.load_train_test("dataset/test.csv")
     X_train, X_test = utils.scale_data(X_train, X_test)
     
     # Combine train and test sets
@@ -51,3 +52,5 @@ if __name__ == "__main__":
         strategy=strategy,
         config=fl.server.ServerConfig(num_rounds=10),
     )
+    
+    dump(model, 'model/model.joblib')

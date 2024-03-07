@@ -43,7 +43,7 @@ def set_initial_params(model: LogisticRegression):
     if model.fit_intercept:
         model.intercept_ = np.zeros((n_classes,))
 
-def load_dataset(dataset_path: str):
+def load_train_test(dataset_path: str):
     """Loads the dataset from the given path."""
     
     df = pd.read_csv(dataset_path)
@@ -54,6 +54,14 @@ def load_dataset(dataset_path: str):
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
     
     return X_train, X_test, y_train, y_test
+
+def load_dataset(dataset_path: str):
+    df = pd.read_csv(dataset_path)
+    
+    X = df.drop('Credit_Score', axis=1)
+    y = df['Credit_Score']
+    
+    return X, y
 
 def scale_data(X_train, X_test):
     """Scales the data using StandardScaler."""
