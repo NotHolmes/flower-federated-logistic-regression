@@ -8,8 +8,14 @@ import numpy as np
 
 import flwr as fl
 import utils
+import requests
+import os
 
 if __name__ == "__main__":
+
+    PUBLIC_IP = os.environ.get(
+        "PUBLIC_IP"
+    )  # run PUBLIC_IP=$(curl -s ifconfig.co) on GCP VM on startup to set the public IP
     N_CLIENTS = 3
 
     parser = argparse.ArgumentParser(description="Flower")
@@ -68,5 +74,5 @@ if __name__ == "__main__":
 
     # Start Flower client
     fl.client.start_client(
-        server_address="0.0.0.0:8080", client=FlowerClient().to_client()
+        server_address="{PUBLIC_IP}:8080", client=FlowerClient().to_client()
     )
