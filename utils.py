@@ -43,16 +43,29 @@ def set_initial_params(model: LogisticRegression):
     if model.fit_intercept:
         model.intercept_ = np.zeros((n_classes,))
 
-def load_train_test(dataset_path: str):
-    """Loads the dataset from the given path."""
-    
+
+NUM_CLIENTS = 3
+def load_dataset_for_client(client_id: int, dataset_path: str):
     df = pd.read_csv(dataset_path)
-    
-    X = df.drop('Credit_Score', axis=1)
-    y = df['Credit_Score']
-    
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-    
+    X = df.drop("Credit_Score", axis=1)
+    y = df["Credit_Score"]
+
+    # Ensure even dataset splitting
+    np.random.seed(42)
+    if len(X) % NUM_CLIENTS != 0:
+        drop_indices = np.random.choice(X.index, (len(X) % NUM_CLIENTS), replace=False)
+        X = X.drop(drop_indices)
+        y = y.drop(drop_indices)
+
+    # Split for clients
+    X_splits = np.split(X, NUM_CLIENTS)
+    y_splits = np.split(y, NUM_CLIENTS)
+
+    # Train/test split for the selected client
+    X_train, X_test, y_train, y_test = train_test_split(
+        X_splits[client_id], y_splits[client_id], train_size=0.8, random_state=42
+    )
+
     return X_train, X_test, y_train, y_test
 
 def load_dataset(dataset_path: str):

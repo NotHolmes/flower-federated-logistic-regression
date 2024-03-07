@@ -9,20 +9,20 @@ import flwr as fl
 import utils
 
 if __name__ == "__main__":
-    N_CLIENTS = 10
+    N_CLIENTS = 5
 
     parser = argparse.ArgumentParser(description="Flower")
     parser.add_argument(
-        "--partition-id",
+        "--client-id",
         type=int,
         choices=range(0, N_CLIENTS),
         required=True,
         help="Specifies the artificial data partition",
     )
     args = parser.parse_args()
-    partition_id = args.partition_id
+    client_id = args.client_id
     
-    X_train, X_test, y_train, y_test = utils.load_train_test("dataset/train.csv")
+    X_train, X_test, y_train, y_test = utils.load_dataset_for_client(client_id=client_id, dataset_path="dataset/train.csv")
     X_train, X_test = utils.scale_data(X_train, X_test)
 
     # Create LogisticRegression Model
