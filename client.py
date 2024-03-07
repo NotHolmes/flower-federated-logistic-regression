@@ -45,7 +45,7 @@ if __name__ == "__main__":
     utils.set_initial_params(model)
 
     # Define Flower client
-    class MnistClient(fl.client.NumPyClient):
+    class FlowerClient(fl.client.NumPyClient):
         def get_parameters(self, config):  # type: ignore
             return utils.get_model_parameters(model)
 
@@ -66,5 +66,5 @@ if __name__ == "__main__":
 
     # Start Flower client
     fl.client.start_client(
-        server_address="0.0.0.0:8080", client=MnistClient().to_client()
+        server_address="0.0.0.0:8080", client=FlowerClient().to_client()
     )
