@@ -4,6 +4,7 @@ import warnings
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import log_loss
 import pandas as pd
+import numpy as np
 
 import flwr as fl
 import utils
@@ -24,6 +25,14 @@ if __name__ == "__main__":
     
     X_train, X_test, y_train, y_test = utils.load_dataset_for_client(client_id=client_id, dataset_path="dataset/train.csv")
     X_train, X_test = utils.scale_data(X_train, X_test)
+    
+    # Print the label distribution
+    unique, counts = np.unique(y_train, return_counts=True)
+    train_counts = dict(zip(unique, counts))
+    print(f"Client {client_id} Label distribution in the training set: {train_counts}")
+    unique, counts = np.unique(y_test, return_counts=True)
+    test_counts = dict(zip(unique, counts))
+    print(f"Client {client_id} Label distribution in the testing set: {test_counts}")
 
     # Create LogisticRegression Model
     model = LogisticRegression(
