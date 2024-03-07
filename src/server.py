@@ -20,8 +20,8 @@ def get_evaluate_fn(model: LogisticRegression):
     def evaluate(server_round, parameters: fl.common.NDArrays, config):
         # Update model with the latest parameters
         utils.set_model_params(model, parameters)
-        loss = log_loss(y_test, model.predict_proba(X_test))
-        accuracy = model.score(X_test, y_test)
+        loss = log_loss(y_test, model.predict_proba(X_test.values))
+        accuracy = model.score(X_test.values, y_test)
         return loss, {"accuracy": accuracy}
 
     return evaluate
