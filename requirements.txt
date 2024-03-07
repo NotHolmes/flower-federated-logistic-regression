@@ -3,3 +3,4 @@ numpy
 pandas
 scikit_learn~=1.2.2
 ipykernel
+requests
