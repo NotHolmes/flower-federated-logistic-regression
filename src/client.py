@@ -74,5 +74,5 @@ if __name__ == "__main__":
 
     # Start Flower client
     fl.client.start_client(
-        server_address="34.143.203.151:8080", client=FlowerClient().to_client()
+        server_address="{PUBLIC_IP}:8080", client=FlowerClient().to_client()
     )
