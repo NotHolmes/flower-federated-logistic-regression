@@ -2,11 +2,13 @@
 set -e
 cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"/
 
-echo "Starting server"
-python src/server.py &
-sleep 3  # Sleep for 3s to give the server enough time to start
+if [[ "$1" != "--client-only" && "$1" != "-cl" ]]; then
+    echo "Starting server"
+    python src/server.py &
+    sleep 3  # Sleep for 3s to give the server enough time to start
+fi
 
-for i in $(seq 0 1); do
+for i in $(seq 0 1 2); do
     echo "Starting client $i"
     python src/client.py --client-id "${i}" &
 done
