@@ -10,7 +10,7 @@ import flwr as fl
 import utils
 
 if __name__ == "__main__":
-    N_CLIENTS = 5
+    N_CLIENTS = 3
 
     parser = argparse.ArgumentParser(description="Flower")
     parser.add_argument(
