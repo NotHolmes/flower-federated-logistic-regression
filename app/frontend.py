@@ -89,7 +89,7 @@ if type_of_loan_business:
 
 type_of_loan = ", ".join(selected_loans)
 
-if st.button("Send to API"):
+if st.button("Predict"):
     # Construct the input data as a dictionary
     input_data = {
         "Month": month,
