@@ -5,6 +5,12 @@ from flwr.common import NDArrays
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
+CREDIT_SCORE_CLASSES = {
+    "Poor":0,
+    "Standard":1,
+    "Good":2
+}
+
 DEFAULT_DICT = {
     'Age': 0,
     'Annual_Income': 0,
