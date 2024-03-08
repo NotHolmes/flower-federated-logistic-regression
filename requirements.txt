@@ -6,3 +6,4 @@ ipykernel
 requests
 streamlit
 datasist
+fastapi
