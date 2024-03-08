@@ -6,9 +6,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
 CREDIT_SCORE_CLASSES = {
-    "Poor":0,
-    "Standard":1,
-    "Good":2
+    0: "Poor",
+    1: "Standard",
+    2: "Good"
 }
 
 DEFAULT_DICT = {
