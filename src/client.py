@@ -16,7 +16,7 @@ if __name__ == "__main__":
     PUBLIC_IP = os.environ.get(
         "PUBLIC_IP"
     )  # run PUBLIC_IP=$(curl -s ifconfig.co) on GCP VM on startup to set the public IP to run client within the same network
-    N_CLIENTS = 3
+    N_CLIENTS = 5
 
     parser = argparse.ArgumentParser(description="Flower")
     parser.add_argument(
