@@ -34,7 +34,7 @@ if __name__ == "__main__":
     utils.set_initial_params(model)
     strategy = fl.server.strategy.FedTrimmedAvg(
         beta=0.8,
-        min_available_clients=3,
+        min_available_clients=5,
         evaluate_fn=get_evaluate_fn(model),
         on_fit_config_fn=fit_round,
     )
