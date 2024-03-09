@@ -32,7 +32,7 @@ def get_evaluate_fn(model: LogisticRegression):
 if __name__ == "__main__":
     model = LogisticRegression()
     utils.set_initial_params(model)
-    strategy = fl.server.strategy.FedAvg(
+    strategy = fl.server.strategy.FedMedian(
         min_available_clients=3,
         evaluate_fn=get_evaluate_fn(model),
         on_fit_config_fn=fit_round,
@@ -42,5 +42,4 @@ if __name__ == "__main__":
         strategy=strategy,
         config=fl.server.ServerConfig(num_rounds=10),
     )
-
-    dump(model, "model/model_fedavg.joblib")
+    dump(model, "model/model_fedmedian.joblib")

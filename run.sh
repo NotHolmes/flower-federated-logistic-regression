@@ -2,8 +2,18 @@
 set -e
 cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"/
 
-if [[ "$1" != "--client-only" && "$1" != "-cl" ]]; then
-    echo "Starting server"
+if [[ "$1" == "--client-only" || "$1" == "-cl" ]]; then
+    :  # Do nothing if client-only mode is specified
+elif [[ "$1" == "--prox" || "$1" == "-p" ]]; then
+    echo "Starting FedProx server"
+    python src/server_fedprox.py &
+    sleep 3  # Sleep for 3s to give the server enough time to start
+elif [[ "$1" == "--med" || "$1" == "-m" ]]; then
+    echo "Starting FedMedian server"
+    python src/server_fedmedian.py &
+    sleep 3  # Sleep for 3s to give the server enough time to start
+else
+    echo "Starting default (FedAvg) server"
     python src/server.py &
     sleep 3  # Sleep for 3s to give the server enough time to start
 fi

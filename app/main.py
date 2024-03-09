@@ -6,7 +6,7 @@ import pandas as pd
 from src.utils import CREDIT_SCORE_CLASSES, scale_data
 
 app = FastAPI()
-model = joblib.load("model/model.joblib")
+model = joblib.load("model/model_fedavg.joblib")
 
 @app.get("/")
 def read_root():
