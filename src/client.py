@@ -47,6 +47,7 @@ if __name__ == "__main__":
         penalty="l2",
         max_iter=1,  # local epoch
         warm_start=True,  # prevent refreshing weights when fitting
+        random_state=42
     )
 
     # Setting initial parameters, akin to model.compile for keras models
