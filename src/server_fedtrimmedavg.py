@@ -33,7 +33,7 @@ if __name__ == "__main__":
     model = LogisticRegression()
     utils.set_initial_params(model)
     strategy = fl.server.strategy.FedTrimmedAvg(
-        beta=0.2
+        beta=0.2,
         min_available_clients=3,
         evaluate_fn=get_evaluate_fn(model),
         on_fit_config_fn=fit_round,
