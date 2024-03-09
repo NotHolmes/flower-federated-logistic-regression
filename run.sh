@@ -4,9 +4,9 @@ cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"/
 
 if [[ "$1" == "--client-only" || "$1" == "-cl" ]]; then
     :  # Do nothing if client-only mode is specified
-elif [[ "$1" == "--prox" || "$1" == "-p" ]]; then
-    echo "Starting FedProx server"
-    python src/server_fedprox.py &
+elif [[ "$1" == "--trim" || "$1" == "-t" ]]; then
+    echo "Starting FedTrimmedAvg server"
+    python src/server_fedtrimmedavg.py &
     sleep 3  # Sleep for 3s to give the server enough time to start
 elif [[ "$1" == "--med" || "$1" == "-m" ]]; then
     echo "Starting FedMedian server"
