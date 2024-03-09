@@ -14,7 +14,7 @@ def fit_round(server_round: int) -> Dict:
 def get_evaluate_fn(model: LogisticRegression):
     """Return an evaluation function for server-side evaluation."""
 
-    X_test, y_test = utils.load_dataset("dataset/test.csv")
+    X_test, y_test = utils.load_dataset("dataset/validation.csv")
     X_test, _ = utils.scale_data(X_test, X_test)
 
     # The `evaluate` function will be called after every round
