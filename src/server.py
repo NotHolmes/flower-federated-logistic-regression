@@ -33,7 +33,7 @@ if __name__ == "__main__":
     model = LogisticRegression(random_state=42)
     utils.set_initial_params(model)
     strategy = fl.server.strategy.FedAvg(
-        min_available_clients=5,
+        min_available_clients=3,
         evaluate_fn=get_evaluate_fn(model),
         on_fit_config_fn=fit_round,
     )

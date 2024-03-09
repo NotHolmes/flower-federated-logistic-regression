@@ -106,7 +106,7 @@ def set_initial_params(model: LogisticRegression):
         model.intercept_ = np.zeros((n_classes,))
 
 
-NUM_CLIENTS = 5
+NUM_CLIENTS = 3
 
 
 def load_dataset_for_client(client_id: int, dataset_path: str):
