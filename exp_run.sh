@@ -28,7 +28,7 @@ run_script() {
         python src/server_krum.py &
         sleep 3  # Sleep for 3s to give the server enough time to start
     elif [[ "$1" == "--avg" || "$1" == "-a" ]]; then
-        echo "Starting Krum server"
+        echo "Starting FedAvg server"
         python src/server.py &
         sleep 3  # Sleep for 3s to give the server enough time to start
     else
