@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-st.set_page_config(page_title="Page Title", layout="wide")
+st.set_page_config(page_title="Credit Scoring Application using Federated Learning", layout="wide")
 
 st.markdown("""
     <style>
