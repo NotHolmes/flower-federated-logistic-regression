@@ -32,10 +32,6 @@ def main(model_type):
     X_test, y_test = utils.load_dataset("dataset/test.csv")
     X_test, _ = utils.scale_data(X_test, X_test)
 
-    # shuffle the data
-    X_test = X_test.sample(frac=1)
-    y_test = y_test.sample(frac=1)
-
     if model_type == "avg":
         model = load('model/model_fedavg.joblib')
     elif model_type == "trim":
