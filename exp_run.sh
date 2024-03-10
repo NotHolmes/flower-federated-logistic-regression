@@ -4,7 +4,7 @@ cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"/
 
 # Check if the loop count is provided as a command-line argument
 if [[ $# -eq 0 ]]; then
-    echo "Please provide the loop count as a command-line argument."
+    echo "Usage: ./exp_run.sh <model> <loop_count>"
     exit 1
 fi
 
