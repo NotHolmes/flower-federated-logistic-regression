@@ -12,6 +12,10 @@ elif [[ "$1" == "--med" || "$1" == "-m" ]]; then
     echo "Starting FedMedian server"
     python src/server_fedmedian.py &
     sleep 3  # Sleep for 3s to give the server enough time to start
+elif [[ "$1" == "--avg" || "$1" == "-a" ]]; then
+    echo "Starting Krum server"
+    python src/server.py &
+    sleep 3  # Sleep for 3s to give the server enough time to start
 else
     echo "Starting default (FedAvg) server"
     python src/server.py &
