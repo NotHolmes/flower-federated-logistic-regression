@@ -127,10 +127,25 @@ if st.button("Predict"):
     }
 
     # Send the data as JSON
-    response = requests.post("http://localhost:8000/predict", json=input_data)
+    response_avg = requests.post("http://localhost:8000/predict", json=input_data)
+    response_trim = requests.post("http://localhost:8000/predict", json=input_data)
+    response_krum = requests.post("http://localhost:8000/predict", json=input_data)
     
-    if response.status_code == 200:
-        result = response.json()
-        st.success(f"Prediction: {result['prediction']}")
+    if response_avg.status_code == 200:
+        result = response_avg.json()
+        st.success(f"FedAvg Prediction: {result['prediction']}")
+    else:
+        st.error("Failed to send data to API")
+    
+    if response_trim.status_code == 200:
+        result = response_trim.json()
+        st.success(f"FedTrimmedAvg Prediction: {result['prediction']}")
+    else:
+        st.error("Failed to send data to API")
+        
+    
+    if response_krum.status_code == 200:
+        result = response_krum.json()
+        st.success(f"Krum Prediction: {result['prediction']}")
     else:
         st.error("Failed to send data to API")
