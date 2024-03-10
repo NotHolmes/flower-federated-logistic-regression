@@ -115,7 +115,7 @@ def load_dataset_for_client(client_id: int, dataset_path: str):
     y = df["Credit_Score"]
 
     # Ensure even dataset splitting
-    np.random.seed(42)
+    # np.random.seed(42)
     if len(X) % NUM_CLIENTS != 0:
         drop_indices = np.random.choice(X.index, (len(X) % NUM_CLIENTS), replace=False)
         X = X.drop(drop_indices)
