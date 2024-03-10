@@ -20,55 +20,64 @@ st.title("Credit Scoring Prediction")
 # Input fields - Part 1
 col1, col2 = st.columns(2) 
 with col1:
-    month = st.selectbox("Month", ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"])
-    age = st.number_input("Age", min_value=18, max_value=100)
+    month = st.selectbox("Month", ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+                         , help="Month in which the customer is applying for the loan")
+    age = st.number_input("Age", min_value=18, max_value=100, "Age of the customer")
 
 with col2:
-    occupation = st.selectbox("Occupation", ["Architect", "Developer", "Doctor", "Engineer", "Entrepreneur", "Journalist", "Lawyer", "Manager", "Mechanic", "Media Manager", "Musician", "Scientist", "Teacher", "Writer", "Others"])
+    occupation = st.selectbox("Occupation", ["Architect", "Developer", "Doctor", "Engineer", "Entrepreneur", "Journalist", "Lawyer", "Manager", "Mechanic", "Media Manager", "Musician", "Scientist", "Teacher", "Writer", "Others"]
+                              , help="Occupation of the customer")
     if occupation == "Others":
         occupation = "________"
 
 # Input fields - Part 2
 col3, col4 = st.columns(2)
 with col3: 
-    annual_income = st.number_input("Annual Income")
-    monthly_inhand_salary = st.number_input("Monthly Inhand Salary")
-    num_bank_accounts = st.number_input("Number of Bank Accounts", min_value=0)
+    annual_income = st.number_input("Annual Income", help="Annual income of the customer")
+    monthly_inhand_salary = st.number_input("Monthly Inhand Salary", help="Monthly base salary of the customer")
+    num_bank_accounts = st.number_input("Number of Bank Accounts", min_value=0, help="Number of bank accounts the customer holds")
 
 with col4:
-    num_credit_card = st.number_input("Number of Credit Cards", min_value=0)
-    interest_rate = st.slider("Interest Rate (%)", min_value=0, max_value=100) 
-    num_of_loan = st.number_input("Number of Loans", min_value=0)
+    num_credit_card = st.number_input("Number of Credit Cards", min_value=0, help="Number of credit cards held by the customer")
+    interest_rate = st.slider("Interest Rate (%)", min_value=0, max_value=100, help="Interest rate on the credit card (in percentage)") 
+    num_of_loan = st.number_input("Number of Loans", min_value=0, help="Number of loans taken from the bank by the customer")
 
 # Input fields - Part 3 
 col5, col6 = st.columns(2)
 with col5:
-    delay_from_due_date = st.number_input("Days Delayed from Due Date", min_value=0)
-    num_of_delayed_payment = st.number_input("Number of Delayed Payments", min_value=0)
-    changed_credit_limit = st.number_input("Change in Credit Limit")
+    delay_from_due_date = st.number_input("Days Delayed from Due Date", min_value=0, help="Number of days delayed from the payment date")
+    num_of_delayed_payment = st.number_input("Number of Delayed Payments", min_value=0, help="Number of delayed payments by the customer")
+    changed_credit_limit = st.number_input("Change in Credit Limit", help="Change in credit limit (in percentage)")
 
 with col6:
-    num_credit_inquiries = st.number_input("Number of Credit Inquiries")
-    credit_mix = st.number_input("Credit Mix")  
+    num_credit_inquiries = st.number_input("Number of Credit Inquiries", min_value=0, help="Number of credit inquiries made by the customer")
+    credit_mix = st.selectbox("Credit Mix", ["Standard", "Good", "Bad"], help="Classification of the mix of credits")
+    if credit_mix == "Bad":
+        credit_mix = 0
+    elif credit_mix == "Standard":
+        credit_mix = 1
+    elif credit_mix == "Good":
+        credit_mix = 2
     outstanding_debt = st.number_input("Outstanding Debt")
 
 # Input fields - Part 4
 col7, col8 = st.columns(2)
 with col7:
-    credit_utilization_ratio = st.number_input("Credit Utilization Ratio")
-    credit_history_age = st.number_input("Credit History Age (e.g., '15 months')", min_value=0) 
-    payment_of_min_amount = st.selectbox("Payment of Minimum Amount", ["No", "Yes"])
+    credit_utilization_ratio = st.number_input("Credit Utilization Ratio", help="Credit utilization ratio of credit card (in percentage)")
+    credit_history_age = st.number_input("Credit History Age (e.g., '15 months')", min_value=0, help="Age of the credit history of the customer") 
+    payment_of_min_amount = st.selectbox("Payment of Minimum Amount", ["No", "Yes"], help="Whether the customer pays the minimum amount due")
     payment_of_min_amount = 1 if payment_of_min_amount == "Yes" else 0
 
 with col8: 
-    total_emi_per_month = st.number_input("Total EMI per Month")
-    amount_invested_monthly = st.number_input("Amount Invested Monthly")
-    payment_behavior = st.selectbox("Payment Behaviour", ["Low_spent_Large_value_payments", "Low_spent_Medium_value_payments", "Low_spent_Small_value_payments", "High_spent_Large_value_payments", "High_spent_Medium_value_payments", "High_spent_Small_value_payments"])
+    total_emi_per_month = st.number_input("Total EMI per Month", help="Total Equated Monthly Installment (EMI) per month")
+    amount_invested_monthly = st.number_input("Amount Invested Monthly", help="Amount invested monthly by the customer")
+    payment_behavior = st.selectbox("Payment Behaviour", ["Low_spent_Large_value_payments", "Low_spent_Medium_value_payments", "Low_spent_Small_value_payments", "High_spent_Large_value_payments", "High_spent_Medium_value_payments", "High_spent_Small_value_payments"]
+                                    , help="Payment behaviour of the customer")
 
 # Input fields - Part 5  
-monthly_balance = st.number_input("Monthly Balance")
+monthly_balance = st.number_input("Monthly Balance", help="Monthly balance of the customer (in USD)")
 
-st.header("Type of Loan Customer Has Taken")
+st.header("Type of Loan Customer Has Taken", help="Select the type of loan(s) the customer has taken")
 type_of_loan_personal = st.checkbox("Personal Loan")
 type_of_loan_home = st.checkbox("Home Loan")
 type_of_loan_car = st.checkbox("Car Loan")
