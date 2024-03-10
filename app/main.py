@@ -7,6 +7,8 @@ from src.utils import CREDIT_SCORE_CLASSES, scale_data
 
 app = FastAPI()
 model = joblib.load("model/model_fedavg.joblib")
+model_trim = joblib.load("model/model_fedtrimmedavg.joblib")
+model_krum = joblib.load("model/model_krum.joblib")
 
 @app.get("/")
 def read_root():
@@ -19,7 +21,11 @@ def predict_credit_score(data: dict):
     
     scale_data(pd.DataFrame(data), pd.DataFrame(data))
     prediction = model.predict(data)[0]
-    return {"prediction": CREDIT_SCORE_CLASSES[prediction]}
+    prediction_trim = model_trim.predict(data)[0]
+    prediction_krum = model_krum.predict(data)[0]
+    return {"prediction": CREDIT_SCORE_CLASSES[prediction],
+            "prediction_trim": CREDIT_SCORE_CLASSES[prediction_trim],
+            "prediction_krum": CREDIT_SCORE_CLASSES[prediction_krum]}
 
 def data_to_pred(data: dict):
     pred = {
