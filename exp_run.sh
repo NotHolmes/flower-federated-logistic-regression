@@ -13,21 +13,21 @@ loop_count=$2
 
 # Function to run the script
 run_script() {
-    if [[ "$1" == "--client-only" || "$1" == "-cl" ]]; then
+    if [[ "$1" == "client-only" || "$1" == "cl" ]]; then
         :  # Do nothing if client-only mode is specified
-    elif [[ "$1" == "--trim" || "$1" == "-t" ]]; then
+    elif [[ "$1" == "trim" || "$1" == "t" ]]; then
         echo "Starting FedTrimmedAvg server"
         python src/server_fedtrimmedavg.py &
         sleep 3  # Sleep for 3s to give the server enough time to start
-    elif [[ "$1" == "--med" || "$1" == "-m" ]]; then
+    elif [[ "$1" == "med" || "$1" == "m" ]]; then
         echo "Starting FedMedian server"
         python src/server_fedmedian.py &
         sleep 3  # Sleep for 3s to give the server enough time to start
-    elif [[ "$1" == "--krum" || "$1" == "-k" ]]; then
+    elif [[ "$1" == "krum" || "$1" == "k" ]]; then
         echo "Starting Krum server"
         python src/server_krum.py &
         sleep 3  # Sleep for 3s to give the server enough time to start
-    elif [[ "$1" == "--avg" || "$1" == "-a" ]]; then
+    elif [[ "$1" == "avg" || "$1" == "a" ]]; then
         echo "Starting FedAvg server"
         python src/server.py &
         sleep 3  # Sleep for 3s to give the server enough time to start
@@ -48,7 +48,7 @@ run_script() {
     wait
 
     # Run python src/matrices.py after server and client are done
-    python src/matrices.py --model "$1" >> "logs/$1_result.txt"
+    python src/matrices.py --model $1 >> "logs/$1_result.txt"
 }
 
 # Loop the script based on the provided loop count
