@@ -22,7 +22,7 @@ col1, col2 = st.columns(2)
 with col1:
     month = st.selectbox("Month", ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
                          , help="Month in which the customer is applying for the loan")
-    age = st.number_input("Age", min_value=18, max_value=100, "Age of the customer")
+    age = st.number_input("Age", min_value=18, max_value=100, help="Age of the customer")
 
 with col2:
     occupation = st.selectbox("Occupation", ["Architect", "Developer", "Doctor", "Engineer", "Entrepreneur", "Journalist", "Lawyer", "Manager", "Mechanic", "Media Manager", "Musician", "Scientist", "Teacher", "Writer", "Others"]
