@@ -37,7 +37,7 @@ if __name__ == "__main__":
         evaluate_fn=get_evaluate_fn(model),
         on_fit_config_fn=fit_round,
     )
-    fl.common.logger.configure(identifier="FedMedian Server", filename="fedmedian_log.txt")
+    fl.common.logger.configure(identifier="FedMedian Server", filename="logs/fedmedian_log.txt")
     fl.server.start_server(
         server_address="0.0.0.0:8080",
         strategy=strategy,

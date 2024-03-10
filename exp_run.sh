@@ -44,7 +44,7 @@ run_script() {
     wait
 
     # Run python src/matrices.py after server and client are done
-    python src/matrices.py --model "$1" >> "$1_result.txt"
+    python src/matrices.py --model "$1" >> "logs/$1_result.txt"
 }
 
 # Loop the script based on the provided loop count
