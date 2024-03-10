@@ -44,4 +44,4 @@ if __name__ == "__main__":
         config=fl.server.ServerConfig(num_rounds=100),
     )
 
-    dump(model, "model/model_fedavg.joblib")
+    dump(model, "model/model_krum.joblib")
