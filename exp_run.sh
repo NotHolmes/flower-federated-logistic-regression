@@ -9,7 +9,7 @@ if [[ $# -eq 0 ]]; then
 fi
 
 # Store the loop count in a variable
-loop_count=$1
+loop_count=$2
 
 # Function to run the script
 run_script() {
