@@ -111,6 +111,7 @@ NUM_CLIENTS = 3
 
 def load_dataset_for_client(client_id: int, dataset_path: str):
     df = pd.read_csv(dataset_path)
+    df = df.sort_values("Credit_Score")  # Sort dataset by Credit_Score
     X = df.drop("Credit_Score", axis=1)
     y = df["Credit_Score"]
 
@@ -127,9 +128,8 @@ def load_dataset_for_client(client_id: int, dataset_path: str):
 
     # Train/test split for the selected client
     X_train, X_test, y_train, y_test = train_test_split(
-        X_splits[client_id], y_splits[client_id], train_size=0.8, random_state=42
-    )
-
+        X_splits[client_id], y_splits[client_id], train_size=0.8)
+        
     return X_train, X_test, y_train, y_test
 
 
