@@ -1,0 +1,660 @@
+Krum Server | INFO flwr 2024-03-20 02:56:44,527 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+Krum Server | INFO flwr 2024-03-20 02:56:44,549 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+Krum Server | INFO flwr 2024-03-20 02:56:44,549 | server.py:89 | Initializing global parameters
+Krum Server | INFO flwr 2024-03-20 02:56:44,549 | server.py:276 | Requesting initial parameters from one random client
+Krum Server | INFO flwr 2024-03-20 02:58:06,170 | server.py:280 | Received initial parameters from one random client
+Krum Server | INFO flwr 2024-03-20 02:58:06,170 | server.py:91 | Evaluating initial parameters
+Krum Server | INFO flwr 2024-03-20 02:58:06,203 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+Krum Server | INFO flwr 2024-03-20 02:58:06,207 | server.py:104 | FL starting
+Krum Server | DEBUG flwr 2024-03-20 02:58:10,623 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:58:10,681 | server.py:236 | fit_round 1 received 2 results and 0 failures
+Krum Server | WARNING flwr 2024-03-20 02:58:10,683 | krum.py:153 | No fit_metrics_aggregation_fn provided
+Krum Server | INFO flwr 2024-03-20 02:58:10,708 | server.py:125 | fit progress: (1, 0.9731355447149461, {'accuracy': 0.544}, 4.5007913910085335)
+Krum Server | DEBUG flwr 2024-03-20 02:58:10,711 | server.py:173 | evaluate_round 1: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:58:11,649 | server.py:187 | evaluate_round 1 received 50 results and 0 failures
+Krum Server | WARNING flwr 2024-03-20 02:58:11,649 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+Krum Server | DEBUG flwr 2024-03-20 02:58:11,650 | server.py:222 | fit_round 2: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:58:11,996 | server.py:236 | fit_round 2 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 02:58:12,052 | server.py:125 | fit progress: (2, 0.968829216243277, {'accuracy': 0.5281}, 5.844356584944762)
+Krum Server | DEBUG flwr 2024-03-20 02:58:12,055 | server.py:173 | evaluate_round 2: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:58:12,287 | server.py:187 | evaluate_round 2 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 02:58:12,287 | server.py:222 | fit_round 3: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:58:12,441 | server.py:236 | fit_round 3 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 02:58:12,506 | server.py:125 | fit progress: (3, 0.980125235774252, {'accuracy': 0.5868}, 6.298848566948436)
+Krum Server | DEBUG flwr 2024-03-20 02:58:12,509 | server.py:173 | evaluate_round 3: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:58:12,683 | server.py:187 | evaluate_round 3 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 02:58:12,684 | server.py:222 | fit_round 4: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:58:12,820 | server.py:236 | fit_round 4 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 02:58:12,881 | server.py:125 | fit progress: (4, 0.8546908553151188, {'accuracy': 0.5934}, 6.674190380028449)
+Krum Server | DEBUG flwr 2024-03-20 02:58:12,884 | server.py:173 | evaluate_round 4: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:58:13,074 | server.py:187 | evaluate_round 4 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 02:58:13,074 | server.py:222 | fit_round 5: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:58:13,204 | server.py:236 | fit_round 5 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 02:58:13,268 | server.py:125 | fit progress: (5, 0.8702217968546138, {'accuracy': 0.5796}, 7.06079812895041)
+Krum Server | DEBUG flwr 2024-03-20 02:58:13,270 | server.py:173 | evaluate_round 5: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:58:13,456 | server.py:187 | evaluate_round 5 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 02:58:13,456 | server.py:222 | fit_round 6: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:58:13,620 | server.py:236 | fit_round 6 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 02:58:13,760 | server.py:125 | fit progress: (6, 0.8396915471524553, {'accuracy': 0.5952}, 7.552703317953274)
+Krum Server | DEBUG flwr 2024-03-20 02:58:13,765 | server.py:173 | evaluate_round 6: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:58:13,937 | server.py:187 | evaluate_round 6 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 02:58:13,937 | server.py:222 | fit_round 7: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:58:14,069 | server.py:236 | fit_round 7 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 02:58:14,126 | server.py:125 | fit progress: (7, 0.8505181900725869, {'accuracy': 0.5936}, 7.918604447040707)
+Krum Server | DEBUG flwr 2024-03-20 02:58:14,129 | server.py:173 | evaluate_round 7: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:58:14,310 | server.py:187 | evaluate_round 7 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 02:58:14,311 | server.py:222 | fit_round 8: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:58:14,446 | server.py:236 | fit_round 8 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 02:58:14,494 | server.py:125 | fit progress: (8, 0.8341377364677784, {'accuracy': 0.6046}, 8.28665856400039)
+Krum Server | DEBUG flwr 2024-03-20 02:58:14,495 | server.py:173 | evaluate_round 8: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:58:14,675 | server.py:187 | evaluate_round 8 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 02:58:14,675 | server.py:222 | fit_round 9: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:58:14,802 | server.py:236 | fit_round 9 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 02:58:14,864 | server.py:125 | fit progress: (9, 0.8468505144541612, {'accuracy': 0.5843}, 8.657193328021094)
+Krum Server | DEBUG flwr 2024-03-20 02:58:14,867 | server.py:173 | evaluate_round 9: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:58:15,050 | server.py:187 | evaluate_round 9 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 02:58:15,051 | server.py:222 | fit_round 10: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:58:15,190 | server.py:236 | fit_round 10 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 02:58:15,248 | server.py:125 | fit progress: (10, 0.8328588182373453, {'accuracy': 0.6043}, 9.041039519011974)
+Krum Server | DEBUG flwr 2024-03-20 02:58:15,253 | server.py:173 | evaluate_round 10: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:58:15,425 | server.py:187 | evaluate_round 10 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 02:58:15,425 | server.py:153 | FL finished in 9.217847489984706
+Krum Server | INFO flwr 2024-03-20 02:58:15,426 | app.py:226 | app_fit: losses_distributed [(1, 0.9774162578582763), (2, 0.9700797867774963), (3, 0.99867058634758), (4, 0.8592954909801483), (5, 0.8727144360542297), (6, 0.8470257461071015), (7, 0.852137131690979), (8, 0.8407487380504608), (9, 0.8502978515625), (10, 0.8338166880607605)]
+Krum Server | INFO flwr 2024-03-20 02:58:15,426 | app.py:227 | app_fit: metrics_distributed_fit {}
+Krum Server | INFO flwr 2024-03-20 02:58:15,426 | app.py:228 | app_fit: metrics_distributed {}
+Krum Server | INFO flwr 2024-03-20 02:58:15,426 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9731355447149461), (2, 0.968829216243277), (3, 0.980125235774252), (4, 0.8546908553151188), (5, 0.8702217968546138), (6, 0.8396915471524553), (7, 0.8505181900725869), (8, 0.8341377364677784), (9, 0.8468505144541612), (10, 0.8328588182373453)]
+Krum Server | INFO flwr 2024-03-20 02:58:15,426 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.544), (2, 0.5281), (3, 0.5868), (4, 0.5934), (5, 0.5796), (6, 0.5952), (7, 0.5936), (8, 0.6046), (9, 0.5843), (10, 0.6043)]}
+Krum Server | INFO flwr 2024-03-20 02:58:20,667 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+Krum Server | INFO flwr 2024-03-20 02:58:20,676 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+Krum Server | INFO flwr 2024-03-20 02:58:20,676 | server.py:89 | Initializing global parameters
+Krum Server | INFO flwr 2024-03-20 02:58:20,676 | server.py:276 | Requesting initial parameters from one random client
+Krum Server | INFO flwr 2024-03-20 02:59:40,509 | server.py:280 | Received initial parameters from one random client
+Krum Server | INFO flwr 2024-03-20 02:59:40,509 | server.py:91 | Evaluating initial parameters
+Krum Server | INFO flwr 2024-03-20 02:59:40,528 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+Krum Server | INFO flwr 2024-03-20 02:59:40,529 | server.py:104 | FL starting
+Krum Server | DEBUG flwr 2024-03-20 02:59:47,397 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:59:47,451 | server.py:236 | fit_round 1 received 2 results and 0 failures
+Krum Server | WARNING flwr 2024-03-20 02:59:47,452 | krum.py:153 | No fit_metrics_aggregation_fn provided
+Krum Server | INFO flwr 2024-03-20 02:59:47,469 | server.py:125 | fit progress: (1, 0.9967961601993206, {'accuracy': 0.5439}, 6.939993686974049)
+Krum Server | DEBUG flwr 2024-03-20 02:59:47,470 | server.py:173 | evaluate_round 1: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:59:48,051 | server.py:187 | evaluate_round 1 received 50 results and 0 failures
+Krum Server | WARNING flwr 2024-03-20 02:59:48,051 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+Krum Server | DEBUG flwr 2024-03-20 02:59:48,051 | server.py:222 | fit_round 2: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:59:48,208 | server.py:236 | fit_round 2 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 02:59:48,272 | server.py:125 | fit progress: (2, 0.985417944879951, {'accuracy': 0.5233}, 7.743356060003862)
+Krum Server | DEBUG flwr 2024-03-20 02:59:48,274 | server.py:173 | evaluate_round 2: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:59:48,483 | server.py:187 | evaluate_round 2 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 02:59:48,484 | server.py:222 | fit_round 3: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:59:48,630 | server.py:236 | fit_round 3 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 02:59:48,667 | server.py:125 | fit progress: (3, 1.0096826923001785, {'accuracy': 0.5843}, 8.13818418898154)
+Krum Server | DEBUG flwr 2024-03-20 02:59:48,668 | server.py:173 | evaluate_round 3: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:59:48,860 | server.py:187 | evaluate_round 3 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 02:59:48,860 | server.py:222 | fit_round 4: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:59:48,989 | server.py:236 | fit_round 4 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 02:59:49,057 | server.py:125 | fit progress: (4, 0.9655968013742268, {'accuracy': 0.526}, 8.527914045960642)
+Krum Server | DEBUG flwr 2024-03-20 02:59:49,060 | server.py:173 | evaluate_round 4: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:59:49,244 | server.py:187 | evaluate_round 4 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 02:59:49,244 | server.py:222 | fit_round 5: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:59:49,388 | server.py:236 | fit_round 5 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 02:59:49,447 | server.py:125 | fit progress: (5, 1.008981302126647, {'accuracy': 0.5882}, 8.917920759995468)
+Krum Server | DEBUG flwr 2024-03-20 02:59:49,449 | server.py:173 | evaluate_round 5: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:59:49,629 | server.py:187 | evaluate_round 5 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 02:59:49,629 | server.py:222 | fit_round 6: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:59:49,755 | server.py:236 | fit_round 6 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 02:59:49,787 | server.py:125 | fit progress: (6, 0.9501534675295809, {'accuracy': 0.5399}, 9.258245602017269)
+Krum Server | DEBUG flwr 2024-03-20 02:59:49,788 | server.py:173 | evaluate_round 6: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:59:49,981 | server.py:187 | evaluate_round 6 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 02:59:49,982 | server.py:222 | fit_round 7: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:59:50,120 | server.py:236 | fit_round 7 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 02:59:50,176 | server.py:125 | fit progress: (7, 0.8447028458424136, {'accuracy': 0.5989}, 9.647317263996229)
+Krum Server | DEBUG flwr 2024-03-20 02:59:50,177 | server.py:173 | evaluate_round 7: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:59:50,350 | server.py:187 | evaluate_round 7 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 02:59:50,350 | server.py:222 | fit_round 8: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:59:50,481 | server.py:236 | fit_round 8 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 02:59:50,539 | server.py:125 | fit progress: (8, 0.8550656710012976, {'accuracy': 0.5851}, 10.010390689014457)
+Krum Server | DEBUG flwr 2024-03-20 02:59:50,543 | server.py:173 | evaluate_round 8: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:59:50,726 | server.py:187 | evaluate_round 8 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 02:59:50,727 | server.py:222 | fit_round 9: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:59:50,871 | server.py:236 | fit_round 9 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 02:59:50,903 | server.py:125 | fit progress: (9, 0.8379586721844554, {'accuracy': 0.6037}, 10.373788136057556)
+Krum Server | DEBUG flwr 2024-03-20 02:59:50,904 | server.py:173 | evaluate_round 9: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:59:51,072 | server.py:187 | evaluate_round 9 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 02:59:51,073 | server.py:222 | fit_round 10: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:59:51,203 | server.py:236 | fit_round 10 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 02:59:51,253 | server.py:125 | fit progress: (10, 0.8453418584343954, {'accuracy': 0.5871}, 10.724069332005456)
+Krum Server | DEBUG flwr 2024-03-20 02:59:51,257 | server.py:173 | evaluate_round 10: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 02:59:51,425 | server.py:187 | evaluate_round 10 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 02:59:51,425 | server.py:153 | FL finished in 10.896436774055474
+Krum Server | INFO flwr 2024-03-20 02:59:51,426 | app.py:226 | app_fit: losses_distributed [(1, 1.0129762375354767), (2, 1.0118379199504852), (3, 1.0317189002037048), (4, 0.9867851841449737), (5, 1.0411134934425355), (6, 0.9764869892597199), (7, 0.8476216197013855), (8, 0.8706737589836121), (9, 0.8439501678943634), (10, 0.8588295447826385)]
+Krum Server | INFO flwr 2024-03-20 02:59:51,426 | app.py:227 | app_fit: metrics_distributed_fit {}
+Krum Server | INFO flwr 2024-03-20 02:59:51,426 | app.py:228 | app_fit: metrics_distributed {}
+Krum Server | INFO flwr 2024-03-20 02:59:51,427 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9967961601993206), (2, 0.985417944879951), (3, 1.0096826923001785), (4, 0.9655968013742268), (5, 1.008981302126647), (6, 0.9501534675295809), (7, 0.8447028458424136), (8, 0.8550656710012976), (9, 0.8379586721844554), (10, 0.8453418584343954)]
+Krum Server | INFO flwr 2024-03-20 02:59:51,427 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5439), (2, 0.5233), (3, 0.5843), (4, 0.526), (5, 0.5882), (6, 0.5399), (7, 0.5989), (8, 0.5851), (9, 0.6037), (10, 0.5871)]}
+Krum Server | INFO flwr 2024-03-20 02:59:56,623 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+Krum Server | INFO flwr 2024-03-20 02:59:56,634 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+Krum Server | INFO flwr 2024-03-20 02:59:56,634 | server.py:89 | Initializing global parameters
+Krum Server | INFO flwr 2024-03-20 02:59:56,634 | server.py:276 | Requesting initial parameters from one random client
+Krum Server | INFO flwr 2024-03-20 03:01:16,512 | server.py:280 | Received initial parameters from one random client
+Krum Server | INFO flwr 2024-03-20 03:01:16,512 | server.py:91 | Evaluating initial parameters
+Krum Server | INFO flwr 2024-03-20 03:01:16,534 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+Krum Server | INFO flwr 2024-03-20 03:01:16,534 | server.py:104 | FL starting
+Krum Server | DEBUG flwr 2024-03-20 03:01:23,517 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:01:23,539 | server.py:236 | fit_round 1 received 2 results and 0 failures
+Krum Server | WARNING flwr 2024-03-20 03:01:23,540 | krum.py:153 | No fit_metrics_aggregation_fn provided
+Krum Server | INFO flwr 2024-03-20 03:01:23,564 | server.py:125 | fit progress: (1, 0.9375407282889661, {'accuracy': 0.5583}, 7.029573583044112)
+Krum Server | DEBUG flwr 2024-03-20 03:01:23,567 | server.py:173 | evaluate_round 1: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:01:24,067 | server.py:187 | evaluate_round 1 received 50 results and 0 failures
+Krum Server | WARNING flwr 2024-03-20 03:01:24,067 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+Krum Server | DEBUG flwr 2024-03-20 03:01:24,067 | server.py:222 | fit_round 2: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:01:24,228 | server.py:236 | fit_round 2 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:01:24,284 | server.py:125 | fit progress: (2, 0.9998876332462998, {'accuracy': 0.5229}, 7.749058292945847)
+Krum Server | DEBUG flwr 2024-03-20 03:01:24,287 | server.py:173 | evaluate_round 2: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:01:24,481 | server.py:187 | evaluate_round 2 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:01:24,481 | server.py:222 | fit_round 3: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:01:24,615 | server.py:236 | fit_round 3 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:01:24,659 | server.py:125 | fit progress: (3, 0.9658556496165686, {'accuracy': 0.5895}, 8.12370312702842)
+Krum Server | DEBUG flwr 2024-03-20 03:01:24,659 | server.py:173 | evaluate_round 3: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:01:24,866 | server.py:187 | evaluate_round 3 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:01:24,866 | server.py:222 | fit_round 4: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:01:25,000 | server.py:236 | fit_round 4 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:01:25,031 | server.py:125 | fit progress: (4, 0.8588899687850878, {'accuracy': 0.5889}, 8.495946828043088)
+Krum Server | DEBUG flwr 2024-03-20 03:01:25,031 | server.py:173 | evaluate_round 4: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:01:25,208 | server.py:187 | evaluate_round 4 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:01:25,209 | server.py:222 | fit_round 5: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:01:25,346 | server.py:236 | fit_round 5 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:01:25,394 | server.py:125 | fit progress: (5, 0.8625493372331233, {'accuracy': 0.591}, 8.859500337042846)
+Krum Server | DEBUG flwr 2024-03-20 03:01:25,395 | server.py:173 | evaluate_round 5: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:01:25,579 | server.py:187 | evaluate_round 5 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:01:25,580 | server.py:222 | fit_round 6: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:01:25,714 | server.py:236 | fit_round 6 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:01:25,776 | server.py:125 | fit progress: (6, 0.841327962826986, {'accuracy': 0.5964}, 9.24127461493481)
+Krum Server | DEBUG flwr 2024-03-20 03:01:25,778 | server.py:173 | evaluate_round 6: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:01:25,950 | server.py:187 | evaluate_round 6 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:01:25,950 | server.py:222 | fit_round 7: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:01:26,078 | server.py:236 | fit_round 7 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:01:26,134 | server.py:125 | fit progress: (7, 0.8715626332800033, {'accuracy': 0.599}, 9.599676926038228)
+Krum Server | DEBUG flwr 2024-03-20 03:01:26,138 | server.py:173 | evaluate_round 7: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:01:26,341 | server.py:187 | evaluate_round 7 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:01:26,342 | server.py:222 | fit_round 8: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:01:26,481 | server.py:236 | fit_round 8 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:01:26,541 | server.py:125 | fit progress: (8, 0.8428042618609873, {'accuracy': 0.5934}, 10.00611904996913)
+Krum Server | DEBUG flwr 2024-03-20 03:01:26,544 | server.py:173 | evaluate_round 8: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:01:26,711 | server.py:187 | evaluate_round 8 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:01:26,711 | server.py:222 | fit_round 9: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:01:26,839 | server.py:236 | fit_round 9 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:01:26,902 | server.py:125 | fit progress: (9, 0.8650102088277506, {'accuracy': 0.5916}, 10.36694274994079)
+Krum Server | DEBUG flwr 2024-03-20 03:01:26,905 | server.py:173 | evaluate_round 9: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:01:27,073 | server.py:187 | evaluate_round 9 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:01:27,074 | server.py:222 | fit_round 10: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:01:27,202 | server.py:236 | fit_round 10 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:01:27,260 | server.py:125 | fit progress: (10, 0.8401463516096644, {'accuracy': 0.5889}, 10.724980385042727)
+Krum Server | DEBUG flwr 2024-03-20 03:01:27,264 | server.py:173 | evaluate_round 10: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:01:27,426 | server.py:187 | evaluate_round 10 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:01:27,427 | server.py:153 | FL finished in 10.891892830026336
+Krum Server | INFO flwr 2024-03-20 03:01:27,427 | app.py:226 | app_fit: losses_distributed [(1, 0.9463792037963867), (2, 1.006930958032608), (3, 0.9720570361614227), (4, 0.8523579657077789), (5, 0.8625134468078614), (6, 0.8363776779174805), (7, 0.8689078259468078), (8, 0.8423054957389832), (9, 0.8652171277999878), (10, 0.843848557472229)]
+Krum Server | INFO flwr 2024-03-20 03:01:27,427 | app.py:227 | app_fit: metrics_distributed_fit {}
+Krum Server | INFO flwr 2024-03-20 03:01:27,427 | app.py:228 | app_fit: metrics_distributed {}
+Krum Server | INFO flwr 2024-03-20 03:01:27,427 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9375407282889661), (2, 0.9998876332462998), (3, 0.9658556496165686), (4, 0.8588899687850878), (5, 0.8625493372331233), (6, 0.841327962826986), (7, 0.8715626332800033), (8, 0.8428042618609873), (9, 0.8650102088277506), (10, 0.8401463516096644)]
+Krum Server | INFO flwr 2024-03-20 03:01:27,427 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5583), (2, 0.5229), (3, 0.5895), (4, 0.5889), (5, 0.591), (6, 0.5964), (7, 0.599), (8, 0.5934), (9, 0.5916), (10, 0.5889)]}
+Krum Server | INFO flwr 2024-03-20 03:01:32,623 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+Krum Server | INFO flwr 2024-03-20 03:01:32,638 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+Krum Server | INFO flwr 2024-03-20 03:01:32,638 | server.py:89 | Initializing global parameters
+Krum Server | INFO flwr 2024-03-20 03:01:32,638 | server.py:276 | Requesting initial parameters from one random client
+Krum Server | INFO flwr 2024-03-20 03:02:53,315 | server.py:280 | Received initial parameters from one random client
+Krum Server | INFO flwr 2024-03-20 03:02:53,315 | server.py:91 | Evaluating initial parameters
+Krum Server | INFO flwr 2024-03-20 03:02:53,336 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+Krum Server | INFO flwr 2024-03-20 03:02:53,337 | server.py:104 | FL starting
+Krum Server | DEBUG flwr 2024-03-20 03:02:58,755 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:02:58,769 | server.py:236 | fit_round 1 received 2 results and 0 failures
+Krum Server | WARNING flwr 2024-03-20 03:02:58,771 | krum.py:153 | No fit_metrics_aggregation_fn provided
+Krum Server | INFO flwr 2024-03-20 03:02:58,794 | server.py:125 | fit progress: (1, 0.9721593176040002, {'accuracy': 0.5427}, 5.456404116004705)
+Krum Server | DEBUG flwr 2024-03-20 03:02:58,797 | server.py:173 | evaluate_round 1: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:02:59,446 | server.py:187 | evaluate_round 1 received 50 results and 0 failures
+Krum Server | WARNING flwr 2024-03-20 03:02:59,446 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+Krum Server | DEBUG flwr 2024-03-20 03:02:59,447 | server.py:222 | fit_round 2: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:02:59,659 | server.py:236 | fit_round 2 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:02:59,716 | server.py:125 | fit progress: (2, 0.9402796245648606, {'accuracy': 0.5416}, 6.378183815977536)
+Krum Server | DEBUG flwr 2024-03-20 03:02:59,718 | server.py:173 | evaluate_round 2: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:02:59,902 | server.py:187 | evaluate_round 2 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:02:59,902 | server.py:222 | fit_round 3: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:03:00,036 | server.py:236 | fit_round 3 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:03:00,079 | server.py:125 | fit progress: (3, 0.941858124261257, {'accuracy': 0.599}, 6.741502629010938)
+Krum Server | DEBUG flwr 2024-03-20 03:03:00,080 | server.py:173 | evaluate_round 3: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:03:00,256 | server.py:187 | evaluate_round 3 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:03:00,257 | server.py:222 | fit_round 4: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:03:00,392 | server.py:236 | fit_round 4 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:03:00,423 | server.py:125 | fit progress: (4, 0.8472385701172019, {'accuracy': 0.595}, 7.085165824973956)
+Krum Server | DEBUG flwr 2024-03-20 03:03:00,423 | server.py:173 | evaluate_round 4: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:03:00,589 | server.py:187 | evaluate_round 4 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:03:00,589 | server.py:222 | fit_round 5: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:03:00,723 | server.py:236 | fit_round 5 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:03:00,780 | server.py:125 | fit progress: (5, 0.8496704483127778, {'accuracy': 0.5982}, 7.442999024991877)
+Krum Server | DEBUG flwr 2024-03-20 03:03:00,783 | server.py:173 | evaluate_round 5: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:03:00,949 | server.py:187 | evaluate_round 5 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:03:00,950 | server.py:222 | fit_round 6: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:03:01,089 | server.py:236 | fit_round 6 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:03:01,145 | server.py:125 | fit progress: (6, 0.8452048629030565, {'accuracy': 0.5916}, 7.80718864290975)
+Krum Server | DEBUG flwr 2024-03-20 03:03:01,146 | server.py:173 | evaluate_round 6: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:03:01,317 | server.py:187 | evaluate_round 6 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:03:01,317 | server.py:222 | fit_round 7: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:03:01,456 | server.py:236 | fit_round 7 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:03:01,511 | server.py:125 | fit progress: (7, 0.8418720335153034, {'accuracy': 0.5941}, 8.17319007893093)
+Krum Server | DEBUG flwr 2024-03-20 03:03:01,512 | server.py:173 | evaluate_round 7: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:03:01,683 | server.py:187 | evaluate_round 7 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:03:01,684 | server.py:222 | fit_round 8: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:03:01,816 | server.py:236 | fit_round 8 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:03:01,855 | server.py:125 | fit progress: (8, 0.8371036126100339, {'accuracy': 0.5999}, 8.518083022907376)
+Krum Server | DEBUG flwr 2024-03-20 03:03:01,856 | server.py:173 | evaluate_round 8: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:03:02,024 | server.py:187 | evaluate_round 8 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:03:02,025 | server.py:222 | fit_round 9: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:03:02,158 | server.py:236 | fit_round 9 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:03:02,215 | server.py:125 | fit progress: (9, 0.8350910073760064, {'accuracy': 0.5981}, 8.877263623988256)
+Krum Server | DEBUG flwr 2024-03-20 03:03:02,218 | server.py:173 | evaluate_round 9: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:03:02,383 | server.py:187 | evaluate_round 9 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:03:02,384 | server.py:222 | fit_round 10: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:03:02,517 | server.py:236 | fit_round 10 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:03:02,573 | server.py:125 | fit progress: (10, 0.8494888264417721, {'accuracy': 0.5957}, 9.235926421009935)
+Krum Server | DEBUG flwr 2024-03-20 03:03:02,576 | server.py:173 | evaluate_round 10: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:03:02,740 | server.py:187 | evaluate_round 10 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:03:02,741 | server.py:153 | FL finished in 9.403453717008233
+Krum Server | INFO flwr 2024-03-20 03:03:02,741 | app.py:226 | app_fit: losses_distributed [(1, 0.9792379271984101), (2, 0.9543760573863983), (3, 0.9498765587806701), (4, 0.8463641369342804), (5, 0.8537251222133636), (6, 0.8499814283847809), (7, 0.8441050589084625), (8, 0.8463547384738922), (9, 0.8279938507080078), (10, 0.84783282995224)]
+Krum Server | INFO flwr 2024-03-20 03:03:02,741 | app.py:227 | app_fit: metrics_distributed_fit {}
+Krum Server | INFO flwr 2024-03-20 03:03:02,741 | app.py:228 | app_fit: metrics_distributed {}
+Krum Server | INFO flwr 2024-03-20 03:03:02,742 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9721593176040002), (2, 0.9402796245648606), (3, 0.941858124261257), (4, 0.8472385701172019), (5, 0.8496704483127778), (6, 0.8452048629030565), (7, 0.8418720335153034), (8, 0.8371036126100339), (9, 0.8350910073760064), (10, 0.8494888264417721)]
+Krum Server | INFO flwr 2024-03-20 03:03:02,742 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5427), (2, 0.5416), (3, 0.599), (4, 0.595), (5, 0.5982), (6, 0.5916), (7, 0.5941), (8, 0.5999), (9, 0.5981), (10, 0.5957)]}
+Krum Server | INFO flwr 2024-03-20 03:03:08,070 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+Krum Server | INFO flwr 2024-03-20 03:03:08,079 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+Krum Server | INFO flwr 2024-03-20 03:03:08,079 | server.py:89 | Initializing global parameters
+Krum Server | INFO flwr 2024-03-20 03:03:08,080 | server.py:276 | Requesting initial parameters from one random client
+Krum Server | INFO flwr 2024-03-20 03:04:08,889 | server.py:280 | Received initial parameters from one random client
+Krum Server | INFO flwr 2024-03-20 03:04:08,889 | server.py:91 | Evaluating initial parameters
+Krum Server | INFO flwr 2024-03-20 03:04:08,910 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+Krum Server | INFO flwr 2024-03-20 03:04:08,910 | server.py:104 | FL starting
+Krum Server | DEBUG flwr 2024-03-20 03:04:35,381 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:04:35,395 | server.py:236 | fit_round 1 received 2 results and 0 failures
+Krum Server | WARNING flwr 2024-03-20 03:04:35,396 | krum.py:153 | No fit_metrics_aggregation_fn provided
+Krum Server | INFO flwr 2024-03-20 03:04:35,419 | server.py:125 | fit progress: (1, 0.9468810565613976, {'accuracy': 0.5412}, 26.508443673956208)
+Krum Server | DEBUG flwr 2024-03-20 03:04:35,422 | server.py:173 | evaluate_round 1: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:04:36,142 | server.py:187 | evaluate_round 1 received 50 results and 0 failures
+Krum Server | WARNING flwr 2024-03-20 03:04:36,142 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+Krum Server | DEBUG flwr 2024-03-20 03:04:36,143 | server.py:222 | fit_round 2: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:04:36,373 | server.py:236 | fit_round 2 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:04:36,429 | server.py:125 | fit progress: (2, 0.9726695070095153, {'accuracy': 0.5277}, 27.518373150960542)
+Krum Server | DEBUG flwr 2024-03-20 03:04:36,431 | server.py:173 | evaluate_round 2: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:04:36,631 | server.py:187 | evaluate_round 2 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:04:36,631 | server.py:222 | fit_round 3: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:04:36,765 | server.py:236 | fit_round 3 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:04:36,795 | server.py:125 | fit progress: (3, 0.9412194663450669, {'accuracy': 0.5982}, 27.884845257969573)
+Krum Server | DEBUG flwr 2024-03-20 03:04:36,795 | server.py:173 | evaluate_round 3: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:04:36,981 | server.py:187 | evaluate_round 3 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:04:36,981 | server.py:222 | fit_round 4: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:04:37,115 | server.py:236 | fit_round 4 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:04:37,172 | server.py:125 | fit progress: (4, 0.8576799357390892, {'accuracy': 0.5833}, 28.26145071501378)
+Krum Server | DEBUG flwr 2024-03-20 03:04:37,175 | server.py:173 | evaluate_round 4: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:04:37,351 | server.py:187 | evaluate_round 4 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:04:37,352 | server.py:222 | fit_round 5: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:04:37,486 | server.py:236 | fit_round 5 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:04:37,538 | server.py:125 | fit progress: (5, 0.847629810933813, {'accuracy': 0.5866}, 28.627830034005456)
+Krum Server | DEBUG flwr 2024-03-20 03:04:37,541 | server.py:173 | evaluate_round 5: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:04:37,710 | server.py:187 | evaluate_round 5 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:04:37,710 | server.py:222 | fit_round 6: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:04:37,845 | server.py:236 | fit_round 6 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:04:37,876 | server.py:125 | fit progress: (6, 0.8433965285223946, {'accuracy': 0.5908}, 28.965886079939082)
+Krum Server | DEBUG flwr 2024-03-20 03:04:37,876 | server.py:173 | evaluate_round 6: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:04:38,040 | server.py:187 | evaluate_round 6 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:04:38,040 | server.py:222 | fit_round 7: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:04:38,174 | server.py:236 | fit_round 7 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:04:38,231 | server.py:125 | fit progress: (7, 0.8443458840434834, {'accuracy': 0.5917}, 29.321174253942445)
+Krum Server | DEBUG flwr 2024-03-20 03:04:38,233 | server.py:173 | evaluate_round 7: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:04:38,398 | server.py:187 | evaluate_round 7 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:04:38,398 | server.py:222 | fit_round 8: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:04:38,529 | server.py:236 | fit_round 8 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:04:38,587 | server.py:125 | fit progress: (8, 0.8405311652999254, {'accuracy': 0.5845}, 29.677152344956994)
+Krum Server | DEBUG flwr 2024-03-20 03:04:38,589 | server.py:173 | evaluate_round 8: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:04:38,756 | server.py:187 | evaluate_round 8 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:04:38,757 | server.py:222 | fit_round 9: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:04:38,886 | server.py:236 | fit_round 9 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:04:38,917 | server.py:125 | fit progress: (9, 0.8466688003092162, {'accuracy': 0.5954}, 30.006414338946342)
+Krum Server | DEBUG flwr 2024-03-20 03:04:38,918 | server.py:173 | evaluate_round 9: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:04:39,081 | server.py:187 | evaluate_round 9 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:04:39,081 | server.py:222 | fit_round 10: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:04:39,213 | server.py:236 | fit_round 10 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:04:39,268 | server.py:125 | fit progress: (10, 0.8364960356687247, {'accuracy': 0.5969}, 30.357686269911937)
+Krum Server | DEBUG flwr 2024-03-20 03:04:39,271 | server.py:173 | evaluate_round 10: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:04:39,436 | server.py:187 | evaluate_round 10 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:04:39,437 | server.py:153 | FL finished in 30.526390937971883
+Krum Server | INFO flwr 2024-03-20 03:04:39,437 | app.py:226 | app_fit: losses_distributed [(1, 0.9502012968063355), (2, 0.9852092885971069), (3, 0.9529062342643738), (4, 0.8574461781978607), (5, 0.8476225543022156), (6, 0.8437212324142456), (7, 0.8559844243526459), (8, 0.8499430203437806), (9, 0.8479217088222504), (10, 0.851287910938263)]
+Krum Server | INFO flwr 2024-03-20 03:04:39,437 | app.py:227 | app_fit: metrics_distributed_fit {}
+Krum Server | INFO flwr 2024-03-20 03:04:39,437 | app.py:228 | app_fit: metrics_distributed {}
+Krum Server | INFO flwr 2024-03-20 03:04:39,437 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9468810565613976), (2, 0.9726695070095153), (3, 0.9412194663450669), (4, 0.8576799357390892), (5, 0.847629810933813), (6, 0.8433965285223946), (7, 0.8443458840434834), (8, 0.8405311652999254), (9, 0.8466688003092162), (10, 0.8364960356687247)]
+Krum Server | INFO flwr 2024-03-20 03:04:39,437 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5412), (2, 0.5277), (3, 0.5982), (4, 0.5833), (5, 0.5866), (6, 0.5908), (7, 0.5917), (8, 0.5845), (9, 0.5954), (10, 0.5969)]}
+Krum Server | INFO flwr 2024-03-20 03:04:44,600 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+Krum Server | INFO flwr 2024-03-20 03:04:44,614 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+Krum Server | INFO flwr 2024-03-20 03:04:44,614 | server.py:89 | Initializing global parameters
+Krum Server | INFO flwr 2024-03-20 03:04:44,615 | server.py:276 | Requesting initial parameters from one random client
+Krum Server | INFO flwr 2024-03-20 03:06:02,361 | server.py:280 | Received initial parameters from one random client
+Krum Server | INFO flwr 2024-03-20 03:06:02,361 | server.py:91 | Evaluating initial parameters
+Krum Server | INFO flwr 2024-03-20 03:06:02,382 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+Krum Server | INFO flwr 2024-03-20 03:06:02,382 | server.py:104 | FL starting
+Krum Server | DEBUG flwr 2024-03-20 03:06:11,077 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:06:11,093 | server.py:236 | fit_round 1 received 2 results and 0 failures
+Krum Server | WARNING flwr 2024-03-20 03:06:11,094 | krum.py:153 | No fit_metrics_aggregation_fn provided
+Krum Server | INFO flwr 2024-03-20 03:06:11,116 | server.py:125 | fit progress: (1, 0.9413759320184186, {'accuracy': 0.5688}, 8.733065742999315)
+Krum Server | DEBUG flwr 2024-03-20 03:06:11,119 | server.py:173 | evaluate_round 1: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:06:11,615 | server.py:187 | evaluate_round 1 received 50 results and 0 failures
+Krum Server | WARNING flwr 2024-03-20 03:06:11,615 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+Krum Server | DEBUG flwr 2024-03-20 03:06:11,615 | server.py:222 | fit_round 2: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:06:11,758 | server.py:236 | fit_round 2 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:06:11,807 | server.py:125 | fit progress: (2, 0.9875500078369234, {'accuracy': 0.5233}, 9.42371052200906)
+Krum Server | DEBUG flwr 2024-03-20 03:06:11,807 | server.py:173 | evaluate_round 2: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:06:11,996 | server.py:187 | evaluate_round 2 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:06:11,996 | server.py:222 | fit_round 3: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:06:12,134 | server.py:236 | fit_round 3 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:06:12,191 | server.py:125 | fit progress: (3, 0.9890705014107136, {'accuracy': 0.5879}, 9.808106304961257)
+Krum Server | DEBUG flwr 2024-03-20 03:06:12,192 | server.py:173 | evaluate_round 3: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:06:12,368 | server.py:187 | evaluate_round 3 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:06:12,368 | server.py:222 | fit_round 4: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:06:12,504 | server.py:236 | fit_round 4 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:06:12,555 | server.py:125 | fit progress: (4, 0.9765658971302419, {'accuracy': 0.5246}, 10.171715843025595)
+Krum Server | DEBUG flwr 2024-03-20 03:06:12,555 | server.py:173 | evaluate_round 4: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:06:12,752 | server.py:187 | evaluate_round 4 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:06:12,752 | server.py:222 | fit_round 5: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:06:12,880 | server.py:236 | fit_round 5 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:06:12,938 | server.py:125 | fit progress: (5, 0.990308757811712, {'accuracy': 0.589}, 10.555603996035643)
+Krum Server | DEBUG flwr 2024-03-20 03:06:12,942 | server.py:173 | evaluate_round 5: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:06:13,108 | server.py:187 | evaluate_round 5 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:06:13,108 | server.py:222 | fit_round 6: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:06:13,238 | server.py:236 | fit_round 6 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:06:13,287 | server.py:125 | fit progress: (6, 0.9638036918684336, {'accuracy': 0.5301}, 10.904613074031658)
+Krum Server | DEBUG flwr 2024-03-20 03:06:13,288 | server.py:173 | evaluate_round 6: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:06:13,458 | server.py:187 | evaluate_round 6 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:06:13,459 | server.py:222 | fit_round 7: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:06:13,596 | server.py:236 | fit_round 7 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:06:13,731 | server.py:125 | fit progress: (7, 1.0098630775395507, {'accuracy': 0.5917}, 11.348170739016496)
+Krum Server | DEBUG flwr 2024-03-20 03:06:13,733 | server.py:173 | evaluate_round 7: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:06:13,911 | server.py:187 | evaluate_round 7 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:06:13,912 | server.py:222 | fit_round 8: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:06:14,034 | server.py:236 | fit_round 8 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:06:14,099 | server.py:125 | fit progress: (8, 0.9463952954865333, {'accuracy': 0.5393}, 11.716144419042394)
+Krum Server | DEBUG flwr 2024-03-20 03:06:14,100 | server.py:173 | evaluate_round 8: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:06:14,262 | server.py:187 | evaluate_round 8 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:06:14,262 | server.py:222 | fit_round 9: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:06:14,391 | server.py:236 | fit_round 9 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:06:14,423 | server.py:125 | fit progress: (9, 1.0066591762558648, {'accuracy': 0.5871}, 12.039894592948258)
+Krum Server | DEBUG flwr 2024-03-20 03:06:14,423 | server.py:173 | evaluate_round 9: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:06:14,589 | server.py:187 | evaluate_round 9 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:06:14,589 | server.py:222 | fit_round 10: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:06:14,712 | server.py:236 | fit_round 10 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:06:14,762 | server.py:125 | fit progress: (10, 0.9408347435583825, {'accuracy': 0.5418}, 12.37900656601414)
+Krum Server | DEBUG flwr 2024-03-20 03:06:14,763 | server.py:173 | evaluate_round 10: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:06:14,967 | server.py:187 | evaluate_round 10 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:06:14,967 | server.py:153 | FL finished in 12.584240654017776
+Krum Server | INFO flwr 2024-03-20 03:06:14,968 | app.py:226 | app_fit: losses_distributed [(1, 0.9587231040000915), (2, 0.9805947160720825), (3, 1.024303718805313), (4, 0.9895830178260803), (5, 1.0218904519081116), (6, 0.9837198257446289), (7, 1.051113374233246), (8, 0.9621564865112304), (9, 1.0315602767467498), (10, 0.9603661835193634)]
+Krum Server | INFO flwr 2024-03-20 03:06:14,968 | app.py:227 | app_fit: metrics_distributed_fit {}
+Krum Server | INFO flwr 2024-03-20 03:06:14,968 | app.py:228 | app_fit: metrics_distributed {}
+Krum Server | INFO flwr 2024-03-20 03:06:14,969 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9413759320184186), (2, 0.9875500078369234), (3, 0.9890705014107136), (4, 0.9765658971302419), (5, 0.990308757811712), (6, 0.9638036918684336), (7, 1.0098630775395507), (8, 0.9463952954865333), (9, 1.0066591762558648), (10, 0.9408347435583825)]
+Krum Server | INFO flwr 2024-03-20 03:06:14,969 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5688), (2, 0.5233), (3, 0.5879), (4, 0.5246), (5, 0.589), (6, 0.5301), (7, 0.5917), (8, 0.5393), (9, 0.5871), (10, 0.5418)]}
+Krum Server | INFO flwr 2024-03-20 03:06:21,933 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+Krum Server | INFO flwr 2024-03-20 03:06:21,946 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+Krum Server | INFO flwr 2024-03-20 03:06:21,946 | server.py:89 | Initializing global parameters
+Krum Server | INFO flwr 2024-03-20 03:06:21,946 | server.py:276 | Requesting initial parameters from one random client
+Krum Server | INFO flwr 2024-03-20 03:07:39,521 | server.py:280 | Received initial parameters from one random client
+Krum Server | INFO flwr 2024-03-20 03:07:39,521 | server.py:91 | Evaluating initial parameters
+Krum Server | INFO flwr 2024-03-20 03:07:39,541 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+Krum Server | INFO flwr 2024-03-20 03:07:39,541 | server.py:104 | FL starting
+Krum Server | DEBUG flwr 2024-03-20 03:07:47,230 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:07:47,249 | server.py:236 | fit_round 1 received 2 results and 0 failures
+Krum Server | WARNING flwr 2024-03-20 03:07:47,250 | krum.py:153 | No fit_metrics_aggregation_fn provided
+Krum Server | INFO flwr 2024-03-20 03:07:47,269 | server.py:125 | fit progress: (1, 0.9831525524711479, {'accuracy': 0.5642}, 7.727738132001832)
+Krum Server | DEBUG flwr 2024-03-20 03:07:47,270 | server.py:173 | evaluate_round 1: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:07:48,107 | server.py:187 | evaluate_round 1 received 50 results and 0 failures
+Krum Server | WARNING flwr 2024-03-20 03:07:48,107 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+Krum Server | DEBUG flwr 2024-03-20 03:07:48,107 | server.py:222 | fit_round 2: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:07:48,382 | server.py:236 | fit_round 2 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:07:48,438 | server.py:125 | fit progress: (2, 0.973509349086904, {'accuracy': 0.5311}, 8.896489862934686)
+Krum Server | DEBUG flwr 2024-03-20 03:07:48,440 | server.py:173 | evaluate_round 2: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:07:48,629 | server.py:187 | evaluate_round 2 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:07:48,630 | server.py:222 | fit_round 3: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:07:48,776 | server.py:236 | fit_round 3 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:07:48,806 | server.py:125 | fit progress: (3, 1.0033175337066431, {'accuracy': 0.5877}, 9.263953475980088)
+Krum Server | DEBUG flwr 2024-03-20 03:07:48,806 | server.py:173 | evaluate_round 3: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:07:48,995 | server.py:187 | evaluate_round 3 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:07:48,995 | server.py:222 | fit_round 4: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:07:49,150 | server.py:236 | fit_round 4 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:07:49,204 | server.py:125 | fit progress: (4, 0.986513112515094, {'accuracy': 0.5244}, 9.662303294986486)
+Krum Server | DEBUG flwr 2024-03-20 03:07:49,205 | server.py:173 | evaluate_round 4: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:07:49,394 | server.py:187 | evaluate_round 4 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:07:49,395 | server.py:222 | fit_round 5: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:07:49,535 | server.py:236 | fit_round 5 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:07:49,590 | server.py:125 | fit progress: (5, 0.9888463784720909, {'accuracy': 0.5881}, 10.048872193903662)
+Krum Server | DEBUG flwr 2024-03-20 03:07:49,593 | server.py:173 | evaluate_round 5: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:07:49,803 | server.py:187 | evaluate_round 5 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:07:49,803 | server.py:222 | fit_round 6: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:07:49,936 | server.py:236 | fit_round 6 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:07:49,966 | server.py:125 | fit progress: (6, 0.8504528392957327, {'accuracy': 0.5908}, 10.424579035956413)
+Krum Server | DEBUG flwr 2024-03-20 03:07:49,967 | server.py:173 | evaluate_round 6: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:07:50,144 | server.py:187 | evaluate_round 6 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:07:50,145 | server.py:222 | fit_round 7: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:07:50,269 | server.py:236 | fit_round 7 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:07:50,312 | server.py:125 | fit progress: (7, 0.8831444552379962, {'accuracy': 0.5901}, 10.770820120931603)
+Krum Server | DEBUG flwr 2024-03-20 03:07:50,313 | server.py:173 | evaluate_round 7: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:07:50,508 | server.py:187 | evaluate_round 7 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:07:50,509 | server.py:222 | fit_round 8: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:07:50,644 | server.py:236 | fit_round 8 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:07:50,700 | server.py:125 | fit progress: (8, 0.8449806496006765, {'accuracy': 0.5954}, 11.158487378968857)
+Krum Server | DEBUG flwr 2024-03-20 03:07:50,703 | server.py:173 | evaluate_round 8: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:07:50,867 | server.py:187 | evaluate_round 8 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:07:50,867 | server.py:222 | fit_round 9: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:07:51,002 | server.py:236 | fit_round 9 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:07:51,032 | server.py:125 | fit progress: (9, 0.8494457021890431, {'accuracy': 0.5914}, 11.490348652936518)
+Krum Server | DEBUG flwr 2024-03-20 03:07:51,033 | server.py:173 | evaluate_round 9: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:07:51,198 | server.py:187 | evaluate_round 9 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:07:51,199 | server.py:222 | fit_round 10: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:07:51,335 | server.py:236 | fit_round 10 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:07:51,396 | server.py:125 | fit progress: (10, 0.8357877908188736, {'accuracy': 0.5953}, 11.854393670917489)
+Krum Server | DEBUG flwr 2024-03-20 03:07:51,399 | server.py:173 | evaluate_round 10: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:07:51,581 | server.py:187 | evaluate_round 10 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:07:51,582 | server.py:153 | FL finished in 12.039985590963624
+Krum Server | INFO flwr 2024-03-20 03:07:51,582 | app.py:226 | app_fit: losses_distributed [(1, 1.0221682333946227), (2, 0.9877009320259095), (3, 1.0326525247097016), (4, 1.008756092786789), (5, 1.0170240664482117), (6, 0.8657695603370666), (7, 0.9209022188186645), (8, 0.8594596028327942), (9, 0.8590032422542572), (10, 0.8484955132007599)]
+Krum Server | INFO flwr 2024-03-20 03:07:51,582 | app.py:227 | app_fit: metrics_distributed_fit {}
+Krum Server | INFO flwr 2024-03-20 03:07:51,583 | app.py:228 | app_fit: metrics_distributed {}
+Krum Server | INFO flwr 2024-03-20 03:07:51,583 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9831525524711479), (2, 0.973509349086904), (3, 1.0033175337066431), (4, 0.986513112515094), (5, 0.9888463784720909), (6, 0.8504528392957327), (7, 0.8831444552379962), (8, 0.8449806496006765), (9, 0.8494457021890431), (10, 0.8357877908188736)]
+Krum Server | INFO flwr 2024-03-20 03:07:51,583 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5642), (2, 0.5311), (3, 0.5877), (4, 0.5244), (5, 0.5881), (6, 0.5908), (7, 0.5901), (8, 0.5954), (9, 0.5914), (10, 0.5953)]}
+Krum Server | INFO flwr 2024-03-20 03:07:56,801 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+Krum Server | INFO flwr 2024-03-20 03:07:56,814 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+Krum Server | INFO flwr 2024-03-20 03:07:56,814 | server.py:89 | Initializing global parameters
+Krum Server | INFO flwr 2024-03-20 03:07:56,814 | server.py:276 | Requesting initial parameters from one random client
+Krum Server | INFO flwr 2024-03-20 03:09:17,934 | server.py:280 | Received initial parameters from one random client
+Krum Server | INFO flwr 2024-03-20 03:09:17,934 | server.py:91 | Evaluating initial parameters
+Krum Server | INFO flwr 2024-03-20 03:09:17,966 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+Krum Server | INFO flwr 2024-03-20 03:09:17,968 | server.py:104 | FL starting
+Krum Server | DEBUG flwr 2024-03-20 03:09:23,381 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:09:23,395 | server.py:236 | fit_round 1 received 2 results and 0 failures
+Krum Server | WARNING flwr 2024-03-20 03:09:23,396 | krum.py:153 | No fit_metrics_aggregation_fn provided
+Krum Server | INFO flwr 2024-03-20 03:09:23,420 | server.py:125 | fit progress: (1, 0.9763660143679014, {'accuracy': 0.547}, 5.450948357000016)
+Krum Server | DEBUG flwr 2024-03-20 03:09:23,423 | server.py:173 | evaluate_round 1: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:09:24,027 | server.py:187 | evaluate_round 1 received 50 results and 0 failures
+Krum Server | WARNING flwr 2024-03-20 03:09:24,027 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+Krum Server | DEBUG flwr 2024-03-20 03:09:24,027 | server.py:222 | fit_round 2: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:09:24,235 | server.py:236 | fit_round 2 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:09:24,278 | server.py:125 | fit progress: (2, 0.966030181730553, {'accuracy': 0.5378}, 6.309546162956394)
+Krum Server | DEBUG flwr 2024-03-20 03:09:24,279 | server.py:173 | evaluate_round 2: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:09:24,462 | server.py:187 | evaluate_round 2 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:09:24,462 | server.py:222 | fit_round 3: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:09:24,600 | server.py:236 | fit_round 3 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:09:24,656 | server.py:125 | fit progress: (3, 1.0040858837184696, {'accuracy': 0.5894}, 6.686717815930024)
+Krum Server | DEBUG flwr 2024-03-20 03:09:24,659 | server.py:173 | evaluate_round 3: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:09:24,832 | server.py:187 | evaluate_round 3 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:09:24,832 | server.py:222 | fit_round 4: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:09:24,968 | server.py:236 | fit_round 4 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:09:24,998 | server.py:125 | fit progress: (4, 0.9771946026782738, {'accuracy': 0.5175}, 7.029569985927083)
+Krum Server | DEBUG flwr 2024-03-20 03:09:24,999 | server.py:173 | evaluate_round 4: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:09:25,171 | server.py:187 | evaluate_round 4 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:09:25,172 | server.py:222 | fit_round 5: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:09:25,306 | server.py:236 | fit_round 5 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:09:25,365 | server.py:125 | fit progress: (5, 1.0026437149434235, {'accuracy': 0.5885}, 7.395915146917105)
+Krum Server | DEBUG flwr 2024-03-20 03:09:25,365 | server.py:173 | evaluate_round 5: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:09:25,538 | server.py:187 | evaluate_round 5 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:09:25,538 | server.py:222 | fit_round 6: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:09:25,667 | server.py:236 | fit_round 6 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:09:25,724 | server.py:125 | fit progress: (6, 0.9682602888517764, {'accuracy': 0.5338}, 7.754886546987109)
+Krum Server | DEBUG flwr 2024-03-20 03:09:25,727 | server.py:173 | evaluate_round 6: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:09:25,904 | server.py:187 | evaluate_round 6 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:09:25,904 | server.py:222 | fit_round 7: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:09:26,032 | server.py:236 | fit_round 7 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:09:26,083 | server.py:125 | fit progress: (7, 0.9832485115838601, {'accuracy': 0.5928}, 8.113942030933686)
+Krum Server | DEBUG flwr 2024-03-20 03:09:26,084 | server.py:173 | evaluate_round 7: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:09:26,262 | server.py:187 | evaluate_round 7 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:09:26,262 | server.py:222 | fit_round 8: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:09:26,393 | server.py:236 | fit_round 8 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:09:26,446 | server.py:125 | fit progress: (8, 0.8398653801541214, {'accuracy': 0.6023}, 8.47709246899467)
+Krum Server | DEBUG flwr 2024-03-20 03:09:26,450 | server.py:173 | evaluate_round 8: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:09:26,618 | server.py:187 | evaluate_round 8 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:09:26,618 | server.py:222 | fit_round 9: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:09:26,743 | server.py:236 | fit_round 9 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:09:26,802 | server.py:125 | fit progress: (9, 0.8506332597101623, {'accuracy': 0.5859}, 8.833624475984834)
+Krum Server | DEBUG flwr 2024-03-20 03:09:26,804 | server.py:173 | evaluate_round 9: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:09:26,968 | server.py:187 | evaluate_round 9 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:09:26,969 | server.py:222 | fit_round 10: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:09:27,098 | server.py:236 | fit_round 10 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:09:27,157 | server.py:125 | fit progress: (10, 0.8497877743784906, {'accuracy': 0.6067}, 9.188044230919331)
+Krum Server | DEBUG flwr 2024-03-20 03:09:27,160 | server.py:173 | evaluate_round 10: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:09:27,328 | server.py:187 | evaluate_round 10 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:09:27,328 | server.py:153 | FL finished in 9.359388617915101
+Krum Server | INFO flwr 2024-03-20 03:09:27,329 | app.py:226 | app_fit: losses_distributed [(1, 0.9798228228092194), (2, 0.9960415959358215), (3, 0.9946359813213348), (4, 1.0105203247070313), (5, 0.9985329556465149), (6, 0.9871976959705353), (7, 0.9941701853275299), (8, 0.8392194902896881), (9, 0.8610956943035126), (10, 0.8462281799316407)]
+Krum Server | INFO flwr 2024-03-20 03:09:27,329 | app.py:227 | app_fit: metrics_distributed_fit {}
+Krum Server | INFO flwr 2024-03-20 03:09:27,329 | app.py:228 | app_fit: metrics_distributed {}
+Krum Server | INFO flwr 2024-03-20 03:09:27,329 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9763660143679014), (2, 0.966030181730553), (3, 1.0040858837184696), (4, 0.9771946026782738), (5, 1.0026437149434235), (6, 0.9682602888517764), (7, 0.9832485115838601), (8, 0.8398653801541214), (9, 0.8506332597101623), (10, 0.8497877743784906)]
+Krum Server | INFO flwr 2024-03-20 03:09:27,329 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.547), (2, 0.5378), (3, 0.5894), (4, 0.5175), (5, 0.5885), (6, 0.5338), (7, 0.5928), (8, 0.6023), (9, 0.5859), (10, 0.6067)]}
+Krum Server | INFO flwr 2024-03-20 03:09:32,516 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+Krum Server | INFO flwr 2024-03-20 03:09:32,532 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+Krum Server | INFO flwr 2024-03-20 03:09:32,532 | server.py:89 | Initializing global parameters
+Krum Server | INFO flwr 2024-03-20 03:09:32,532 | server.py:276 | Requesting initial parameters from one random client
+Krum Server | INFO flwr 2024-03-20 03:10:54,791 | server.py:280 | Received initial parameters from one random client
+Krum Server | INFO flwr 2024-03-20 03:10:54,792 | server.py:91 | Evaluating initial parameters
+Krum Server | INFO flwr 2024-03-20 03:10:54,826 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+Krum Server | INFO flwr 2024-03-20 03:10:54,828 | server.py:104 | FL starting
+Krum Server | DEBUG flwr 2024-03-20 03:10:58,785 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:10:58,825 | server.py:236 | fit_round 1 received 2 results and 0 failures
+Krum Server | WARNING flwr 2024-03-20 03:10:58,827 | krum.py:153 | No fit_metrics_aggregation_fn provided
+Krum Server | INFO flwr 2024-03-20 03:10:58,849 | server.py:125 | fit progress: (1, 0.931711179301146, {'accuracy': 0.565}, 4.0203178540105)
+Krum Server | DEBUG flwr 2024-03-20 03:10:58,854 | server.py:173 | evaluate_round 1: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:10:59,559 | server.py:187 | evaluate_round 1 received 50 results and 0 failures
+Krum Server | WARNING flwr 2024-03-20 03:10:59,560 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+Krum Server | DEBUG flwr 2024-03-20 03:10:59,560 | server.py:222 | fit_round 2: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:10:59,789 | server.py:236 | fit_round 2 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:10:59,844 | server.py:125 | fit progress: (2, 0.9904475783332406, {'accuracy': 0.524}, 5.01562251499854)
+Krum Server | DEBUG flwr 2024-03-20 03:10:59,847 | server.py:173 | evaluate_round 2: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:11:00,043 | server.py:187 | evaluate_round 2 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:11:00,044 | server.py:222 | fit_round 3: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:11:00,179 | server.py:236 | fit_round 3 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:11:00,224 | server.py:125 | fit progress: (3, 0.9772916000221585, {'accuracy': 0.5866}, 5.394752194057219)
+Krum Server | DEBUG flwr 2024-03-20 03:11:00,224 | server.py:173 | evaluate_round 3: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:11:00,443 | server.py:187 | evaluate_round 3 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:11:00,444 | server.py:222 | fit_round 4: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:11:00,576 | server.py:236 | fit_round 4 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:11:00,623 | server.py:125 | fit progress: (4, 0.8545105129065423, {'accuracy': 0.587}, 5.794015294057317)
+Krum Server | DEBUG flwr 2024-03-20 03:11:00,624 | server.py:173 | evaluate_round 4: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:11:00,789 | server.py:187 | evaluate_round 4 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:11:00,790 | server.py:222 | fit_round 5: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:11:00,914 | server.py:236 | fit_round 5 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:11:00,963 | server.py:125 | fit progress: (5, 0.8518924136968048, {'accuracy': 0.5856}, 6.134081630036235)
+Krum Server | DEBUG flwr 2024-03-20 03:11:00,964 | server.py:173 | evaluate_round 5: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:11:01,140 | server.py:187 | evaluate_round 5 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:11:01,140 | server.py:222 | fit_round 6: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:11:01,274 | server.py:236 | fit_round 6 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:11:01,332 | server.py:125 | fit progress: (6, 0.8450395385313754, {'accuracy': 0.5928}, 6.502701657009311)
+Krum Server | DEBUG flwr 2024-03-20 03:11:01,333 | server.py:173 | evaluate_round 6: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:11:01,502 | server.py:187 | evaluate_round 6 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:11:01,502 | server.py:222 | fit_round 7: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:11:01,638 | server.py:236 | fit_round 7 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:11:01,694 | server.py:125 | fit progress: (7, 0.8485662233757164, {'accuracy': 0.5959}, 6.865542105981149)
+Krum Server | DEBUG flwr 2024-03-20 03:11:01,696 | server.py:173 | evaluate_round 7: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:11:01,867 | server.py:187 | evaluate_round 7 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:11:01,868 | server.py:222 | fit_round 8: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:11:01,999 | server.py:236 | fit_round 8 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:11:02,031 | server.py:125 | fit progress: (8, 0.8422495838434253, {'accuracy': 0.5881}, 7.202392189996317)
+Krum Server | DEBUG flwr 2024-03-20 03:11:02,032 | server.py:173 | evaluate_round 8: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:11:02,210 | server.py:187 | evaluate_round 8 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:11:02,210 | server.py:222 | fit_round 9: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:11:02,339 | server.py:236 | fit_round 9 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:11:02,394 | server.py:125 | fit progress: (9, 0.8401158910678772, {'accuracy': 0.6007}, 7.565571238053963)
+Krum Server | DEBUG flwr 2024-03-20 03:11:02,397 | server.py:173 | evaluate_round 9: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:11:02,567 | server.py:187 | evaluate_round 9 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:11:02,567 | server.py:222 | fit_round 10: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:11:02,700 | server.py:236 | fit_round 10 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:11:02,760 | server.py:125 | fit progress: (10, 0.8430693842859845, {'accuracy': 0.5926}, 7.931415905011818)
+Krum Server | DEBUG flwr 2024-03-20 03:11:02,762 | server.py:173 | evaluate_round 10: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:11:02,931 | server.py:187 | evaluate_round 10 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:11:02,932 | server.py:153 | FL finished in 8.10292204702273
+Krum Server | INFO flwr 2024-03-20 03:11:02,932 | app.py:226 | app_fit: losses_distributed [(1, 0.9608325028419494), (2, 1.0048532712459564), (3, 1.008074381351471), (4, 0.8775884115695953), (5, 0.871530853509903), (6, 0.8605896604061126), (7, 0.8663550674915313), (8, 0.8632016336917877), (9, 0.8532528603076934), (10, 0.847799483537674)]
+Krum Server | INFO flwr 2024-03-20 03:11:02,932 | app.py:227 | app_fit: metrics_distributed_fit {}
+Krum Server | INFO flwr 2024-03-20 03:11:02,932 | app.py:228 | app_fit: metrics_distributed {}
+Krum Server | INFO flwr 2024-03-20 03:11:02,933 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.931711179301146), (2, 0.9904475783332406), (3, 0.9772916000221585), (4, 0.8545105129065423), (5, 0.8518924136968048), (6, 0.8450395385313754), (7, 0.8485662233757164), (8, 0.8422495838434253), (9, 0.8401158910678772), (10, 0.8430693842859845)]
+Krum Server | INFO flwr 2024-03-20 03:11:02,933 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.565), (2, 0.524), (3, 0.5866), (4, 0.587), (5, 0.5856), (6, 0.5928), (7, 0.5959), (8, 0.5881), (9, 0.6007), (10, 0.5926)]}
+Krum Server | INFO flwr 2024-03-20 03:11:08,186 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+Krum Server | INFO flwr 2024-03-20 03:11:08,202 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+Krum Server | INFO flwr 2024-03-20 03:11:08,203 | server.py:89 | Initializing global parameters
+Krum Server | INFO flwr 2024-03-20 03:11:08,203 | server.py:276 | Requesting initial parameters from one random client
+Krum Server | INFO flwr 2024-03-20 03:12:26,859 | server.py:280 | Received initial parameters from one random client
+Krum Server | INFO flwr 2024-03-20 03:12:26,859 | server.py:91 | Evaluating initial parameters
+Krum Server | INFO flwr 2024-03-20 03:12:26,892 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+Krum Server | INFO flwr 2024-03-20 03:12:26,895 | server.py:104 | FL starting
+Krum Server | DEBUG flwr 2024-03-20 03:12:34,172 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:12:34,188 | server.py:236 | fit_round 1 received 2 results and 0 failures
+Krum Server | WARNING flwr 2024-03-20 03:12:34,189 | krum.py:153 | No fit_metrics_aggregation_fn provided
+Krum Server | INFO flwr 2024-03-20 03:12:34,205 | server.py:125 | fit progress: (1, 0.9372366261917777, {'accuracy': 0.5523}, 7.309776723035611)
+Krum Server | DEBUG flwr 2024-03-20 03:12:34,206 | server.py:173 | evaluate_round 1: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:12:34,781 | server.py:187 | evaluate_round 1 received 50 results and 0 failures
+Krum Server | WARNING flwr 2024-03-20 03:12:34,782 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+Krum Server | DEBUG flwr 2024-03-20 03:12:34,783 | server.py:222 | fit_round 2: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:12:34,968 | server.py:236 | fit_round 2 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:12:35,000 | server.py:125 | fit progress: (2, 0.943914063486305, {'accuracy': 0.5404}, 8.10494525404647)
+Krum Server | DEBUG flwr 2024-03-20 03:12:35,001 | server.py:173 | evaluate_round 2: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:12:35,190 | server.py:187 | evaluate_round 2 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:12:35,191 | server.py:222 | fit_round 3: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:12:35,325 | server.py:236 | fit_round 3 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:12:35,385 | server.py:125 | fit progress: (3, 0.9722271591634424, {'accuracy': 0.5939}, 8.489633809076622)
+Krum Server | DEBUG flwr 2024-03-20 03:12:35,386 | server.py:173 | evaluate_round 3: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:12:35,562 | server.py:187 | evaluate_round 3 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:12:35,562 | server.py:222 | fit_round 4: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:12:35,697 | server.py:236 | fit_round 4 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:12:35,757 | server.py:125 | fit progress: (4, 0.8500934852236214, {'accuracy': 0.6004}, 8.861673734034412)
+Krum Server | DEBUG flwr 2024-03-20 03:12:35,759 | server.py:173 | evaluate_round 4: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:12:35,926 | server.py:187 | evaluate_round 4 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:12:35,926 | server.py:222 | fit_round 5: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:12:36,058 | server.py:236 | fit_round 5 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:12:36,089 | server.py:125 | fit progress: (5, 0.8718780633039412, {'accuracy': 0.5923}, 9.193964302074164)
+Krum Server | DEBUG flwr 2024-03-20 03:12:36,090 | server.py:173 | evaluate_round 5: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:12:36,257 | server.py:187 | evaluate_round 5 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:12:36,257 | server.py:222 | fit_round 6: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:12:36,396 | server.py:236 | fit_round 6 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:12:36,453 | server.py:125 | fit progress: (6, 0.8413187428380837, {'accuracy': 0.5905}, 9.557494451059029)
+Krum Server | DEBUG flwr 2024-03-20 03:12:36,453 | server.py:173 | evaluate_round 6: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:12:36,640 | server.py:187 | evaluate_round 6 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:12:36,640 | server.py:222 | fit_round 7: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:12:36,779 | server.py:236 | fit_round 7 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:12:36,837 | server.py:125 | fit progress: (7, 0.8539036312618122, {'accuracy': 0.5935}, 9.94178069604095)
+Krum Server | DEBUG flwr 2024-03-20 03:12:36,840 | server.py:173 | evaluate_round 7: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:12:37,005 | server.py:187 | evaluate_round 7 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:12:37,005 | server.py:222 | fit_round 8: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:12:37,139 | server.py:236 | fit_round 8 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:12:37,194 | server.py:125 | fit progress: (8, 0.8357803096594542, {'accuracy': 0.6002}, 10.298980465042405)
+Krum Server | DEBUG flwr 2024-03-20 03:12:37,195 | server.py:173 | evaluate_round 8: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:12:37,363 | server.py:187 | evaluate_round 8 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:12:37,363 | server.py:222 | fit_round 9: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:12:37,490 | server.py:236 | fit_round 9 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:12:37,548 | server.py:125 | fit progress: (9, 0.8567227316809934, {'accuracy': 0.5914}, 10.652858495013788)
+Krum Server | DEBUG flwr 2024-03-20 03:12:37,550 | server.py:173 | evaluate_round 9: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:12:37,715 | server.py:187 | evaluate_round 9 received 50 results and 0 failures
+Krum Server | DEBUG flwr 2024-03-20 03:12:37,715 | server.py:222 | fit_round 10: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:12:37,847 | server.py:236 | fit_round 10 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:12:37,904 | server.py:125 | fit progress: (10, 0.8328709277200554, {'accuracy': 0.5931}, 11.008835005108267)
+Krum Server | DEBUG flwr 2024-03-20 03:12:37,908 | server.py:173 | evaluate_round 10: strategy sampled 50 clients (out of 100)
+Krum Server | DEBUG flwr 2024-03-20 03:12:38,092 | server.py:187 | evaluate_round 10 received 50 results and 0 failures
+Krum Server | INFO flwr 2024-03-20 03:12:38,092 | server.py:153 | FL finished in 11.196822259109467
+Krum Server | INFO flwr 2024-03-20 03:12:38,093 | app.py:226 | app_fit: losses_distributed [(1, 0.9545034027099609), (2, 0.9568843424320221), (3, 0.9746723771095276), (4, 0.8476044809818268), (5, 0.8737517595291138), (6, 0.8460150468349457), (7, 0.8676911973953247), (8, 0.8492592990398407), (9, 0.8701659786701202), (10, 0.8429675495624542)]
+Krum Server | INFO flwr 2024-03-20 03:12:38,093 | app.py:227 | app_fit: metrics_distributed_fit {}
+Krum Server | INFO flwr 2024-03-20 03:12:38,093 | app.py:228 | app_fit: metrics_distributed {}
+Krum Server | INFO flwr 2024-03-20 03:12:38,093 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9372366261917777), (2, 0.943914063486305), (3, 0.9722271591634424), (4, 0.8500934852236214), (5, 0.8718780633039412), (6, 0.8413187428380837), (7, 0.8539036312618122), (8, 0.8357803096594542), (9, 0.8567227316809934), (10, 0.8328709277200554)]
+Krum Server | INFO flwr 2024-03-20 03:12:38,093 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5523), (2, 0.5404), (3, 0.5939), (4, 0.6004), (5, 0.5923), (6, 0.5905), (7, 0.5935), (8, 0.6002), (9, 0.5914), (10, 0.5931)]}

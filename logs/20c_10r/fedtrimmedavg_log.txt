@@ -1,0 +1,660 @@
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:09:48,176 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:09:48,190 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:09:48,191 | server.py:89 | Initializing global parameters
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:09:48,191 | server.py:276 | Requesting initial parameters from one random client
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:12,930 | server.py:280 | Received initial parameters from one random client
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:12,931 | server.py:91 | Evaluating initial parameters
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:12,962 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:12,965 | server.py:104 | FL starting
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:19,501 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:19,574 | server.py:236 | fit_round 1 received 2 results and 0 failures
+FedTrimmedAvg Server | WARNING flwr 2024-03-19 17:10:19,575 | fedtrimmedavg.py:142 | No fit_metrics_aggregation_fn provided
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:19,600 | server.py:125 | fit progress: (1, 0.9509728784095505, {'accuracy': 0.5696}, 6.6349120259983465)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:19,604 | server.py:173 | evaluate_round 1: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:19,696 | server.py:187 | evaluate_round 1 received 10 results and 0 failures
+FedTrimmedAvg Server | WARNING flwr 2024-03-19 17:10:19,696 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:19,696 | server.py:222 | fit_round 2: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:19,907 | server.py:236 | fit_round 2 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:19,931 | server.py:125 | fit progress: (2, 0.8521846454771476, {'accuracy': 0.5961}, 6.965333170956001)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:19,931 | server.py:173 | evaluate_round 2: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:20,019 | server.py:187 | evaluate_round 2 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:20,019 | server.py:222 | fit_round 3: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:20,257 | server.py:236 | fit_round 3 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:20,275 | server.py:125 | fit progress: (3, 0.8438184535729564, {'accuracy': 0.5916}, 7.310247299959883)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:20,276 | server.py:173 | evaluate_round 3: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:20,356 | server.py:187 | evaluate_round 3 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:20,356 | server.py:222 | fit_round 4: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:20,592 | server.py:236 | fit_round 4 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:20,620 | server.py:125 | fit progress: (4, 0.8341409272395666, {'accuracy': 0.5991}, 7.654967227950692)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:20,621 | server.py:173 | evaluate_round 4: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:20,697 | server.py:187 | evaluate_round 4 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:20,698 | server.py:222 | fit_round 5: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:20,923 | server.py:236 | fit_round 5 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:20,940 | server.py:125 | fit progress: (5, 0.8317787502698968, {'accuracy': 0.6001}, 7.974728474044241)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:20,941 | server.py:173 | evaluate_round 5: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:21,041 | server.py:187 | evaluate_round 5 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:21,041 | server.py:222 | fit_round 6: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:21,277 | server.py:236 | fit_round 6 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:21,299 | server.py:125 | fit progress: (6, 0.8261552259069478, {'accuracy': 0.603}, 8.334181542973965)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:21,301 | server.py:173 | evaluate_round 6: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:21,369 | server.py:187 | evaluate_round 6 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:21,370 | server.py:222 | fit_round 7: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:21,599 | server.py:236 | fit_round 7 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:21,621 | server.py:125 | fit progress: (7, 0.8265467987826213, {'accuracy': 0.6044}, 8.655841846950352)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:21,624 | server.py:173 | evaluate_round 7: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:21,712 | server.py:187 | evaluate_round 7 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:21,712 | server.py:222 | fit_round 8: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:21,930 | server.py:236 | fit_round 8 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:21,946 | server.py:125 | fit progress: (8, 0.8228757671892385, {'accuracy': 0.6035}, 8.981058205012232)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:21,947 | server.py:173 | evaluate_round 8: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:22,048 | server.py:187 | evaluate_round 8 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:22,049 | server.py:222 | fit_round 9: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:22,255 | server.py:236 | fit_round 9 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:22,276 | server.py:125 | fit progress: (9, 0.8240209500345156, {'accuracy': 0.5997}, 9.310510759940371)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:22,278 | server.py:173 | evaluate_round 9: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:22,349 | server.py:187 | evaluate_round 9 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:22,349 | server.py:222 | fit_round 10: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:22,589 | server.py:236 | fit_round 10 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:22,611 | server.py:125 | fit progress: (10, 0.8207399307213787, {'accuracy': 0.6028}, 9.646112552960403)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:22,612 | server.py:173 | evaluate_round 10: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:22,703 | server.py:187 | evaluate_round 10 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:22,703 | server.py:153 | FL finished in 9.73779896798078
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:22,703 | app.py:226 | app_fit: losses_distributed [(1, 0.9662668168544769), (2, 0.8521905660629272), (3, 0.8457755625247956), (4, 0.8429890036582947), (5, 0.8326890766620636), (6, 0.8349252879619599), (7, 0.8279227495193482), (8, 0.8218779325485229), (9, 0.8325340390205384), (10, 0.8231281578540802)]
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:22,704 | app.py:227 | app_fit: metrics_distributed_fit {}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:22,704 | app.py:228 | app_fit: metrics_distributed {}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:22,704 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9509728784095505), (2, 0.8521846454771476), (3, 0.8438184535729564), (4, 0.8341409272395666), (5, 0.8317787502698968), (6, 0.8261552259069478), (7, 0.8265467987826213), (8, 0.8228757671892385), (9, 0.8240209500345156), (10, 0.8207399307213787)]
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:22,704 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5696), (2, 0.5961), (3, 0.5916), (4, 0.5991), (5, 0.6001), (6, 0.603), (7, 0.6044), (8, 0.6035), (9, 0.5997), (10, 0.6028)]}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:28,145 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:28,163 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:28,163 | server.py:89 | Initializing global parameters
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:28,164 | server.py:276 | Requesting initial parameters from one random client
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:42,754 | server.py:280 | Received initial parameters from one random client
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:42,754 | server.py:91 | Evaluating initial parameters
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:42,786 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:42,789 | server.py:104 | FL starting
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:43,172 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:43,271 | server.py:236 | fit_round 1 received 2 results and 0 failures
+FedTrimmedAvg Server | WARNING flwr 2024-03-19 17:10:43,273 | fedtrimmedavg.py:142 | No fit_metrics_aggregation_fn provided
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:43,301 | server.py:125 | fit progress: (1, 0.9493578405753222, {'accuracy': 0.577}, 0.5117933270521462)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:43,302 | server.py:173 | evaluate_round 1: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:43,421 | server.py:187 | evaluate_round 1 received 10 results and 0 failures
+FedTrimmedAvg Server | WARNING flwr 2024-03-19 17:10:43,421 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:43,421 | server.py:222 | fit_round 2: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:43,720 | server.py:236 | fit_round 2 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:43,741 | server.py:125 | fit progress: (2, 0.852895736789771, {'accuracy': 0.5932}, 0.9518298209877685)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:43,743 | server.py:173 | evaluate_round 2: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:43,848 | server.py:187 | evaluate_round 2 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:43,849 | server.py:222 | fit_round 3: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:44,071 | server.py:236 | fit_round 3 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:44,088 | server.py:125 | fit progress: (3, 0.8431620718722596, {'accuracy': 0.5914}, 1.298769755056128)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:44,088 | server.py:173 | evaluate_round 3: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:44,180 | server.py:187 | evaluate_round 3 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:44,180 | server.py:222 | fit_round 4: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:44,439 | server.py:236 | fit_round 4 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:44,466 | server.py:125 | fit progress: (4, 0.8344326941055413, {'accuracy': 0.598}, 1.6766525369603187)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:44,468 | server.py:173 | evaluate_round 4: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:44,534 | server.py:187 | evaluate_round 4 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:44,534 | server.py:222 | fit_round 5: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:44,774 | server.py:236 | fit_round 5 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:44,796 | server.py:125 | fit progress: (5, 0.8326260453004761, {'accuracy': 0.5977}, 2.0068664960563183)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:44,799 | server.py:173 | evaluate_round 5: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:44,884 | server.py:187 | evaluate_round 5 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:44,884 | server.py:222 | fit_round 6: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:45,103 | server.py:236 | fit_round 6 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:45,120 | server.py:125 | fit progress: (6, 0.8279708879266271, {'accuracy': 0.6001}, 2.3312540480401367)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:45,121 | server.py:173 | evaluate_round 6: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:45,201 | server.py:187 | evaluate_round 6 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:45,202 | server.py:222 | fit_round 7: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:45,431 | server.py:236 | fit_round 7 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:45,453 | server.py:125 | fit progress: (7, 0.8275344243761592, {'accuracy': 0.5976}, 2.663798468071036)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:45,456 | server.py:173 | evaluate_round 7: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:45,539 | server.py:187 | evaluate_round 7 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:45,540 | server.py:222 | fit_round 8: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:45,755 | server.py:236 | fit_round 8 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:45,780 | server.py:125 | fit progress: (8, 0.8238977446379083, {'accuracy': 0.601}, 2.990490952041)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:45,781 | server.py:173 | evaluate_round 8: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:45,871 | server.py:187 | evaluate_round 8 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:45,872 | server.py:222 | fit_round 9: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:46,089 | server.py:236 | fit_round 9 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:46,106 | server.py:125 | fit progress: (9, 0.8251855205162224, {'accuracy': 0.6021}, 3.31705608102493)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:46,107 | server.py:173 | evaluate_round 9: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:46,190 | server.py:187 | evaluate_round 9 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:46,190 | server.py:222 | fit_round 10: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:46,398 | server.py:236 | fit_round 10 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:46,420 | server.py:125 | fit progress: (10, 0.8213355312095264, {'accuracy': 0.604}, 3.6304583030287176)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:46,421 | server.py:173 | evaluate_round 10: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:10:46,510 | server.py:187 | evaluate_round 10 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:46,511 | server.py:153 | FL finished in 3.721710633020848
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:46,511 | app.py:226 | app_fit: losses_distributed [(1, 0.9502234995365143), (2, 0.8584311366081238), (3, 0.8555496215820313), (4, 0.8398826658725739), (5, 0.836384379863739), (6, 0.8259744822978974), (7, 0.8258440673351288), (8, 0.8294226109981537), (9, 0.8217114269733429), (10, 0.8196003019809723)]
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:46,512 | app.py:227 | app_fit: metrics_distributed_fit {}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:46,512 | app.py:228 | app_fit: metrics_distributed {}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:46,512 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9493578405753222), (2, 0.852895736789771), (3, 0.8431620718722596), (4, 0.8344326941055413), (5, 0.8326260453004761), (6, 0.8279708879266271), (7, 0.8275344243761592), (8, 0.8238977446379083), (9, 0.8251855205162224), (10, 0.8213355312095264)]
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:46,512 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.577), (2, 0.5932), (3, 0.5914), (4, 0.598), (5, 0.5977), (6, 0.6001), (7, 0.5976), (8, 0.601), (9, 0.6021), (10, 0.604)]}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:51,686 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:51,703 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:51,703 | server.py:89 | Initializing global parameters
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:10:51,703 | server.py:276 | Requesting initial parameters from one random client
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:04,455 | server.py:280 | Received initial parameters from one random client
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:04,455 | server.py:91 | Evaluating initial parameters
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:04,476 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:04,476 | server.py:104 | FL starting
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:05,722 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:05,839 | server.py:236 | fit_round 1 received 2 results and 0 failures
+FedTrimmedAvg Server | WARNING flwr 2024-03-19 17:11:05,841 | fedtrimmedavg.py:142 | No fit_metrics_aggregation_fn provided
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:05,866 | server.py:125 | fit progress: (1, 0.9585369226603269, {'accuracy': 0.5705}, 1.3898049150593579)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:05,867 | server.py:173 | evaluate_round 1: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:05,966 | server.py:187 | evaluate_round 1 received 10 results and 0 failures
+FedTrimmedAvg Server | WARNING flwr 2024-03-19 17:11:05,966 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:05,967 | server.py:222 | fit_round 2: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:06,236 | server.py:236 | fit_round 2 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:06,252 | server.py:125 | fit progress: (2, 0.8546863875274806, {'accuracy': 0.5996}, 1.7755396789871156)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:06,252 | server.py:173 | evaluate_round 2: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:06,345 | server.py:187 | evaluate_round 2 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:06,346 | server.py:222 | fit_round 3: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:06,576 | server.py:236 | fit_round 3 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:06,604 | server.py:125 | fit progress: (3, 0.8441385553802824, {'accuracy': 0.5911}, 2.127457401016727)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:06,606 | server.py:173 | evaluate_round 3: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:06,678 | server.py:187 | evaluate_round 3 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:06,679 | server.py:222 | fit_round 4: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:06,909 | server.py:236 | fit_round 4 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:06,930 | server.py:125 | fit progress: (4, 0.8350805675495685, {'accuracy': 0.604}, 2.4537578530143946)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:06,932 | server.py:173 | evaluate_round 4: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:07,017 | server.py:187 | evaluate_round 4 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:07,017 | server.py:222 | fit_round 5: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:07,237 | server.py:236 | fit_round 5 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:07,254 | server.py:125 | fit progress: (5, 0.8325419285889775, {'accuracy': 0.5988}, 2.7777178060496226)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:07,255 | server.py:173 | evaluate_round 5: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:07,329 | server.py:187 | evaluate_round 5 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:07,330 | server.py:222 | fit_round 6: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:07,555 | server.py:236 | fit_round 6 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:07,578 | server.py:125 | fit progress: (6, 0.8276899510635632, {'accuracy': 0.6086}, 3.1013943960424513)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:07,578 | server.py:173 | evaluate_round 6: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:07,643 | server.py:187 | evaluate_round 6 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:07,643 | server.py:222 | fit_round 7: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:07,860 | server.py:236 | fit_round 7 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:07,884 | server.py:125 | fit progress: (7, 0.827081657099165, {'accuracy': 0.6009}, 3.407619764097035)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:07,885 | server.py:173 | evaluate_round 7: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:07,971 | server.py:187 | evaluate_round 7 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:07,972 | server.py:222 | fit_round 8: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:08,223 | server.py:236 | fit_round 8 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:08,242 | server.py:125 | fit progress: (8, 0.8241123664951884, {'accuracy': 0.6045}, 3.7661163550801575)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:08,243 | server.py:173 | evaluate_round 8: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:08,334 | server.py:187 | evaluate_round 8 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:08,335 | server.py:222 | fit_round 9: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:08,551 | server.py:236 | fit_round 9 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:08,574 | server.py:125 | fit progress: (9, 0.8250797409631992, {'accuracy': 0.6031}, 4.097826100070961)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:08,574 | server.py:173 | evaluate_round 9: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:08,664 | server.py:187 | evaluate_round 9 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:08,665 | server.py:222 | fit_round 10: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:08,874 | server.py:236 | fit_round 10 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:08,897 | server.py:125 | fit progress: (10, 0.8217496358626312, {'accuracy': 0.6075}, 4.4210526960669085)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:08,901 | server.py:173 | evaluate_round 10: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:08,983 | server.py:187 | evaluate_round 10 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:08,984 | server.py:153 | FL finished in 4.507482140092179
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:08,984 | app.py:226 | app_fit: losses_distributed [(1, 0.9727302074432373), (2, 0.8498090982437134), (3, 0.8317454695701599), (4, 0.8324417293071746), (5, 0.831261932849884), (6, 0.8160116255283356), (7, 0.8228066504001618), (8, 0.8130271971225739), (9, 0.819280457496643), (10, 0.8175320267677307)]
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:08,984 | app.py:227 | app_fit: metrics_distributed_fit {}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:08,985 | app.py:228 | app_fit: metrics_distributed {}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:08,985 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9585369226603269), (2, 0.8546863875274806), (3, 0.8441385553802824), (4, 0.8350805675495685), (5, 0.8325419285889775), (6, 0.8276899510635632), (7, 0.827081657099165), (8, 0.8241123664951884), (9, 0.8250797409631992), (10, 0.8217496358626312)]
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:08,985 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5705), (2, 0.5996), (3, 0.5911), (4, 0.604), (5, 0.5988), (6, 0.6086), (7, 0.6009), (8, 0.6045), (9, 0.6031), (10, 0.6075)]}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:14,077 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:14,093 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:14,093 | server.py:89 | Initializing global parameters
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:14,094 | server.py:276 | Requesting initial parameters from one random client
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:27,417 | server.py:280 | Received initial parameters from one random client
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:27,418 | server.py:91 | Evaluating initial parameters
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:27,442 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:27,442 | server.py:104 | FL starting
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:28,119 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:28,205 | server.py:236 | fit_round 1 received 2 results and 0 failures
+FedTrimmedAvg Server | WARNING flwr 2024-03-19 17:11:28,207 | fedtrimmedavg.py:142 | No fit_metrics_aggregation_fn provided
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:28,229 | server.py:125 | fit progress: (1, 0.9476765963601621, {'accuracy': 0.5716}, 0.7874604399548844)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:28,232 | server.py:173 | evaluate_round 1: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:28,322 | server.py:187 | evaluate_round 1 received 10 results and 0 failures
+FedTrimmedAvg Server | WARNING flwr 2024-03-19 17:11:28,322 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:28,322 | server.py:222 | fit_round 2: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:28,573 | server.py:236 | fit_round 2 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:28,591 | server.py:125 | fit progress: (2, 0.8515110141406572, {'accuracy': 0.599}, 1.1486022539902478)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:28,592 | server.py:173 | evaluate_round 2: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:28,692 | server.py:187 | evaluate_round 2 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:28,693 | server.py:222 | fit_round 3: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:28,949 | server.py:236 | fit_round 3 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:28,970 | server.py:125 | fit progress: (3, 0.8414319996806807, {'accuracy': 0.593}, 1.5277727840002626)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:28,973 | server.py:173 | evaluate_round 3: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:29,036 | server.py:187 | evaluate_round 3 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:29,036 | server.py:222 | fit_round 4: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:29,260 | server.py:236 | fit_round 4 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:29,280 | server.py:125 | fit progress: (4, 0.8343844470081829, {'accuracy': 0.6003}, 1.8379593329736963)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:29,283 | server.py:173 | evaluate_round 4: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:29,364 | server.py:187 | evaluate_round 4 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:29,365 | server.py:222 | fit_round 5: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:29,589 | server.py:236 | fit_round 5 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:29,605 | server.py:125 | fit progress: (5, 0.8323744661699789, {'accuracy': 0.6005}, 2.1632336790207773)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:29,606 | server.py:173 | evaluate_round 5: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:29,684 | server.py:187 | evaluate_round 5 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:29,684 | server.py:222 | fit_round 6: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:29,905 | server.py:236 | fit_round 6 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:29,926 | server.py:125 | fit progress: (6, 0.8274653878374524, {'accuracy': 0.6049}, 2.48385088192299)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:29,928 | server.py:173 | evaluate_round 6: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:30,002 | server.py:187 | evaluate_round 6 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:30,002 | server.py:222 | fit_round 7: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:30,193 | server.py:236 | fit_round 7 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:30,213 | server.py:125 | fit progress: (7, 0.8272369141847352, {'accuracy': 0.6005}, 2.7713364659575745)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:30,216 | server.py:173 | evaluate_round 7: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:30,307 | server.py:187 | evaluate_round 7 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:30,307 | server.py:222 | fit_round 8: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:30,523 | server.py:236 | fit_round 8 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:30,539 | server.py:125 | fit progress: (8, 0.8238718649823182, {'accuracy': 0.6049}, 3.096570126945153)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:30,539 | server.py:173 | evaluate_round 8: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:30,610 | server.py:187 | evaluate_round 8 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:30,611 | server.py:222 | fit_round 9: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:30,829 | server.py:236 | fit_round 9 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:30,849 | server.py:125 | fit progress: (9, 0.8243120627201702, {'accuracy': 0.6025}, 3.406828913022764)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:30,852 | server.py:173 | evaluate_round 9: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:30,932 | server.py:187 | evaluate_round 9 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:30,933 | server.py:222 | fit_round 10: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:31,134 | server.py:236 | fit_round 10 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:31,158 | server.py:125 | fit progress: (10, 0.8213578127090088, {'accuracy': 0.6031}, 3.7163309219758958)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:31,159 | server.py:173 | evaluate_round 10: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:31,247 | server.py:187 | evaluate_round 10 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:31,248 | server.py:153 | FL finished in 3.8059423989616334
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:31,248 | app.py:226 | app_fit: losses_distributed [(1, 0.9402151882648468), (2, 0.8459392488002777), (3, 0.8318970322608947), (4, 0.8374582409858704), (5, 0.8374298393726349), (6, 0.8260658919811249), (7, 0.8196221053600311), (8, 0.8194910764694214), (9, 0.8207814335823059), (10, 0.8200563848018646)]
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:31,249 | app.py:227 | app_fit: metrics_distributed_fit {}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:31,249 | app.py:228 | app_fit: metrics_distributed {}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:31,249 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9476765963601621), (2, 0.8515110141406572), (3, 0.8414319996806807), (4, 0.8343844470081829), (5, 0.8323744661699789), (6, 0.8274653878374524), (7, 0.8272369141847352), (8, 0.8238718649823182), (9, 0.8243120627201702), (10, 0.8213578127090088)]
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:31,250 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5716), (2, 0.599), (3, 0.593), (4, 0.6003), (5, 0.6005), (6, 0.6049), (7, 0.6005), (8, 0.6049), (9, 0.6025), (10, 0.6031)]}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:36,357 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:36,370 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:36,370 | server.py:89 | Initializing global parameters
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:36,371 | server.py:276 | Requesting initial parameters from one random client
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:49,383 | server.py:280 | Received initial parameters from one random client
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:49,384 | server.py:91 | Evaluating initial parameters
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:49,405 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:49,406 | server.py:104 | FL starting
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:50,172 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:50,271 | server.py:236 | fit_round 1 received 2 results and 0 failures
+FedTrimmedAvg Server | WARNING flwr 2024-03-19 17:11:50,272 | fedtrimmedavg.py:142 | No fit_metrics_aggregation_fn provided
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:50,287 | server.py:125 | fit progress: (1, 0.9460948127777273, {'accuracy': 0.5791}, 0.8805409349733964)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:50,288 | server.py:173 | evaluate_round 1: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:50,395 | server.py:187 | evaluate_round 1 received 10 results and 0 failures
+FedTrimmedAvg Server | WARNING flwr 2024-03-19 17:11:50,395 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:50,396 | server.py:222 | fit_round 2: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:50,614 | server.py:236 | fit_round 2 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:50,638 | server.py:125 | fit progress: (2, 0.853669905290047, {'accuracy': 0.595}, 1.2314680559793487)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:50,639 | server.py:173 | evaluate_round 2: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:50,731 | server.py:187 | evaluate_round 2 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:50,732 | server.py:222 | fit_round 3: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:50,965 | server.py:236 | fit_round 3 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:50,984 | server.py:125 | fit progress: (3, 0.8436961025194621, {'accuracy': 0.592}, 1.5771631200332195)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:50,984 | server.py:173 | evaluate_round 3: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:51,072 | server.py:187 | evaluate_round 3 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:51,073 | server.py:222 | fit_round 4: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:51,303 | server.py:236 | fit_round 4 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:51,323 | server.py:125 | fit progress: (4, 0.8356822348939345, {'accuracy': 0.6013}, 1.9159481599926949)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:51,323 | server.py:173 | evaluate_round 4: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:51,415 | server.py:187 | evaluate_round 4 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:51,416 | server.py:222 | fit_round 5: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:51,660 | server.py:236 | fit_round 5 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:51,678 | server.py:125 | fit progress: (5, 0.8331408633148903, {'accuracy': 0.5995}, 2.271944727981463)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:51,679 | server.py:173 | evaluate_round 5: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:51,753 | server.py:187 | evaluate_round 5 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:51,753 | server.py:222 | fit_round 6: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:51,985 | server.py:236 | fit_round 6 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:52,007 | server.py:125 | fit progress: (6, 0.8283065361426823, {'accuracy': 0.605}, 2.600993582047522)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:52,009 | server.py:173 | evaluate_round 6: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:52,069 | server.py:187 | evaluate_round 6 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:52,069 | server.py:222 | fit_round 7: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:52,276 | server.py:236 | fit_round 7 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:52,298 | server.py:125 | fit progress: (7, 0.8279507515287414, {'accuracy': 0.6017}, 2.891604495001957)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:52,301 | server.py:173 | evaluate_round 7: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:52,365 | server.py:187 | evaluate_round 7 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:52,365 | server.py:222 | fit_round 8: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:52,659 | server.py:236 | fit_round 8 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:52,679 | server.py:125 | fit progress: (8, 0.8243218799490809, {'accuracy': 0.6063}, 3.2725459589855745)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:52,682 | server.py:173 | evaluate_round 8: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:52,773 | server.py:187 | evaluate_round 8 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:52,773 | server.py:222 | fit_round 9: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:53,049 | server.py:236 | fit_round 9 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:53,066 | server.py:125 | fit progress: (9, 0.824004594167731, {'accuracy': 0.6023}, 3.6599392549833283)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:53,067 | server.py:173 | evaluate_round 9: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:53,131 | server.py:187 | evaluate_round 9 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:53,131 | server.py:222 | fit_round 10: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:53,408 | server.py:236 | fit_round 10 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:53,429 | server.py:125 | fit progress: (10, 0.8216265604048731, {'accuracy': 0.6054}, 4.02225914504379)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:53,432 | server.py:173 | evaluate_round 10: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:11:53,507 | server.py:187 | evaluate_round 10 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:53,507 | server.py:153 | FL finished in 4.100778016960248
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:53,508 | app.py:226 | app_fit: losses_distributed [(1, 0.9554453790187836), (2, 0.8539664208889007), (3, 0.8449881494045257), (4, 0.8358058094978332), (5, 0.8311395883560181), (6, 0.824597817659378), (7, 0.8303333938121795), (8, 0.8277238965034485), (9, 0.8286311566829682), (10, 0.8263598680496216)]
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:53,508 | app.py:227 | app_fit: metrics_distributed_fit {}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:53,508 | app.py:228 | app_fit: metrics_distributed {}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:53,509 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9460948127777273), (2, 0.853669905290047), (3, 0.8436961025194621), (4, 0.8356822348939345), (5, 0.8331408633148903), (6, 0.8283065361426823), (7, 0.8279507515287414), (8, 0.8243218799490809), (9, 0.824004594167731), (10, 0.8216265604048731)]
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:53,509 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5791), (2, 0.595), (3, 0.592), (4, 0.6013), (5, 0.5995), (6, 0.605), (7, 0.6017), (8, 0.6063), (9, 0.6023), (10, 0.6054)]}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:58,849 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:58,862 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:58,862 | server.py:89 | Initializing global parameters
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:11:58,863 | server.py:276 | Requesting initial parameters from one random client
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:12,258 | server.py:280 | Received initial parameters from one random client
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:12,258 | server.py:91 | Evaluating initial parameters
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:12,304 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:12,305 | server.py:104 | FL starting
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:12,633 | server.py:222 | fit_round 1: strategy sampled 4 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:12,777 | server.py:236 | fit_round 1 received 4 results and 0 failures
+FedTrimmedAvg Server | WARNING flwr 2024-03-19 17:12:12,779 | fedtrimmedavg.py:142 | No fit_metrics_aggregation_fn provided
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:12,804 | server.py:125 | fit progress: (1, 0.9437340759073619, {'accuracy': 0.5729}, 0.4983666610205546)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:12,805 | server.py:173 | evaluate_round 1: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:12,919 | server.py:187 | evaluate_round 1 received 10 results and 0 failures
+FedTrimmedAvg Server | WARNING flwr 2024-03-19 17:12:12,919 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:12,919 | server.py:222 | fit_round 2: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:13,186 | server.py:236 | fit_round 2 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:13,203 | server.py:125 | fit progress: (2, 0.8524976127249052, {'accuracy': 0.5948}, 0.8977790980134159)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:13,203 | server.py:173 | evaluate_round 2: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:13,305 | server.py:187 | evaluate_round 2 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:13,305 | server.py:222 | fit_round 3: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:13,516 | server.py:236 | fit_round 3 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:13,539 | server.py:125 | fit progress: (3, 0.8423613363942252, {'accuracy': 0.592}, 1.2333873639581725)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:13,540 | server.py:173 | evaluate_round 3: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:13,619 | server.py:187 | evaluate_round 3 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:13,620 | server.py:222 | fit_round 4: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:13,849 | server.py:236 | fit_round 4 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:13,877 | server.py:125 | fit progress: (4, 0.8342393186137147, {'accuracy': 0.5997}, 1.571418039035052)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:13,880 | server.py:173 | evaluate_round 4: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:13,967 | server.py:187 | evaluate_round 4 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:13,967 | server.py:222 | fit_round 5: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:14,182 | server.py:236 | fit_round 5 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:14,198 | server.py:125 | fit progress: (5, 0.8317826242916618, {'accuracy': 0.5958}, 1.8926850539864972)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:14,198 | server.py:173 | evaluate_round 5: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:14,260 | server.py:187 | evaluate_round 5 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:14,261 | server.py:222 | fit_round 6: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:14,496 | server.py:236 | fit_round 6 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:14,524 | server.py:125 | fit progress: (6, 0.8268698141347354, {'accuracy': 0.6035}, 2.2187680549686775)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:14,526 | server.py:173 | evaluate_round 6: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:14,607 | server.py:187 | evaluate_round 6 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:14,608 | server.py:222 | fit_round 7: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:14,822 | server.py:236 | fit_round 7 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:14,844 | server.py:125 | fit progress: (7, 0.8263315868245283, {'accuracy': 0.604}, 2.5386256769998)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:14,846 | server.py:173 | evaluate_round 7: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:14,913 | server.py:187 | evaluate_round 7 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:14,914 | server.py:222 | fit_round 8: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:15,119 | server.py:236 | fit_round 8 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:15,140 | server.py:125 | fit progress: (8, 0.8231847397137962, {'accuracy': 0.6048}, 2.835000528022647)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:15,143 | server.py:173 | evaluate_round 8: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:15,218 | server.py:187 | evaluate_round 8 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:15,219 | server.py:222 | fit_round 9: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:15,444 | server.py:236 | fit_round 9 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:15,461 | server.py:125 | fit progress: (9, 0.8237484817320143, {'accuracy': 0.6048}, 3.1558482369873673)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:15,462 | server.py:173 | evaluate_round 9: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:15,535 | server.py:187 | evaluate_round 9 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:15,536 | server.py:222 | fit_round 10: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:15,740 | server.py:236 | fit_round 10 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:15,762 | server.py:125 | fit progress: (10, 0.8211606943096756, {'accuracy': 0.6069}, 3.4570062269922346)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:15,763 | server.py:173 | evaluate_round 10: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:15,836 | server.py:187 | evaluate_round 10 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:15,836 | server.py:153 | FL finished in 3.5305606479523703
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:15,836 | app.py:226 | app_fit: losses_distributed [(1, 0.953181391954422), (2, 0.8526083588600158), (3, 0.8340218365192413), (4, 0.8293654322624207), (5, 0.8306385457515717), (6, 0.8279382526874542), (7, 0.8216625273227691), (8, 0.8209873557090759), (9, 0.8295489490032196), (10, 0.8257976233959198)]
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:15,836 | app.py:227 | app_fit: metrics_distributed_fit {}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:15,836 | app.py:228 | app_fit: metrics_distributed {}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:15,836 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9437340759073619), (2, 0.8524976127249052), (3, 0.8423613363942252), (4, 0.8342393186137147), (5, 0.8317826242916618), (6, 0.8268698141347354), (7, 0.8263315868245283), (8, 0.8231847397137962), (9, 0.8237484817320143), (10, 0.8211606943096756)]
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:15,836 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5729), (2, 0.5948), (3, 0.592), (4, 0.5997), (5, 0.5958), (6, 0.6035), (7, 0.604), (8, 0.6048), (9, 0.6048), (10, 0.6069)]}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:21,050 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:21,065 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:21,066 | server.py:89 | Initializing global parameters
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:21,066 | server.py:276 | Requesting initial parameters from one random client
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:34,366 | server.py:280 | Received initial parameters from one random client
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:34,367 | server.py:91 | Evaluating initial parameters
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:34,398 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:34,402 | server.py:104 | FL starting
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:34,936 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:35,039 | server.py:236 | fit_round 1 received 2 results and 0 failures
+FedTrimmedAvg Server | WARNING flwr 2024-03-19 17:12:35,040 | fedtrimmedavg.py:142 | No fit_metrics_aggregation_fn provided
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:35,066 | server.py:125 | fit progress: (1, 0.9499476095940167, {'accuracy': 0.5801}, 0.66380455205217)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:35,069 | server.py:173 | evaluate_round 1: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:35,183 | server.py:187 | evaluate_round 1 received 10 results and 0 failures
+FedTrimmedAvg Server | WARNING flwr 2024-03-19 17:12:35,184 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:35,184 | server.py:222 | fit_round 2: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:35,477 | server.py:236 | fit_round 2 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:35,494 | server.py:125 | fit progress: (2, 0.8526767668378336, {'accuracy': 0.5946}, 1.0923134420299903)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:35,495 | server.py:173 | evaluate_round 2: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:35,584 | server.py:187 | evaluate_round 2 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:35,585 | server.py:222 | fit_round 3: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:35,760 | server.py:236 | fit_round 3 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:35,788 | server.py:125 | fit progress: (3, 0.8444800186680753, {'accuracy': 0.5904}, 1.3863253790186718)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:35,791 | server.py:173 | evaluate_round 3: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:35,868 | server.py:187 | evaluate_round 3 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:35,869 | server.py:222 | fit_round 4: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:36,098 | server.py:236 | fit_round 4 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:36,124 | server.py:125 | fit progress: (4, 0.8350287372933999, {'accuracy': 0.5987}, 1.7220931450137869)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:36,127 | server.py:173 | evaluate_round 4: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:36,206 | server.py:187 | evaluate_round 4 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:36,207 | server.py:222 | fit_round 5: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:36,420 | server.py:236 | fit_round 5 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:36,441 | server.py:125 | fit progress: (5, 0.8326554934684227, {'accuracy': 0.5984}, 2.039363536052406)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:36,444 | server.py:173 | evaluate_round 5: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:36,526 | server.py:187 | evaluate_round 5 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:36,527 | server.py:222 | fit_round 6: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:36,734 | server.py:236 | fit_round 6 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:36,757 | server.py:125 | fit progress: (6, 0.8273262105305014, {'accuracy': 0.6033}, 2.3553087189793587)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:36,759 | server.py:173 | evaluate_round 6: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:36,839 | server.py:187 | evaluate_round 6 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:36,839 | server.py:222 | fit_round 7: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:37,067 | server.py:236 | fit_round 7 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:37,088 | server.py:125 | fit progress: (7, 0.8279894857290641, {'accuracy': 0.6009}, 2.6862914609955624)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:37,091 | server.py:173 | evaluate_round 7: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:37,170 | server.py:187 | evaluate_round 7 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:37,171 | server.py:222 | fit_round 8: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:37,373 | server.py:236 | fit_round 8 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:37,409 | server.py:125 | fit progress: (8, 0.8236277185417713, {'accuracy': 0.6052}, 3.006506658042781)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:37,409 | server.py:173 | evaluate_round 8: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:37,488 | server.py:187 | evaluate_round 8 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:37,489 | server.py:222 | fit_round 9: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:37,711 | server.py:236 | fit_round 9 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:37,731 | server.py:125 | fit progress: (9, 0.8241606889735995, {'accuracy': 0.601}, 3.3292620420688763)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:37,732 | server.py:173 | evaluate_round 9: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:37,819 | server.py:187 | evaluate_round 9 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:37,820 | server.py:222 | fit_round 10: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:38,022 | server.py:236 | fit_round 10 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:38,045 | server.py:125 | fit progress: (10, 0.821651358961535, {'accuracy': 0.6036}, 3.6433770089643076)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:38,048 | server.py:173 | evaluate_round 10: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:38,127 | server.py:187 | evaluate_round 10 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:38,128 | server.py:153 | FL finished in 3.725619537057355
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:38,128 | app.py:226 | app_fit: losses_distributed [(1, 0.9625531375408173), (2, 0.8519752204418183), (3, 0.8552169084548951), (4, 0.8339940190315247), (5, 0.8429091513156891), (6, 0.8322257101535797), (7, 0.8405569136142731), (8, 0.8327932894229889), (9, 0.8313434302806855), (10, 0.8220406711101532)]
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:38,128 | app.py:227 | app_fit: metrics_distributed_fit {}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:38,129 | app.py:228 | app_fit: metrics_distributed {}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:38,129 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9499476095940167), (2, 0.8526767668378336), (3, 0.8444800186680753), (4, 0.8350287372933999), (5, 0.8326554934684227), (6, 0.8273262105305014), (7, 0.8279894857290641), (8, 0.8236277185417713), (9, 0.8241606889735995), (10, 0.821651358961535)]
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:38,129 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5801), (2, 0.5946), (3, 0.5904), (4, 0.5987), (5, 0.5984), (6, 0.6033), (7, 0.6009), (8, 0.6052), (9, 0.601), (10, 0.6036)]}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:43,467 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:43,478 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:43,479 | server.py:89 | Initializing global parameters
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:43,479 | server.py:276 | Requesting initial parameters from one random client
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:55,925 | server.py:280 | Received initial parameters from one random client
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:55,926 | server.py:91 | Evaluating initial parameters
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:55,958 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:55,961 | server.py:104 | FL starting
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:57,170 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:57,270 | server.py:236 | fit_round 1 received 2 results and 0 failures
+FedTrimmedAvg Server | WARNING flwr 2024-03-19 17:12:57,271 | fedtrimmedavg.py:142 | No fit_metrics_aggregation_fn provided
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:57,296 | server.py:125 | fit progress: (1, 0.9175296382568887, {'accuracy': 0.5764}, 1.334571451996453)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:57,299 | server.py:173 | evaluate_round 1: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:57,410 | server.py:187 | evaluate_round 1 received 10 results and 0 failures
+FedTrimmedAvg Server | WARNING flwr 2024-03-19 17:12:57,410 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:57,410 | server.py:222 | fit_round 2: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:57,673 | server.py:236 | fit_round 2 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:57,700 | server.py:125 | fit progress: (2, 0.8501039094423944, {'accuracy': 0.5893}, 1.7382224251050502)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:57,703 | server.py:173 | evaluate_round 2: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:57,804 | server.py:187 | evaluate_round 2 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:57,805 | server.py:222 | fit_round 3: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:58,026 | server.py:236 | fit_round 3 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:58,043 | server.py:125 | fit progress: (3, 0.8400402542531651, {'accuracy': 0.5957}, 2.0813951920717955)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:58,044 | server.py:173 | evaluate_round 3: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:58,118 | server.py:187 | evaluate_round 3 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:58,119 | server.py:222 | fit_round 4: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:58,346 | server.py:236 | fit_round 4 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:58,367 | server.py:125 | fit progress: (4, 0.8325976209387567, {'accuracy': 0.602}, 2.405000291997567)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:58,370 | server.py:173 | evaluate_round 4: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:58,461 | server.py:187 | evaluate_round 4 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:58,462 | server.py:222 | fit_round 5: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:58,677 | server.py:236 | fit_round 5 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:58,700 | server.py:125 | fit progress: (5, 0.8302056968135492, {'accuracy': 0.5943}, 2.7380958400899544)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:58,703 | server.py:173 | evaluate_round 5: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:58,771 | server.py:187 | evaluate_round 5 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:58,771 | server.py:222 | fit_round 6: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:58,973 | server.py:236 | fit_round 6 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:58,989 | server.py:125 | fit progress: (6, 0.8263864331812436, {'accuracy': 0.6048}, 3.0274990120669827)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:58,990 | server.py:173 | evaluate_round 6: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:59,083 | server.py:187 | evaluate_round 6 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:59,083 | server.py:222 | fit_round 7: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:59,299 | server.py:236 | fit_round 7 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:59,328 | server.py:125 | fit progress: (7, 0.8256391877913173, {'accuracy': 0.6017}, 3.366384831024334)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:59,329 | server.py:173 | evaluate_round 7: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:59,391 | server.py:187 | evaluate_round 7 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:59,391 | server.py:222 | fit_round 8: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:59,617 | server.py:236 | fit_round 8 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:59,640 | server.py:125 | fit progress: (8, 0.8235368934995771, {'accuracy': 0.6077}, 3.6785019600065425)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:59,643 | server.py:173 | evaluate_round 8: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:59,727 | server.py:187 | evaluate_round 8 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:59,728 | server.py:222 | fit_round 9: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:59,937 | server.py:236 | fit_round 9 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:12:59,965 | server.py:125 | fit progress: (9, 0.823220312307299, {'accuracy': 0.6015}, 4.003518037032336)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:12:59,968 | server.py:173 | evaluate_round 9: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:00,040 | server.py:187 | evaluate_round 9 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:00,041 | server.py:222 | fit_round 10: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:00,278 | server.py:236 | fit_round 10 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:00,300 | server.py:125 | fit progress: (10, 0.8212314087097135, {'accuracy': 0.6056}, 4.337925411993638)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:00,302 | server.py:173 | evaluate_round 10: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:00,378 | server.py:187 | evaluate_round 10 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:00,379 | server.py:153 | FL finished in 4.416989819030277
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:00,379 | app.py:226 | app_fit: losses_distributed [(1, 0.8969884276390075), (2, 0.8433869540691376), (3, 0.8318702399730682), (4, 0.8301586151123047), (5, 0.8178536713123321), (6, 0.8177512526512146), (7, 0.8208760201931), (8, 0.8174872875213623), (9, 0.8096481919288635), (10, 0.8085648238658905)]
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:00,380 | app.py:227 | app_fit: metrics_distributed_fit {}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:00,380 | app.py:228 | app_fit: metrics_distributed {}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:00,380 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9175296382568887), (2, 0.8501039094423944), (3, 0.8400402542531651), (4, 0.8325976209387567), (5, 0.8302056968135492), (6, 0.8263864331812436), (7, 0.8256391877913173), (8, 0.8235368934995771), (9, 0.823220312307299), (10, 0.8212314087097135)]
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:00,381 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5764), (2, 0.5893), (3, 0.5957), (4, 0.602), (5, 0.5943), (6, 0.6048), (7, 0.6017), (8, 0.6077), (9, 0.6015), (10, 0.6056)]}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:05,607 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:05,621 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:05,622 | server.py:89 | Initializing global parameters
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:05,622 | server.py:276 | Requesting initial parameters from one random client
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:18,987 | server.py:280 | Received initial parameters from one random client
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:18,987 | server.py:91 | Evaluating initial parameters
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:19,017 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:19,021 | server.py:104 | FL starting
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:19,258 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:19,349 | server.py:236 | fit_round 1 received 2 results and 0 failures
+FedTrimmedAvg Server | WARNING flwr 2024-03-19 17:13:19,350 | fedtrimmedavg.py:142 | No fit_metrics_aggregation_fn provided
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:19,365 | server.py:125 | fit progress: (1, 0.9454363827103467, {'accuracy': 0.5711}, 0.3431061260635033)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:19,365 | server.py:173 | evaluate_round 1: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:19,521 | server.py:187 | evaluate_round 1 received 10 results and 0 failures
+FedTrimmedAvg Server | WARNING flwr 2024-03-19 17:13:19,521 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:19,522 | server.py:222 | fit_round 2: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:19,827 | server.py:236 | fit_round 2 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:19,852 | server.py:125 | fit progress: (2, 0.8520833022293293, {'accuracy': 0.5939}, 0.8305546620395035)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:19,855 | server.py:173 | evaluate_round 2: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:19,946 | server.py:187 | evaluate_round 2 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:19,947 | server.py:222 | fit_round 3: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:20,168 | server.py:236 | fit_round 3 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:20,193 | server.py:125 | fit progress: (3, 0.84462404244161, {'accuracy': 0.5921}, 1.1709047850454226)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:20,194 | server.py:173 | evaluate_round 3: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:20,278 | server.py:187 | evaluate_round 3 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:20,279 | server.py:222 | fit_round 4: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:20,486 | server.py:236 | fit_round 4 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:20,530 | server.py:125 | fit progress: (4, 0.8352235409960082, {'accuracy': 0.6008}, 1.5086950979894027)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:20,531 | server.py:173 | evaluate_round 4: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:20,606 | server.py:187 | evaluate_round 4 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:20,607 | server.py:222 | fit_round 5: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:20,828 | server.py:236 | fit_round 5 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:20,851 | server.py:125 | fit progress: (5, 0.832910921672382, {'accuracy': 0.5965}, 1.8293296210467815)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:20,852 | server.py:173 | evaluate_round 5: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:20,945 | server.py:187 | evaluate_round 5 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:20,945 | server.py:222 | fit_round 6: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:21,166 | server.py:236 | fit_round 6 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:21,193 | server.py:125 | fit progress: (6, 0.8275570579285564, {'accuracy': 0.6038}, 2.1715178480371833)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:21,196 | server.py:173 | evaluate_round 6: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:21,280 | server.py:187 | evaluate_round 6 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:21,281 | server.py:222 | fit_round 7: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:21,477 | server.py:236 | fit_round 7 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:21,493 | server.py:125 | fit progress: (7, 0.8275490187426094, {'accuracy': 0.6006}, 2.4714644480263814)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:21,494 | server.py:173 | evaluate_round 7: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:21,570 | server.py:187 | evaluate_round 7 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:21,571 | server.py:222 | fit_round 8: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:21,778 | server.py:236 | fit_round 8 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:21,800 | server.py:125 | fit progress: (8, 0.8239324060896466, {'accuracy': 0.6087}, 2.7780545060522854)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:21,803 | server.py:173 | evaluate_round 8: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:21,896 | server.py:187 | evaluate_round 8 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:21,897 | server.py:222 | fit_round 9: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:22,094 | server.py:236 | fit_round 9 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:22,117 | server.py:125 | fit progress: (9, 0.8243816013704256, {'accuracy': 0.6041}, 3.095239690039307)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:22,120 | server.py:173 | evaluate_round 9: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:22,211 | server.py:187 | evaluate_round 9 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:22,211 | server.py:222 | fit_round 10: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:22,422 | server.py:236 | fit_round 10 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:22,439 | server.py:125 | fit progress: (10, 0.8217955473318336, {'accuracy': 0.6075}, 3.4174261779990047)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:22,440 | server.py:173 | evaluate_round 10: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:22,523 | server.py:187 | evaluate_round 10 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:22,523 | server.py:153 | FL finished in 3.501587848062627
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:22,524 | app.py:226 | app_fit: losses_distributed [(1, 0.9571554243564606), (2, 0.8509850978851319), (3, 0.8394966721534729), (4, 0.8338558375835419), (5, 0.823974335193634), (6, 0.8345554590225219), (7, 0.818936824798584), (8, 0.8212668895721436), (9, 0.8128621280193329), (10, 0.8316416263580322)]
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:22,524 | app.py:227 | app_fit: metrics_distributed_fit {}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:22,525 | app.py:228 | app_fit: metrics_distributed {}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:22,525 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9454363827103467), (2, 0.8520833022293293), (3, 0.84462404244161), (4, 0.8352235409960082), (5, 0.832910921672382), (6, 0.8275570579285564), (7, 0.8275490187426094), (8, 0.8239324060896466), (9, 0.8243816013704256), (10, 0.8217955473318336)]
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:22,525 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5711), (2, 0.5939), (3, 0.5921), (4, 0.6008), (5, 0.5965), (6, 0.6038), (7, 0.6006), (8, 0.6087), (9, 0.6041), (10, 0.6075)]}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:27,733 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:27,741 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:27,742 | server.py:89 | Initializing global parameters
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:27,742 | server.py:276 | Requesting initial parameters from one random client
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:41,066 | server.py:280 | Received initial parameters from one random client
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:41,067 | server.py:91 | Evaluating initial parameters
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:41,086 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:41,087 | server.py:104 | FL starting
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:41,621 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:41,708 | server.py:236 | fit_round 1 received 2 results and 0 failures
+FedTrimmedAvg Server | WARNING flwr 2024-03-19 17:13:41,710 | fedtrimmedavg.py:142 | No fit_metrics_aggregation_fn provided
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:41,730 | server.py:125 | fit progress: (1, 0.9596334116263766, {'accuracy': 0.5738}, 0.6423471469897777)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:41,732 | server.py:173 | evaluate_round 1: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:41,821 | server.py:187 | evaluate_round 1 received 10 results and 0 failures
+FedTrimmedAvg Server | WARNING flwr 2024-03-19 17:13:41,822 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:41,822 | server.py:222 | fit_round 2: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:42,083 | server.py:236 | fit_round 2 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:42,113 | server.py:125 | fit progress: (2, 0.852680918800069, {'accuracy': 0.5968}, 1.02520229795482)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:42,114 | server.py:173 | evaluate_round 2: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:42,197 | server.py:187 | evaluate_round 2 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:42,198 | server.py:222 | fit_round 3: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:42,419 | server.py:236 | fit_round 3 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:42,436 | server.py:125 | fit progress: (3, 0.8446928629975521, {'accuracy': 0.5904}, 1.3481569329742342)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:42,436 | server.py:173 | evaluate_round 3: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:42,526 | server.py:187 | evaluate_round 3 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:42,527 | server.py:222 | fit_round 4: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:42,735 | server.py:236 | fit_round 4 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:42,768 | server.py:125 | fit progress: (4, 0.8340763582705744, {'accuracy': 0.6001}, 1.6809805419761688)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:42,771 | server.py:173 | evaluate_round 4: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:42,854 | server.py:187 | evaluate_round 4 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:42,855 | server.py:222 | fit_round 5: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:43,052 | server.py:236 | fit_round 5 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:43,074 | server.py:125 | fit progress: (5, 0.8313812180711627, {'accuracy': 0.5992}, 1.9861171119846404)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:43,076 | server.py:173 | evaluate_round 5: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:43,148 | server.py:187 | evaluate_round 5 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:43,149 | server.py:222 | fit_round 6: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:43,379 | server.py:236 | fit_round 6 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:43,408 | server.py:125 | fit progress: (6, 0.8261529024317515, {'accuracy': 0.6055}, 2.320377144962549)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:43,410 | server.py:173 | evaluate_round 6: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:43,493 | server.py:187 | evaluate_round 6 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:43,494 | server.py:222 | fit_round 7: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:43,720 | server.py:236 | fit_round 7 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:43,745 | server.py:125 | fit progress: (7, 0.826604428919097, {'accuracy': 0.6018}, 2.6577210399555042)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:43,746 | server.py:173 | evaluate_round 7: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:43,815 | server.py:187 | evaluate_round 7 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:43,815 | server.py:222 | fit_round 8: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:44,059 | server.py:236 | fit_round 8 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:44,081 | server.py:125 | fit progress: (8, 0.8227894081548027, {'accuracy': 0.6054}, 2.9936540669295937)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:44,084 | server.py:173 | evaluate_round 8: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:44,159 | server.py:187 | evaluate_round 8 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:44,160 | server.py:222 | fit_round 9: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:44,431 | server.py:236 | fit_round 9 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:44,455 | server.py:125 | fit progress: (9, 0.8237660923101905, {'accuracy': 0.6044}, 3.367267761961557)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:44,456 | server.py:173 | evaluate_round 9: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:44,537 | server.py:187 | evaluate_round 9 received 10 results and 0 failures
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:44,537 | server.py:222 | fit_round 10: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:44,738 | server.py:236 | fit_round 10 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:44,756 | server.py:125 | fit progress: (10, 0.8205280003775137, {'accuracy': 0.6062}, 3.66850094194524)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:44,757 | server.py:173 | evaluate_round 10: strategy sampled 10 clients (out of 20)
+FedTrimmedAvg Server | DEBUG flwr 2024-03-19 17:13:44,842 | server.py:187 | evaluate_round 10 received 10 results and 0 failures
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:44,842 | server.py:153 | FL finished in 3.7547864709049463
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:44,842 | app.py:226 | app_fit: losses_distributed [(1, 0.9623318135738372), (2, 0.8474085927009583), (3, 0.8444862246513367), (4, 0.8248239755630493), (5, 0.8256154239177704), (6, 0.8151935577392578), (7, 0.8200516164302826), (8, 0.8215525805950165), (9, 0.8154811799526215), (10, 0.8126939177513123)]
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:44,843 | app.py:227 | app_fit: metrics_distributed_fit {}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:44,843 | app.py:228 | app_fit: metrics_distributed {}
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:44,843 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9596334116263766), (2, 0.852680918800069), (3, 0.8446928629975521), (4, 0.8340763582705744), (5, 0.8313812180711627), (6, 0.8261529024317515), (7, 0.826604428919097), (8, 0.8227894081548027), (9, 0.8237660923101905), (10, 0.8205280003775137)]
+FedTrimmedAvg Server | INFO flwr 2024-03-19 17:13:44,843 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5738), (2, 0.5968), (3, 0.5904), (4, 0.6001), (5, 0.5992), (6, 0.6055), (7, 0.6018), (8, 0.6054), (9, 0.6044), (10, 0.6062)]}
