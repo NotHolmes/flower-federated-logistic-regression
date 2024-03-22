@@ -23,9 +23,19 @@ def predict_credit_score(data: dict):
     prediction = model.predict(data)[0]
     prediction_trim = model_trim.predict(data)[0]
     prediction_krum = model_krum.predict(data)[0]
-    return {"prediction": CREDIT_SCORE_CLASSES[prediction],
-            "prediction_trim": CREDIT_SCORE_CLASSES[prediction_trim],
-            "prediction_krum": CREDIT_SCORE_CLASSES[prediction_krum]}
+    
+    probability = max(model.predict_proba(data)[0])
+    probability_trim = max(model_trim.predict_proba(data)[0])
+    probability_krum = max(model_krum.predict_proba(data)[0])
+    
+    return {
+        "prediction": CREDIT_SCORE_CLASSES[prediction],
+        "prediction_trim": CREDIT_SCORE_CLASSES[prediction_trim],
+        "prediction_krum": CREDIT_SCORE_CLASSES[prediction_krum],
+        "probability": probability,
+        "probability_trim": probability_trim,
+        "probability_krum": probability_krum
+    }
 
 def data_to_pred(data: dict):
     pred = {

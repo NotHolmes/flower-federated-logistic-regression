@@ -131,9 +131,8 @@ if st.button("Predict"):
     
     if response.status_code == 200:
         result = response.json()
-        st.success(f"FedAvg Prediction: {result['prediction']}")
-        st.success(f"Krum Prediction: {result['prediction_trim']}")
-        st.success(f"FedTrimmedAvg Prediction: {result['prediction_trim']}")
+        st.success(f"FedAvg Prediction: {result['prediction']}, Probability: {result['probability']}")
+        st.success(f"Krum Prediction: {result['prediction_trim']}, Probability: {result['probability_krum']}")
+        st.success(f"FedTrimmedAvg Prediction: {result['prediction_trim']}, Probability: {result['probability_trim']}")
     else:
         st.error("Failed to send data to API")
-
