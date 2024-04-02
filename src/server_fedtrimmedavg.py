@@ -33,8 +33,8 @@ if __name__ == "__main__":
     model = LogisticRegression()
     utils.set_initial_params(model)
     strategy = fl.server.strategy.FedTrimmedAvg(
-        beta=0.25,
-        min_available_clients=3,
+        beta=0.20,
+        min_available_clients=100,
         evaluate_fn=get_evaluate_fn(model),
         on_fit_config_fn=fit_round,
     )
@@ -42,6 +42,6 @@ if __name__ == "__main__":
     fl.server.start_server(
         server_address="0.0.0.0:8080",
         strategy=strategy,
-        config=fl.server.ServerConfig(num_rounds=100),
+        config=fl.server.ServerConfig(num_rounds=10),
     )
     dump(model, "model/model_fedtrimmedavg.joblib")
