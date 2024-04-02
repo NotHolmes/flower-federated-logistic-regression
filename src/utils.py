@@ -5,6 +5,8 @@ from flwr.common import NDArrays
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
+NUM_CLIENTS = 100
+
 CREDIT_SCORE_CLASSES = {
     0: "Poor",
     1: "Standard",
@@ -104,9 +106,6 @@ def set_initial_params(model: LogisticRegression):
     model.coef_ = np.zeros((n_classes, n_features))
     if model.fit_intercept:
         model.intercept_ = np.zeros((n_classes,))
-
-
-NUM_CLIENTS = 3
 
 def load_random_dataset(dataset_path: str, random_state: int = None):
     df = pd.read_csv(dataset_path)
