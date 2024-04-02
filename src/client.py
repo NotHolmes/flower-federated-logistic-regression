@@ -11,6 +11,7 @@ import utils
 import requests
 import os
 
+
 if __name__ == "__main__":
 
     PUBLIC_IP = os.environ.get(
@@ -26,11 +27,21 @@ if __name__ == "__main__":
         required=True,
         help="Specifies the artificial data partition",
     )
+    parser.add_argument(
+        "--random_state",
+        type=int,
+        required=True,
+        help="Specifies the random state for the data partition",
+    )
+    
     args = parser.parse_args()
     client_id = args.client_id
+    random_state = args.random_state
+    
+    df = utils.load_random_dataset("dataset/train.csv", random_state=random_state)
 
     X_train, X_test, y_train, y_test = utils.load_dataset_for_client(
-        client_id=client_id, dataset_path="dataset/train.csv"
+        client_id=client_id, df=df
     )
     X_train, X_test = utils.scale_data(X_train, X_test)
 

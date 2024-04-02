@@ -108,19 +108,14 @@ def set_initial_params(model: LogisticRegression):
 
 NUM_CLIENTS = 3
 
-
-def load_dataset_for_client(client_id: int, dataset_path: str):
+def load_random_dataset(dataset_path: str, random_state: int = None):
     df = pd.read_csv(dataset_path)
-    df = df.sort_values("Credit_Score")  # Sort dataset by Credit_Score
+    
+    return df.sample(frac=1, random_state=random_state).reset_index(drop=True)
+
+def load_dataset_for_client(client_id: int, df: pd.DataFrame):
     X = df.drop("Credit_Score", axis=1)
     y = df["Credit_Score"]
-
-    # Ensure even dataset splitting
-    # np.random.seed(42)
-    if len(X) % NUM_CLIENTS != 0:
-        drop_indices = np.random.choice(X.index, (len(X) % NUM_CLIENTS), replace=False)
-        X = X.drop(drop_indices)
-        y = y.drop(drop_indices)
 
     # Split for clients
     X_splits = np.split(X, NUM_CLIENTS)

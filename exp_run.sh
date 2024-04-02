@@ -4,12 +4,14 @@ cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"/
 
 # Check if the loop count is provided as a command-line argument
 if [[ $# -eq 0 ]]; then
-    echo "Usage: ./exp_run.sh <model> <loop_count>"
+    echo "Usage: ./exp_run.sh <model> <loop_count> <random_state>"
     exit 1
 fi
 
 # Store the loop count in a variable
 loop_count=$2
+
+random_state=$3
 
 # Function to run the script
 run_script() {
@@ -39,7 +41,7 @@ run_script() {
 
     for i in $(seq 0 1 2); do
         echo "Starting client $i"
-        python src/client.py --client-id "${i}" &
+        python src/client.py --client-id "${i}" --random_state "${i}" &
     done
 
     # This will allow you to use CTRL+C to stop all background processes

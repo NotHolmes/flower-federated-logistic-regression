@@ -24,7 +24,7 @@ fi
 
 for i in $(seq 0 $(( $2 - 1 ))); do
     echo "Starting client $i"
-    python src/client.py --client-id "${i}" &
+    python src/client.py --client-id "${i}" --random_state "${i}" &
 done
 
 # This will allow you to use CTRL+C to stop all background processes
