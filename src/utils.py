@@ -5,7 +5,7 @@ from flwr.common import NDArrays
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
-NUM_CLIENTS = 3
+NUM_CLIENTS = 100
 
 CREDIT_SCORE_CLASSES = {
     0: "Poor",
