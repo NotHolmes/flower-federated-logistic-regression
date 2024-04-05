@@ -16,6 +16,10 @@ elif [[ "$1" == "--avg" || "$1" == "-a" ]]; then
     echo "Starting Krum server"
     python src/server.py &
     sleep 3  # Sleep for 3s to give the server enough time to start
+elif [[ "$1" == "--krum" || "$1" == "-k" ]]; then
+    echo "Starting Krum server"
+    python src/server_krum.py &
+    sleep 3  # Sleep for 3s to give the server enough time to start
 else
     echo "Starting default (FedAvg) server"
     python src/server.py &
