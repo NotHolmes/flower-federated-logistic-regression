@@ -1,0 +1,660 @@
+FedKrum Server | INFO flwr 2024-04-02 10:51:48,519 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+FedKrum Server | INFO flwr 2024-04-02 10:51:48,528 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+FedKrum Server | INFO flwr 2024-04-02 10:51:48,528 | server.py:89 | Initializing global parameters
+FedKrum Server | INFO flwr 2024-04-02 10:51:48,528 | server.py:276 | Requesting initial parameters from one random client
+FedKrum Server | INFO flwr 2024-04-02 10:54:37,182 | server.py:280 | Received initial parameters from one random client
+FedKrum Server | INFO flwr 2024-04-02 10:54:37,183 | server.py:91 | Evaluating initial parameters
+FedKrum Server | INFO flwr 2024-04-02 10:54:37,207 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+FedKrum Server | INFO flwr 2024-04-02 10:54:37,210 | server.py:104 | FL starting
+FedKrum Server | DEBUG flwr 2024-04-02 10:55:54,296 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 100)
+FedKrum Server | DEBUG flwr 2024-04-02 10:55:54,649 | server.py:236 | fit_round 1 received 2 results and 0 failures
+FedKrum Server | WARNING flwr 2024-04-02 10:55:54,652 | krum.py:153 | No fit_metrics_aggregation_fn provided
+FedKrum Server | INFO flwr 2024-04-02 10:55:54,676 | server.py:125 | fit progress: (1, 0.9442516829041029, {'accuracy': 0.5354}, 77.46513571916148)
+FedKrum Server | DEBUG flwr 2024-04-02 10:55:54,680 | server.py:173 | evaluate_round 1: strategy sampled 105 clients (out of 105)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:00,068 | server.py:187 | evaluate_round 1 received 105 results and 0 failures
+FedKrum Server | WARNING flwr 2024-04-02 10:56:00,068 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:00,068 | server.py:222 | fit_round 2: strategy sampled 186 clients (out of 186)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:01,568 | server.py:236 | fit_round 2 received 186 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 10:56:01,881 | server.py:125 | fit progress: (2, 0.9493267750698924, {'accuracy': 0.5524}, 84.66973319114186)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:01,885 | server.py:173 | evaluate_round 2: strategy sampled 187 clients (out of 187)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:02,710 | server.py:187 | evaluate_round 2 received 187 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:02,711 | server.py:222 | fit_round 3: strategy sampled 187 clients (out of 187)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:03,342 | server.py:236 | fit_round 3 received 187 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 10:56:03,641 | server.py:125 | fit progress: (3, 0.9024144102135604, {'accuracy': 0.5805}, 86.4294739922043)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:03,643 | server.py:173 | evaluate_round 3: strategy sampled 187 clients (out of 187)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:04,478 | server.py:187 | evaluate_round 3 received 187 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:04,479 | server.py:222 | fit_round 4: strategy sampled 187 clients (out of 187)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:05,091 | server.py:236 | fit_round 4 received 187 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 10:56:05,358 | server.py:125 | fit progress: (4, 0.9310245769814958, {'accuracy': 0.5619}, 88.14670918602496)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:05,360 | server.py:173 | evaluate_round 4: strategy sampled 187 clients (out of 187)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:06,191 | server.py:187 | evaluate_round 4 received 187 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:06,191 | server.py:222 | fit_round 5: strategy sampled 187 clients (out of 187)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:06,816 | server.py:236 | fit_round 5 received 187 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 10:56:07,123 | server.py:125 | fit progress: (5, 0.905143372829433, {'accuracy': 0.6047}, 89.91189129999839)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:07,125 | server.py:173 | evaluate_round 5: strategy sampled 187 clients (out of 187)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:07,940 | server.py:187 | evaluate_round 5 received 187 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:07,941 | server.py:222 | fit_round 6: strategy sampled 187 clients (out of 187)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:08,554 | server.py:236 | fit_round 6 received 187 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 10:56:08,871 | server.py:125 | fit progress: (6, 0.8402028077767721, {'accuracy': 0.5909}, 91.66013269801624)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:08,873 | server.py:173 | evaluate_round 6: strategy sampled 187 clients (out of 187)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:09,733 | server.py:187 | evaluate_round 6 received 187 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:09,734 | server.py:222 | fit_round 7: strategy sampled 187 clients (out of 187)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:10,328 | server.py:236 | fit_round 7 received 187 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 10:56:10,560 | server.py:125 | fit progress: (7, 0.8477330534785742, {'accuracy': 0.6025}, 93.34922963520512)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:10,562 | server.py:173 | evaluate_round 7: strategy sampled 187 clients (out of 187)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:11,356 | server.py:187 | evaluate_round 7 received 187 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:11,357 | server.py:222 | fit_round 8: strategy sampled 187 clients (out of 187)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:12,017 | server.py:236 | fit_round 8 received 187 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 10:56:12,349 | server.py:125 | fit progress: (8, 0.837294043313227, {'accuracy': 0.597}, 95.13802215806209)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:12,351 | server.py:173 | evaluate_round 8: strategy sampled 187 clients (out of 187)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:13,148 | server.py:187 | evaluate_round 8 received 187 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:13,149 | server.py:222 | fit_round 9: strategy sampled 187 clients (out of 187)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:13,770 | server.py:236 | fit_round 9 received 187 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 10:56:14,069 | server.py:125 | fit progress: (9, 0.8406995211348564, {'accuracy': 0.605}, 96.85792535799555)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:14,074 | server.py:173 | evaluate_round 9: strategy sampled 187 clients (out of 187)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:14,861 | server.py:187 | evaluate_round 9 received 187 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:14,862 | server.py:222 | fit_round 10: strategy sampled 187 clients (out of 187)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:15,473 | server.py:236 | fit_round 10 received 187 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 10:56:15,784 | server.py:125 | fit progress: (10, 0.8358742558747645, {'accuracy': 0.599}, 98.57255829800852)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:15,786 | server.py:173 | evaluate_round 10: strategy sampled 187 clients (out of 187)
+FedKrum Server | DEBUG flwr 2024-04-02 10:56:16,574 | server.py:187 | evaluate_round 10 received 187 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 10:56:16,575 | server.py:153 | FL finished in 99.36401125905104
+FedKrum Server | INFO flwr 2024-04-02 10:56:16,578 | app.py:226 | app_fit: losses_distributed [(1, 0.9556668020430066), (2, 0.9601869436508832), (3, 0.9183131998235529), (4, 0.9404847647417038), (5, 0.9220423347809735), (6, 0.8476609979721315), (7, 0.8551690457338955), (8, 0.8429730343308678), (9, 0.8503365054487545), (10, 0.8425684746573953)]
+FedKrum Server | INFO flwr 2024-04-02 10:56:16,579 | app.py:227 | app_fit: metrics_distributed_fit {}
+FedKrum Server | INFO flwr 2024-04-02 10:56:16,580 | app.py:228 | app_fit: metrics_distributed {}
+FedKrum Server | INFO flwr 2024-04-02 10:56:16,581 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9442516829041029), (2, 0.9493267750698924), (3, 0.9024144102135604), (4, 0.9310245769814958), (5, 0.905143372829433), (6, 0.8402028077767721), (7, 0.8477330534785742), (8, 0.837294043313227), (9, 0.8406995211348564), (10, 0.8358742558747645)]
+FedKrum Server | INFO flwr 2024-04-02 10:56:16,582 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5354), (2, 0.5524), (3, 0.5805), (4, 0.5619), (5, 0.6047), (6, 0.5909), (7, 0.6025), (8, 0.597), (9, 0.605), (10, 0.599)]}
+FedKrum Server | INFO flwr 2024-04-02 10:56:22,200 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+FedKrum Server | INFO flwr 2024-04-02 10:56:22,209 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+FedKrum Server | INFO flwr 2024-04-02 10:56:22,210 | server.py:89 | Initializing global parameters
+FedKrum Server | INFO flwr 2024-04-02 10:56:22,210 | server.py:276 | Requesting initial parameters from one random client
+FedKrum Server | INFO flwr 2024-04-02 11:00:27,777 | server.py:280 | Received initial parameters from one random client
+FedKrum Server | INFO flwr 2024-04-02 11:00:27,778 | server.py:91 | Evaluating initial parameters
+FedKrum Server | INFO flwr 2024-04-02 11:00:27,811 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+FedKrum Server | INFO flwr 2024-04-02 11:00:27,812 | server.py:104 | FL starting
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:31,810 | server.py:222 | fit_round 1: strategy sampled 5 clients (out of 100)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:32,122 | server.py:236 | fit_round 1 received 5 results and 0 failures
+FedKrum Server | WARNING flwr 2024-04-02 11:00:32,124 | krum.py:153 | No fit_metrics_aggregation_fn provided
+FedKrum Server | INFO flwr 2024-04-02 11:00:32,152 | server.py:125 | fit progress: (1, 1.0042811226817663, {'accuracy': 0.5601}, 4.338952403981239)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:32,156 | server.py:173 | evaluate_round 1: strategy sampled 101 clients (out of 101)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:36,968 | server.py:187 | evaluate_round 1 received 101 results and 0 failures
+FedKrum Server | WARNING flwr 2024-04-02 11:00:36,968 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:36,968 | server.py:222 | fit_round 2: strategy sampled 178 clients (out of 178)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:38,536 | server.py:236 | fit_round 2 received 178 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:00:38,731 | server.py:125 | fit progress: (2, 0.9704405492328442, {'accuracy': 0.5276}, 10.918019592994824)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:38,733 | server.py:173 | evaluate_round 2: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:39,618 | server.py:187 | evaluate_round 2 received 184 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:39,619 | server.py:222 | fit_round 3: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:40,250 | server.py:236 | fit_round 3 received 184 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:00:40,565 | server.py:125 | fit progress: (3, 1.0077016108891124, {'accuracy': 0.5886}, 12.75146258994937)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:40,567 | server.py:173 | evaluate_round 3: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:41,568 | server.py:187 | evaluate_round 3 received 184 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:41,568 | server.py:222 | fit_round 4: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:42,185 | server.py:236 | fit_round 4 received 184 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:00:42,576 | server.py:125 | fit progress: (4, 0.9789733251581367, {'accuracy': 0.5209}, 14.762518831994385)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:42,580 | server.py:173 | evaluate_round 4: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:43,348 | server.py:187 | evaluate_round 4 received 184 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:43,350 | server.py:222 | fit_round 5: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:43,947 | server.py:236 | fit_round 5 received 184 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:00:44,137 | server.py:125 | fit progress: (5, 1.0039440966554358, {'accuracy': 0.5881}, 16.323469123104587)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:44,137 | server.py:173 | evaluate_round 5: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:44,908 | server.py:187 | evaluate_round 5 received 184 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:44,909 | server.py:222 | fit_round 6: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:45,485 | server.py:236 | fit_round 6 received 184 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:00:45,805 | server.py:125 | fit progress: (6, 0.9763993394353242, {'accuracy': 0.5241}, 17.992094315122813)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:45,807 | server.py:173 | evaluate_round 6: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:46,585 | server.py:187 | evaluate_round 6 received 184 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:46,585 | server.py:222 | fit_round 7: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:47,257 | server.py:236 | fit_round 7 received 184 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:00:47,578 | server.py:125 | fit progress: (7, 0.9937613597473938, {'accuracy': 0.5871}, 19.765165358083323)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:47,582 | server.py:173 | evaluate_round 7: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:48,333 | server.py:187 | evaluate_round 7 received 184 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:48,334 | server.py:222 | fit_round 8: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:48,916 | server.py:236 | fit_round 8 received 184 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:00:49,241 | server.py:125 | fit progress: (8, 0.9893995681188444, {'accuracy': 0.53}, 21.427661577938125)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:49,245 | server.py:173 | evaluate_round 8: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:50,011 | server.py:187 | evaluate_round 8 received 184 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:50,012 | server.py:222 | fit_round 9: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:50,570 | server.py:236 | fit_round 9 received 184 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:00:50,883 | server.py:125 | fit progress: (9, 0.9762727041485865, {'accuracy': 0.5913}, 23.069968634052202)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:50,885 | server.py:173 | evaluate_round 9: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:51,643 | server.py:187 | evaluate_round 9 received 184 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:51,643 | server.py:222 | fit_round 10: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:52,221 | server.py:236 | fit_round 10 received 184 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:00:52,545 | server.py:125 | fit progress: (10, 0.8468403807804776, {'accuracy': 0.6081}, 24.732038347050548)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:52,548 | server.py:173 | evaluate_round 10: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:00:53,310 | server.py:187 | evaluate_round 10 received 184 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:00:53,311 | server.py:153 | FL finished in 25.497633188962936
+FedKrum Server | INFO flwr 2024-04-02 11:00:53,312 | app.py:226 | app_fit: losses_distributed [(1, 1.0162438956817779), (2, 0.9814137427703195), (3, 1.028720083767953), (4, 0.9911053096470626), (5, 1.010824562738771), (6, 0.9968493516030519), (7, 1.0099525717289553), (8, 1.0069270399601564), (9, 0.9944842357350432), (10, 0.8437392705160639)]
+FedKrum Server | INFO flwr 2024-04-02 11:00:53,312 | app.py:227 | app_fit: metrics_distributed_fit {}
+FedKrum Server | INFO flwr 2024-04-02 11:00:53,312 | app.py:228 | app_fit: metrics_distributed {}
+FedKrum Server | INFO flwr 2024-04-02 11:00:53,312 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 1.0042811226817663), (2, 0.9704405492328442), (3, 1.0077016108891124), (4, 0.9789733251581367), (5, 1.0039440966554358), (6, 0.9763993394353242), (7, 0.9937613597473938), (8, 0.9893995681188444), (9, 0.9762727041485865), (10, 0.8468403807804776)]
+FedKrum Server | INFO flwr 2024-04-02 11:00:53,312 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5601), (2, 0.5276), (3, 0.5886), (4, 0.5209), (5, 0.5881), (6, 0.5241), (7, 0.5871), (8, 0.53), (9, 0.5913), (10, 0.6081)]}
+FedKrum Server | INFO flwr 2024-04-02 11:00:59,019 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+FedKrum Server | INFO flwr 2024-04-02 11:00:59,035 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+FedKrum Server | INFO flwr 2024-04-02 11:00:59,035 | server.py:89 | Initializing global parameters
+FedKrum Server | INFO flwr 2024-04-02 11:00:59,036 | server.py:276 | Requesting initial parameters from one random client
+FedKrum Server | INFO flwr 2024-04-02 11:03:49,899 | server.py:280 | Received initial parameters from one random client
+FedKrum Server | INFO flwr 2024-04-02 11:03:49,899 | server.py:91 | Evaluating initial parameters
+FedKrum Server | INFO flwr 2024-04-02 11:03:49,935 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+FedKrum Server | INFO flwr 2024-04-02 11:03:49,939 | server.py:104 | FL starting
+FedKrum Server | DEBUG flwr 2024-04-02 11:04:57,495 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 100)
+FedKrum Server | DEBUG flwr 2024-04-02 11:04:57,979 | server.py:236 | fit_round 1 received 2 results and 0 failures
+FedKrum Server | WARNING flwr 2024-04-02 11:04:57,981 | krum.py:153 | No fit_metrics_aggregation_fn provided
+FedKrum Server | INFO flwr 2024-04-02 11:04:58,008 | server.py:125 | fit progress: (1, 0.9872639514558086, {'accuracy': 0.5507}, 68.06819794583134)
+FedKrum Server | DEBUG flwr 2024-04-02 11:04:58,012 | server.py:173 | evaluate_round 1: strategy sampled 111 clients (out of 111)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:04,292 | server.py:187 | evaluate_round 1 received 111 results and 0 failures
+FedKrum Server | WARNING flwr 2024-04-02 11:05:04,292 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:04,292 | server.py:222 | fit_round 2: strategy sampled 176 clients (out of 176)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:05,906 | server.py:236 | fit_round 2 received 176 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:05:06,189 | server.py:125 | fit progress: (2, 0.9643534229852366, {'accuracy': 0.5233}, 76.24890194297768)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:06,190 | server.py:173 | evaluate_round 2: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:07,360 | server.py:187 | evaluate_round 2 received 188 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:07,361 | server.py:222 | fit_round 3: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:08,021 | server.py:236 | fit_round 3 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:05:08,340 | server.py:125 | fit progress: (3, 0.9867578292298862, {'accuracy': 0.5876}, 78.39967922493815)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:08,344 | server.py:173 | evaluate_round 3: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:09,165 | server.py:187 | evaluate_round 3 received 188 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:09,166 | server.py:222 | fit_round 4: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:09,820 | server.py:236 | fit_round 4 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:05:10,229 | server.py:125 | fit progress: (4, 0.8541432519469003, {'accuracy': 0.5951}, 80.2885437249206)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:10,232 | server.py:173 | evaluate_round 4: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:11,077 | server.py:187 | evaluate_round 4 received 188 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:11,078 | server.py:222 | fit_round 5: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:11,707 | server.py:236 | fit_round 5 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:05:11,924 | server.py:125 | fit progress: (5, 0.8583277726400985, {'accuracy': 0.5851}, 81.98345798184164)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:11,925 | server.py:173 | evaluate_round 5: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:12,747 | server.py:187 | evaluate_round 5 received 188 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:12,748 | server.py:222 | fit_round 6: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:13,367 | server.py:236 | fit_round 6 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:05:13,682 | server.py:125 | fit progress: (6, 0.8493756915600288, {'accuracy': 0.5869}, 83.74233044986613)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:13,684 | server.py:173 | evaluate_round 6: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:14,489 | server.py:187 | evaluate_round 6 received 188 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:14,490 | server.py:222 | fit_round 7: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:15,113 | server.py:236 | fit_round 7 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:05:15,453 | server.py:125 | fit progress: (7, 0.8389624474700109, {'accuracy': 0.5969}, 85.51284454087727)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:15,457 | server.py:173 | evaluate_round 7: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:16,251 | server.py:187 | evaluate_round 7 received 188 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:16,252 | server.py:222 | fit_round 8: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:16,867 | server.py:236 | fit_round 8 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:05:17,036 | server.py:125 | fit progress: (8, 0.8452220572237322, {'accuracy': 0.5863}, 87.0957321380265)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:17,037 | server.py:173 | evaluate_round 8: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:17,851 | server.py:187 | evaluate_round 8 received 188 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:17,852 | server.py:222 | fit_round 9: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:18,472 | server.py:236 | fit_round 9 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:05:18,810 | server.py:125 | fit progress: (9, 0.8370555295567825, {'accuracy': 0.6006}, 88.87031661183573)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:18,815 | server.py:173 | evaluate_round 9: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:19,597 | server.py:187 | evaluate_round 9 received 188 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:19,598 | server.py:222 | fit_round 10: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:20,220 | server.py:236 | fit_round 10 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:05:20,523 | server.py:125 | fit progress: (10, 0.848189284636756, {'accuracy': 0.5862}, 90.58271422493272)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:20,525 | server.py:173 | evaluate_round 10: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:05:21,340 | server.py:187 | evaluate_round 10 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:05:21,341 | server.py:153 | FL finished in 91.40099654882215
+FedKrum Server | INFO flwr 2024-04-02 11:05:21,342 | app.py:226 | app_fit: losses_distributed [(1, 1.0016515539573119), (2, 0.9642206462139779), (3, 0.9914453638360855), (4, 0.8545481698944214), (5, 0.8582733986859626), (6, 0.8522819987636931), (7, 0.8382343678398335), (8, 0.8443587739416893), (9, 0.8365448485029504), (10, 0.8486067966577855)]
+FedKrum Server | INFO flwr 2024-04-02 11:05:21,342 | app.py:227 | app_fit: metrics_distributed_fit {}
+FedKrum Server | INFO flwr 2024-04-02 11:05:21,342 | app.py:228 | app_fit: metrics_distributed {}
+FedKrum Server | INFO flwr 2024-04-02 11:05:21,342 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9872639514558086), (2, 0.9643534229852366), (3, 0.9867578292298862), (4, 0.8541432519469003), (5, 0.8583277726400985), (6, 0.8493756915600288), (7, 0.8389624474700109), (8, 0.8452220572237322), (9, 0.8370555295567825), (10, 0.848189284636756)]
+FedKrum Server | INFO flwr 2024-04-02 11:05:21,342 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5507), (2, 0.5233), (3, 0.5876), (4, 0.5951), (5, 0.5851), (6, 0.5869), (7, 0.5969), (8, 0.5863), (9, 0.6006), (10, 0.5862)]}
+FedKrum Server | INFO flwr 2024-04-02 11:05:27,080 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+FedKrum Server | INFO flwr 2024-04-02 11:05:27,107 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+FedKrum Server | INFO flwr 2024-04-02 11:05:27,107 | server.py:89 | Initializing global parameters
+FedKrum Server | INFO flwr 2024-04-02 11:05:27,107 | server.py:276 | Requesting initial parameters from one random client
+FedKrum Server | INFO flwr 2024-04-02 11:08:18,224 | server.py:280 | Received initial parameters from one random client
+FedKrum Server | INFO flwr 2024-04-02 11:08:18,225 | server.py:91 | Evaluating initial parameters
+FedKrum Server | INFO flwr 2024-04-02 11:08:18,260 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+FedKrum Server | INFO flwr 2024-04-02 11:08:18,264 | server.py:104 | FL starting
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:17,416 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 100)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:17,769 | server.py:236 | fit_round 1 received 2 results and 0 failures
+FedKrum Server | WARNING flwr 2024-04-02 11:09:17,771 | krum.py:153 | No fit_metrics_aggregation_fn provided
+FedKrum Server | INFO flwr 2024-04-02 11:09:17,798 | server.py:125 | fit progress: (1, 0.9677182890218766, {'accuracy': 0.5649}, 59.532825079979375)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:17,802 | server.py:173 | evaluate_round 1: strategy sampled 104 clients (out of 104)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:23,287 | server.py:187 | evaluate_round 1 received 104 results and 0 failures
+FedKrum Server | WARNING flwr 2024-04-02 11:09:23,288 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:23,288 | server.py:222 | fit_round 2: strategy sampled 170 clients (out of 170)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:24,875 | server.py:236 | fit_round 2 received 170 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:09:25,147 | server.py:125 | fit progress: (2, 1.0038898980396898, {'accuracy': 0.5248}, 66.88160102302209)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:25,149 | server.py:173 | evaluate_round 2: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:26,755 | server.py:187 | evaluate_round 2 received 188 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:26,756 | server.py:222 | fit_round 3: strategy sampled 191 clients (out of 191)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:27,405 | server.py:236 | fit_round 3 received 191 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:09:27,718 | server.py:125 | fit progress: (3, 0.9961167265223292, {'accuracy': 0.5895}, 69.4534785230644)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:27,720 | server.py:173 | evaluate_round 3: strategy sampled 191 clients (out of 191)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:28,541 | server.py:187 | evaluate_round 3 received 191 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:28,542 | server.py:222 | fit_round 4: strategy sampled 191 clients (out of 191)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:29,182 | server.py:236 | fit_round 4 received 191 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:09:29,443 | server.py:125 | fit progress: (4, 0.9937139032789957, {'accuracy': 0.516}, 71.17836742312647)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:29,445 | server.py:173 | evaluate_round 4: strategy sampled 191 clients (out of 191)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:30,265 | server.py:187 | evaluate_round 4 received 191 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:30,266 | server.py:222 | fit_round 5: strategy sampled 191 clients (out of 191)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:30,896 | server.py:236 | fit_round 5 received 191 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:09:31,233 | server.py:125 | fit progress: (5, 0.9779016030331602, {'accuracy': 0.5942}, 72.9684434379451)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:31,236 | server.py:173 | evaluate_round 5: strategy sampled 191 clients (out of 191)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:32,049 | server.py:187 | evaluate_round 5 received 191 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:32,050 | server.py:222 | fit_round 6: strategy sampled 191 clients (out of 191)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:32,685 | server.py:236 | fit_round 6 received 191 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:09:33,014 | server.py:125 | fit progress: (6, 1.0021202523860038, {'accuracy': 0.5203}, 74.74864069302566)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:33,018 | server.py:173 | evaluate_round 6: strategy sampled 191 clients (out of 191)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:33,793 | server.py:187 | evaluate_round 6 received 191 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:33,794 | server.py:222 | fit_round 7: strategy sampled 191 clients (out of 191)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:34,363 | server.py:236 | fit_round 7 received 191 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:09:34,708 | server.py:125 | fit progress: (7, 0.9734241881536378, {'accuracy': 0.5955}, 76.44304472510703)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:34,712 | server.py:173 | evaluate_round 7: strategy sampled 191 clients (out of 191)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:35,473 | server.py:187 | evaluate_round 7 received 191 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:35,474 | server.py:222 | fit_round 8: strategy sampled 191 clients (out of 191)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:36,053 | server.py:236 | fit_round 8 received 191 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:09:36,388 | server.py:125 | fit progress: (8, 0.852867245965417, {'accuracy': 0.5959}, 78.12317497516051)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:36,392 | server.py:173 | evaluate_round 8: strategy sampled 191 clients (out of 191)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:37,174 | server.py:187 | evaluate_round 8 received 191 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:37,174 | server.py:222 | fit_round 9: strategy sampled 191 clients (out of 191)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:37,754 | server.py:236 | fit_round 9 received 191 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:09:38,082 | server.py:125 | fit progress: (9, 0.8634442203859051, {'accuracy': 0.5989}, 79.8173578651622)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:38,085 | server.py:173 | evaluate_round 9: strategy sampled 191 clients (out of 191)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:38,833 | server.py:187 | evaluate_round 9 received 191 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:38,834 | server.py:222 | fit_round 10: strategy sampled 191 clients (out of 191)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:39,452 | server.py:236 | fit_round 10 received 191 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:09:39,793 | server.py:125 | fit progress: (10, 0.8450625961493717, {'accuracy': 0.5991}, 81.52768873097375)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:39,796 | server.py:173 | evaluate_round 10: strategy sampled 191 clients (out of 191)
+FedKrum Server | DEBUG flwr 2024-04-02 11:09:40,551 | server.py:187 | evaluate_round 10 received 191 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:09:40,551 | server.py:153 | FL finished in 82.28641633898951
+FedKrum Server | INFO flwr 2024-04-02 11:09:40,552 | app.py:226 | app_fit: losses_distributed [(1, 0.9894570249777573), (2, 1.0210078041604225), (3, 1.0275363947084437), (4, 1.0100094310900303), (5, 1.0087397644657115), (6, 1.0203686521939581), (7, 1.0046065459076647), (8, 0.864340583379356), (9, 0.8786258575803947), (10, 0.8535375027132284)]
+FedKrum Server | INFO flwr 2024-04-02 11:09:40,552 | app.py:227 | app_fit: metrics_distributed_fit {}
+FedKrum Server | INFO flwr 2024-04-02 11:09:40,552 | app.py:228 | app_fit: metrics_distributed {}
+FedKrum Server | INFO flwr 2024-04-02 11:09:40,553 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9677182890218766), (2, 1.0038898980396898), (3, 0.9961167265223292), (4, 0.9937139032789957), (5, 0.9779016030331602), (6, 1.0021202523860038), (7, 0.9734241881536378), (8, 0.852867245965417), (9, 0.8634442203859051), (10, 0.8450625961493717)]
+FedKrum Server | INFO flwr 2024-04-02 11:09:40,553 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5649), (2, 0.5248), (3, 0.5895), (4, 0.516), (5, 0.5942), (6, 0.5203), (7, 0.5955), (8, 0.5959), (9, 0.5989), (10, 0.5991)]}
+FedKrum Server | INFO flwr 2024-04-02 11:09:46,578 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+FedKrum Server | INFO flwr 2024-04-02 11:09:46,587 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+FedKrum Server | INFO flwr 2024-04-02 11:09:46,588 | server.py:89 | Initializing global parameters
+FedKrum Server | INFO flwr 2024-04-02 11:09:46,588 | server.py:276 | Requesting initial parameters from one random client
+FedKrum Server | INFO flwr 2024-04-02 11:12:39,395 | server.py:280 | Received initial parameters from one random client
+FedKrum Server | INFO flwr 2024-04-02 11:12:39,395 | server.py:91 | Evaluating initial parameters
+FedKrum Server | INFO flwr 2024-04-02 11:12:39,418 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+FedKrum Server | INFO flwr 2024-04-02 11:12:39,419 | server.py:104 | FL starting
+FedKrum Server | DEBUG flwr 2024-04-02 11:13:52,443 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 100)
+FedKrum Server | DEBUG flwr 2024-04-02 11:13:52,842 | server.py:236 | fit_round 1 received 2 results and 0 failures
+FedKrum Server | WARNING flwr 2024-04-02 11:13:52,843 | krum.py:153 | No fit_metrics_aggregation_fn provided
+FedKrum Server | INFO flwr 2024-04-02 11:13:52,858 | server.py:125 | fit progress: (1, 0.9377216819762921, {'accuracy': 0.5646}, 73.43810773082078)
+FedKrum Server | DEBUG flwr 2024-04-02 11:13:52,859 | server.py:173 | evaluate_round 1: strategy sampled 105 clients (out of 105)
+FedKrum Server | DEBUG flwr 2024-04-02 11:13:57,768 | server.py:187 | evaluate_round 1 received 105 results and 0 failures
+FedKrum Server | WARNING flwr 2024-04-02 11:13:57,768 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+FedKrum Server | DEBUG flwr 2024-04-02 11:13:57,769 | server.py:222 | fit_round 2: strategy sampled 174 clients (out of 174)
+FedKrum Server | DEBUG flwr 2024-04-02 11:13:59,212 | server.py:236 | fit_round 2 received 174 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:13:59,483 | server.py:125 | fit progress: (2, 1.0237697073720697, {'accuracy': 0.52}, 80.0625623059459)
+FedKrum Server | DEBUG flwr 2024-04-02 11:13:59,486 | server.py:173 | evaluate_round 2: strategy sampled 187 clients (out of 187)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:00,553 | server.py:187 | evaluate_round 2 received 187 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:00,553 | server.py:222 | fit_round 3: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:01,196 | server.py:236 | fit_round 3 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:14:01,495 | server.py:125 | fit progress: (3, 0.9485105037135986, {'accuracy': 0.5936}, 82.07424464798532)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:01,496 | server.py:173 | evaluate_round 3: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:02,296 | server.py:187 | evaluate_round 3 received 188 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:02,296 | server.py:222 | fit_round 4: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:02,940 | server.py:236 | fit_round 4 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:14:03,212 | server.py:125 | fit progress: (4, 0.8586831767588934, {'accuracy': 0.5807}, 83.79199210600927)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:03,213 | server.py:173 | evaluate_round 4: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:04,001 | server.py:187 | evaluate_round 4 received 188 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:04,003 | server.py:222 | fit_round 5: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:04,634 | server.py:236 | fit_round 5 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:14:04,947 | server.py:125 | fit progress: (5, 0.8620336947655142, {'accuracy': 0.5985}, 85.52638253290206)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:04,949 | server.py:173 | evaluate_round 5: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:05,740 | server.py:187 | evaluate_round 5 received 188 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:05,741 | server.py:222 | fit_round 6: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:06,372 | server.py:236 | fit_round 6 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:14:06,650 | server.py:125 | fit progress: (6, 0.8479513757558717, {'accuracy': 0.5889}, 87.22923007095233)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:06,654 | server.py:173 | evaluate_round 6: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:07,458 | server.py:187 | evaluate_round 6 received 188 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:07,459 | server.py:222 | fit_round 7: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:08,069 | server.py:236 | fit_round 7 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:14:08,398 | server.py:125 | fit progress: (7, 0.8505303348343259, {'accuracy': 0.5954}, 88.97793619497679)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:08,400 | server.py:173 | evaluate_round 7: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:09,189 | server.py:187 | evaluate_round 7 received 188 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:09,190 | server.py:222 | fit_round 8: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:09,821 | server.py:236 | fit_round 8 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:14:10,146 | server.py:125 | fit progress: (8, 0.8484196408081159, {'accuracy': 0.587}, 90.72553872782737)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:10,149 | server.py:173 | evaluate_round 8: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:10,939 | server.py:187 | evaluate_round 8 received 188 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:10,940 | server.py:222 | fit_round 9: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:11,570 | server.py:236 | fit_round 9 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:14:11,742 | server.py:125 | fit progress: (9, 0.8553100070224087, {'accuracy': 0.5976}, 92.32200635992922)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:11,744 | server.py:173 | evaluate_round 9: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:12,725 | server.py:187 | evaluate_round 9 received 188 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:12,726 | server.py:222 | fit_round 10: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:13,332 | server.py:236 | fit_round 10 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:14:13,640 | server.py:125 | fit progress: (10, 0.8460749061602639, {'accuracy': 0.5898}, 94.21948447893374)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:13,642 | server.py:173 | evaluate_round 10: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:14:14,420 | server.py:187 | evaluate_round 10 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:14:14,420 | server.py:153 | FL finished in 94.99998551886529
+FedKrum Server | INFO flwr 2024-04-02 11:14:14,421 | app.py:226 | app_fit: losses_distributed [(1, 0.9465741009939285), (2, 1.0398964285850525), (3, 0.963153119416947), (4, 0.8570742264707037), (5, 0.8662032355019387), (6, 0.8478418816911414), (7, 0.8505269625085465), (8, 0.8476338059978282), (9, 0.8580799280328953), (10, 0.8459976854476523)]
+FedKrum Server | INFO flwr 2024-04-02 11:14:14,421 | app.py:227 | app_fit: metrics_distributed_fit {}
+FedKrum Server | INFO flwr 2024-04-02 11:14:14,421 | app.py:228 | app_fit: metrics_distributed {}
+FedKrum Server | INFO flwr 2024-04-02 11:14:14,421 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9377216819762921), (2, 1.0237697073720697), (3, 0.9485105037135986), (4, 0.8586831767588934), (5, 0.8620336947655142), (6, 0.8479513757558717), (7, 0.8505303348343259), (8, 0.8484196408081159), (9, 0.8553100070224087), (10, 0.8460749061602639)]
+FedKrum Server | INFO flwr 2024-04-02 11:14:14,422 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5646), (2, 0.52), (3, 0.5936), (4, 0.5807), (5, 0.5985), (6, 0.5889), (7, 0.5954), (8, 0.587), (9, 0.5976), (10, 0.5898)]}
+FedKrum Server | INFO flwr 2024-04-02 11:14:20,049 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+FedKrum Server | INFO flwr 2024-04-02 11:14:20,059 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+FedKrum Server | INFO flwr 2024-04-02 11:14:20,059 | server.py:89 | Initializing global parameters
+FedKrum Server | INFO flwr 2024-04-02 11:14:20,059 | server.py:276 | Requesting initial parameters from one random client
+FedKrum Server | INFO flwr 2024-04-02 11:17:13,763 | server.py:280 | Received initial parameters from one random client
+FedKrum Server | INFO flwr 2024-04-02 11:17:13,763 | server.py:91 | Evaluating initial parameters
+FedKrum Server | INFO flwr 2024-04-02 11:17:13,799 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+FedKrum Server | INFO flwr 2024-04-02 11:17:13,803 | server.py:104 | FL starting
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:07,302 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 100)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:07,750 | server.py:236 | fit_round 1 received 2 results and 0 failures
+FedKrum Server | WARNING flwr 2024-04-02 11:19:07,751 | krum.py:153 | No fit_metrics_aggregation_fn provided
+FedKrum Server | INFO flwr 2024-04-02 11:19:07,768 | server.py:125 | fit progress: (1, 0.9367380284959052, {'accuracy': 0.5379}, 113.96363324602135)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:07,769 | server.py:173 | evaluate_round 1: strategy sampled 118 clients (out of 118)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:13,027 | server.py:187 | evaluate_round 1 received 118 results and 0 failures
+FedKrum Server | WARNING flwr 2024-04-02 11:19:13,027 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:13,028 | server.py:222 | fit_round 2: strategy sampled 180 clients (out of 180)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:14,071 | server.py:236 | fit_round 2 received 180 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:19:14,367 | server.py:125 | fit progress: (2, 0.9923555729193139, {'accuracy': 0.5848}, 120.56303481198847)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:14,372 | server.py:173 | evaluate_round 2: strategy sampled 180 clients (out of 180)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:15,155 | server.py:187 | evaluate_round 2 received 180 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:15,155 | server.py:222 | fit_round 3: strategy sampled 180 clients (out of 180)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:15,745 | server.py:236 | fit_round 3 received 180 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:19:16,030 | server.py:125 | fit progress: (3, 0.981486635924791, {'accuracy': 0.5184}, 122.22554052108899)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:16,032 | server.py:173 | evaluate_round 3: strategy sampled 180 clients (out of 180)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:16,776 | server.py:187 | evaluate_round 3 received 180 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:16,776 | server.py:222 | fit_round 4: strategy sampled 180 clients (out of 180)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:17,359 | server.py:236 | fit_round 4 received 180 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:19:17,744 | server.py:125 | fit progress: (4, 0.995519459090177, {'accuracy': 0.5911}, 123.93981675500982)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:17,748 | server.py:173 | evaluate_round 4: strategy sampled 180 clients (out of 180)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:18,493 | server.py:187 | evaluate_round 4 received 180 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:18,494 | server.py:222 | fit_round 5: strategy sampled 180 clients (out of 180)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:19,073 | server.py:236 | fit_round 5 received 180 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:19:19,374 | server.py:125 | fit progress: (5, 0.9691364979073566, {'accuracy': 0.5314}, 125.56985244504176)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:19,377 | server.py:173 | evaluate_round 5: strategy sampled 180 clients (out of 180)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:20,115 | server.py:187 | evaluate_round 5 received 180 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:20,116 | server.py:222 | fit_round 6: strategy sampled 180 clients (out of 180)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:20,663 | server.py:236 | fit_round 6 received 180 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:19:20,972 | server.py:125 | fit progress: (6, 1.007841087860284, {'accuracy': 0.5909}, 127.16803596098907)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:20,977 | server.py:173 | evaluate_round 6: strategy sampled 180 clients (out of 180)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:21,711 | server.py:187 | evaluate_round 6 received 180 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:21,712 | server.py:222 | fit_round 7: strategy sampled 180 clients (out of 180)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:22,249 | server.py:236 | fit_round 7 received 180 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:19:22,557 | server.py:125 | fit progress: (7, 0.9584727282646878, {'accuracy': 0.5373}, 128.75297404197045)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:22,559 | server.py:173 | evaluate_round 7: strategy sampled 180 clients (out of 180)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:23,302 | server.py:187 | evaluate_round 7 received 180 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:23,303 | server.py:222 | fit_round 8: strategy sampled 180 clients (out of 180)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:23,875 | server.py:236 | fit_round 8 received 180 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:19:24,126 | server.py:125 | fit progress: (8, 1.0219756382886518, {'accuracy': 0.5899}, 130.32123116310686)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:24,130 | server.py:173 | evaluate_round 8: strategy sampled 180 clients (out of 180)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:24,883 | server.py:187 | evaluate_round 8 received 180 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:24,884 | server.py:222 | fit_round 9: strategy sampled 180 clients (out of 180)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:25,429 | server.py:236 | fit_round 9 received 180 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:19:25,737 | server.py:125 | fit progress: (9, 0.960265624934142, {'accuracy': 0.5379}, 131.9329278001096)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:25,741 | server.py:173 | evaluate_round 9: strategy sampled 180 clients (out of 180)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:26,483 | server.py:187 | evaluate_round 9 received 180 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:26,483 | server.py:222 | fit_round 10: strategy sampled 180 clients (out of 180)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:27,023 | server.py:236 | fit_round 10 received 180 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:19:27,182 | server.py:125 | fit progress: (10, 1.0300306777175487, {'accuracy': 0.5897}, 133.37818560400046)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:27,183 | server.py:173 | evaluate_round 10: strategy sampled 180 clients (out of 180)
+FedKrum Server | DEBUG flwr 2024-04-02 11:19:27,910 | server.py:187 | evaluate_round 10 received 180 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:19:27,912 | server.py:153 | FL finished in 134.10795024898835
+FedKrum Server | INFO flwr 2024-04-02 11:19:27,914 | app.py:226 | app_fit: losses_distributed [(1, 0.9554128606440657), (2, 1.023477664589882), (3, 0.9939630505111482), (4, 1.0099160863293541), (5, 0.9863557620180978), (6, 1.0183974352147844), (7, 0.9800542404254278), (8, 1.030978304809994), (9, 0.984345879819658), (10, 1.0379038787550396)]
+FedKrum Server | INFO flwr 2024-04-02 11:19:27,915 | app.py:227 | app_fit: metrics_distributed_fit {}
+FedKrum Server | INFO flwr 2024-04-02 11:19:27,916 | app.py:228 | app_fit: metrics_distributed {}
+FedKrum Server | INFO flwr 2024-04-02 11:19:27,917 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9367380284959052), (2, 0.9923555729193139), (3, 0.981486635924791), (4, 0.995519459090177), (5, 0.9691364979073566), (6, 1.007841087860284), (7, 0.9584727282646878), (8, 1.0219756382886518), (9, 0.960265624934142), (10, 1.0300306777175487)]
+FedKrum Server | INFO flwr 2024-04-02 11:19:27,919 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5379), (2, 0.5848), (3, 0.5184), (4, 0.5911), (5, 0.5314), (6, 0.5909), (7, 0.5373), (8, 0.5899), (9, 0.5379), (10, 0.5897)]}
+FedKrum Server | INFO flwr 2024-04-02 11:19:33,771 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+FedKrum Server | INFO flwr 2024-04-02 11:19:33,795 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+FedKrum Server | INFO flwr 2024-04-02 11:19:33,795 | server.py:89 | Initializing global parameters
+FedKrum Server | INFO flwr 2024-04-02 11:19:33,795 | server.py:276 | Requesting initial parameters from one random client
+FedKrum Server | INFO flwr 2024-04-02 11:23:40,404 | server.py:280 | Received initial parameters from one random client
+FedKrum Server | INFO flwr 2024-04-02 11:23:40,404 | server.py:91 | Evaluating initial parameters
+FedKrum Server | INFO flwr 2024-04-02 11:23:40,426 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+FedKrum Server | INFO flwr 2024-04-02 11:23:40,428 | server.py:104 | FL starting
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:44,415 | server.py:222 | fit_round 1: strategy sampled 5 clients (out of 100)
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:44,974 | server.py:236 | fit_round 1 received 5 results and 0 failures
+FedKrum Server | WARNING flwr 2024-04-02 11:23:44,976 | krum.py:153 | No fit_metrics_aggregation_fn provided
+FedKrum Server | INFO flwr 2024-04-02 11:23:45,003 | server.py:125 | fit progress: (1, 0.9802082914178696, {'accuracy': 0.5475}, 4.573709432967007)
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:45,008 | server.py:173 | evaluate_round 1: strategy sampled 113 clients (out of 113)
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:50,123 | server.py:187 | evaluate_round 1 received 113 results and 0 failures
+FedKrum Server | WARNING flwr 2024-04-02 11:23:50,123 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:50,123 | server.py:222 | fit_round 2: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:51,133 | server.py:236 | fit_round 2 received 184 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:23:51,399 | server.py:125 | fit progress: (2, 0.9438780455657739, {'accuracy': 0.5405}, 10.969213069882244)
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:51,400 | server.py:173 | evaluate_round 2: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:52,201 | server.py:187 | evaluate_round 2 received 184 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:52,202 | server.py:222 | fit_round 3: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:52,828 | server.py:236 | fit_round 3 received 184 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:23:53,127 | server.py:125 | fit progress: (3, 0.8582338972798196, {'accuracy': 0.586}, 12.698030444793403)
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:53,129 | server.py:173 | evaluate_round 3: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:53,924 | server.py:187 | evaluate_round 3 received 184 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:53,925 | server.py:222 | fit_round 4: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:54,550 | server.py:236 | fit_round 4 received 184 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:23:54,941 | server.py:125 | fit progress: (4, 0.8719929338502732, {'accuracy': 0.5694}, 14.511637254850939)
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:54,944 | server.py:173 | evaluate_round 4: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:55,723 | server.py:187 | evaluate_round 4 received 184 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:55,724 | server.py:222 | fit_round 5: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:56,348 | server.py:236 | fit_round 5 received 184 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:23:56,530 | server.py:125 | fit progress: (5, 0.8460668005240004, {'accuracy': 0.5993}, 16.10088578192517)
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:56,532 | server.py:173 | evaluate_round 5: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:57,294 | server.py:187 | evaluate_round 5 received 184 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:57,295 | server.py:222 | fit_round 6: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:57,892 | server.py:236 | fit_round 6 received 184 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:23:58,214 | server.py:125 | fit progress: (6, 0.8628450238150223, {'accuracy': 0.5787}, 17.78461247193627)
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:58,218 | server.py:173 | evaluate_round 6: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:58,993 | server.py:187 | evaluate_round 6 received 184 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:58,994 | server.py:222 | fit_round 7: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:59,594 | server.py:236 | fit_round 7 received 184 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:23:59,860 | server.py:125 | fit progress: (7, 0.8416777946522125, {'accuracy': 0.5996}, 19.430205596843734)
+FedKrum Server | DEBUG flwr 2024-04-02 11:23:59,861 | server.py:173 | evaluate_round 7: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:24:00,613 | server.py:187 | evaluate_round 7 received 184 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:24:00,614 | server.py:222 | fit_round 8: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:24:01,209 | server.py:236 | fit_round 8 received 184 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:24:01,524 | server.py:125 | fit progress: (8, 0.8476139795834637, {'accuracy': 0.5926}, 21.09416533797048)
+FedKrum Server | DEBUG flwr 2024-04-02 11:24:01,529 | server.py:173 | evaluate_round 8: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:24:02,288 | server.py:187 | evaluate_round 8 received 184 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:24:02,289 | server.py:222 | fit_round 9: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:24:02,899 | server.py:236 | fit_round 9 received 184 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:24:03,207 | server.py:125 | fit progress: (9, 0.8392462107415694, {'accuracy': 0.6008}, 22.777259496971965)
+FedKrum Server | DEBUG flwr 2024-04-02 11:24:03,208 | server.py:173 | evaluate_round 9: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:24:03,968 | server.py:187 | evaluate_round 9 received 184 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:24:03,969 | server.py:222 | fit_round 10: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:24:04,552 | server.py:236 | fit_round 10 received 184 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:24:04,866 | server.py:125 | fit progress: (10, 0.858679330676043, {'accuracy': 0.5767}, 24.436723744962364)
+FedKrum Server | DEBUG flwr 2024-04-02 11:24:04,868 | server.py:173 | evaluate_round 10: strategy sampled 184 clients (out of 184)
+FedKrum Server | DEBUG flwr 2024-04-02 11:24:05,627 | server.py:187 | evaluate_round 10 received 184 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:24:05,627 | server.py:153 | FL finished in 25.19799991394393
+FedKrum Server | INFO flwr 2024-04-02 11:24:05,630 | app.py:226 | app_fit: losses_distributed [(1, 1.000550925731659), (2, 0.954744402481162), (3, 0.8723730269981467), (4, 0.8815178181166234), (5, 0.8563437944521075), (6, 0.8696828144400016), (7, 0.8506450299983439), (8, 0.8564678443514783), (9, 0.8494945754823477), (10, 0.8622109306895215)]
+FedKrum Server | INFO flwr 2024-04-02 11:24:05,631 | app.py:227 | app_fit: metrics_distributed_fit {}
+FedKrum Server | INFO flwr 2024-04-02 11:24:05,632 | app.py:228 | app_fit: metrics_distributed {}
+FedKrum Server | INFO flwr 2024-04-02 11:24:05,633 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9802082914178696), (2, 0.9438780455657739), (3, 0.8582338972798196), (4, 0.8719929338502732), (5, 0.8460668005240004), (6, 0.8628450238150223), (7, 0.8416777946522125), (8, 0.8476139795834637), (9, 0.8392462107415694), (10, 0.858679330676043)]
+FedKrum Server | INFO flwr 2024-04-02 11:24:05,635 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5475), (2, 0.5405), (3, 0.586), (4, 0.5694), (5, 0.5993), (6, 0.5787), (7, 0.5996), (8, 0.5926), (9, 0.6008), (10, 0.5767)]}
+FedKrum Server | INFO flwr 2024-04-02 11:24:11,297 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+FedKrum Server | INFO flwr 2024-04-02 11:24:11,306 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+FedKrum Server | INFO flwr 2024-04-02 11:24:11,307 | server.py:89 | Initializing global parameters
+FedKrum Server | INFO flwr 2024-04-02 11:24:11,307 | server.py:276 | Requesting initial parameters from one random client
+FedKrum Server | INFO flwr 2024-04-02 11:27:02,423 | server.py:280 | Received initial parameters from one random client
+FedKrum Server | INFO flwr 2024-04-02 11:27:02,423 | server.py:91 | Evaluating initial parameters
+FedKrum Server | INFO flwr 2024-04-02 11:27:02,446 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+FedKrum Server | INFO flwr 2024-04-02 11:27:02,448 | server.py:104 | FL starting
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:22,467 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 100)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:22,710 | server.py:236 | fit_round 1 received 2 results and 0 failures
+FedKrum Server | WARNING flwr 2024-04-02 11:28:22,712 | krum.py:153 | No fit_metrics_aggregation_fn provided
+FedKrum Server | INFO flwr 2024-04-02 11:28:22,738 | server.py:125 | fit progress: (1, 0.9754369972622884, {'accuracy': 0.553}, 80.28840205306187)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:22,742 | server.py:173 | evaluate_round 1: strategy sampled 106 clients (out of 106)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:28,312 | server.py:187 | evaluate_round 1 received 106 results and 0 failures
+FedKrum Server | WARNING flwr 2024-04-02 11:28:28,312 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:28,313 | server.py:222 | fit_round 2: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:29,730 | server.py:236 | fit_round 2 received 183 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:28:30,023 | server.py:125 | fit progress: (2, 0.983463242298024, {'accuracy': 0.5187}, 87.57363296602853)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:30,025 | server.py:173 | evaluate_round 2: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:30,889 | server.py:187 | evaluate_round 2 received 188 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:30,889 | server.py:222 | fit_round 3: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:31,541 | server.py:236 | fit_round 3 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:28:31,862 | server.py:125 | fit progress: (3, 0.9883028128746635, {'accuracy': 0.5827}, 89.41298252390698)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:31,866 | server.py:173 | evaluate_round 3: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:32,687 | server.py:187 | evaluate_round 3 received 188 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:32,688 | server.py:222 | fit_round 4: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:33,331 | server.py:236 | fit_round 4 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:28:33,694 | server.py:125 | fit progress: (4, 0.9952949983917473, {'accuracy': 0.5195}, 91.24496527784504)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:33,696 | server.py:173 | evaluate_round 4: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:34,507 | server.py:187 | evaluate_round 4 received 188 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:34,508 | server.py:222 | fit_round 5: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:35,130 | server.py:236 | fit_round 5 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:28:35,434 | server.py:125 | fit progress: (5, 0.9894132629837854, {'accuracy': 0.5854}, 92.98432385898195)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:35,436 | server.py:173 | evaluate_round 5: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:36,305 | server.py:187 | evaluate_round 5 received 188 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:36,305 | server.py:222 | fit_round 6: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:36,927 | server.py:236 | fit_round 6 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:28:37,252 | server.py:125 | fit progress: (6, 0.843635013652805, {'accuracy': 0.5954}, 94.80230147903785)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:37,254 | server.py:173 | evaluate_round 6: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:38,082 | server.py:187 | evaluate_round 6 received 188 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:38,082 | server.py:222 | fit_round 7: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:38,669 | server.py:236 | fit_round 7 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:28:38,919 | server.py:125 | fit progress: (7, 0.8530412297569281, {'accuracy': 0.5975}, 96.46955846901983)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:38,921 | server.py:173 | evaluate_round 7: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:39,737 | server.py:187 | evaluate_round 7 received 188 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:39,738 | server.py:222 | fit_round 8: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:40,356 | server.py:236 | fit_round 8 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:28:40,670 | server.py:125 | fit progress: (8, 0.8414674182681345, {'accuracy': 0.6032}, 98.22080334904604)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:40,672 | server.py:173 | evaluate_round 8: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:41,668 | server.py:187 | evaluate_round 8 received 188 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:41,669 | server.py:222 | fit_round 9: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:42,296 | server.py:236 | fit_round 9 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:28:42,623 | server.py:125 | fit progress: (9, 0.8513725863157179, {'accuracy': 0.5959}, 100.17382404906675)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:42,625 | server.py:173 | evaluate_round 9: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:43,408 | server.py:187 | evaluate_round 9 received 188 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:43,408 | server.py:222 | fit_round 10: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:44,018 | server.py:236 | fit_round 10 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:28:44,342 | server.py:125 | fit progress: (10, 0.8371549553314875, {'accuracy': 0.6}, 101.89234003890306)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:44,345 | server.py:173 | evaluate_round 10: strategy sampled 188 clients (out of 188)
+FedKrum Server | DEBUG flwr 2024-04-02 11:28:45,113 | server.py:187 | evaluate_round 10 received 188 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:28:45,114 | server.py:153 | FL finished in 102.6643068708945
+FedKrum Server | INFO flwr 2024-04-02 11:28:45,114 | app.py:226 | app_fit: losses_distributed [(1, 0.9862406557461001), (2, 0.9933137982449634), (3, 1.0012428760528564), (4, 1.0107920293478256), (5, 0.997372512170609), (6, 0.8433919390465351), (7, 0.856938214378154), (8, 0.8466916429869672), (9, 0.8451378091852716), (10, 0.8355368965483726)]
+FedKrum Server | INFO flwr 2024-04-02 11:28:45,115 | app.py:227 | app_fit: metrics_distributed_fit {}
+FedKrum Server | INFO flwr 2024-04-02 11:28:45,115 | app.py:228 | app_fit: metrics_distributed {}
+FedKrum Server | INFO flwr 2024-04-02 11:28:45,115 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9754369972622884), (2, 0.983463242298024), (3, 0.9883028128746635), (4, 0.9952949983917473), (5, 0.9894132629837854), (6, 0.843635013652805), (7, 0.8530412297569281), (8, 0.8414674182681345), (9, 0.8513725863157179), (10, 0.8371549553314875)]
+FedKrum Server | INFO flwr 2024-04-02 11:28:45,115 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.553), (2, 0.5187), (3, 0.5827), (4, 0.5195), (5, 0.5854), (6, 0.5954), (7, 0.5975), (8, 0.6032), (9, 0.5959), (10, 0.6)]}
+FedKrum Server | INFO flwr 2024-04-02 11:28:50,817 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+FedKrum Server | INFO flwr 2024-04-02 11:28:50,835 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+FedKrum Server | INFO flwr 2024-04-02 11:28:50,835 | server.py:89 | Initializing global parameters
+FedKrum Server | INFO flwr 2024-04-02 11:28:50,835 | server.py:276 | Requesting initial parameters from one random client
+FedKrum Server | INFO flwr 2024-04-02 11:31:41,223 | server.py:280 | Received initial parameters from one random client
+FedKrum Server | INFO flwr 2024-04-02 11:31:41,223 | server.py:91 | Evaluating initial parameters
+FedKrum Server | INFO flwr 2024-04-02 11:31:41,260 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+FedKrum Server | INFO flwr 2024-04-02 11:31:41,263 | server.py:104 | FL starting
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:07,797 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 100)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:08,272 | server.py:236 | fit_round 1 received 2 results and 0 failures
+FedKrum Server | WARNING flwr 2024-04-02 11:33:08,274 | krum.py:153 | No fit_metrics_aggregation_fn provided
+FedKrum Server | INFO flwr 2024-04-02 11:33:08,290 | server.py:125 | fit progress: (1, 0.9576569354252799, {'accuracy': 0.5801}, 87.02569821686484)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:08,291 | server.py:173 | evaluate_round 1: strategy sampled 105 clients (out of 105)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:13,559 | server.py:187 | evaluate_round 1 received 105 results and 0 failures
+FedKrum Server | WARNING flwr 2024-04-02 11:33:13,559 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:13,560 | server.py:222 | fit_round 2: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:14,605 | server.py:236 | fit_round 2 received 183 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:33:14,892 | server.py:125 | fit progress: (2, 0.8779454772290964, {'accuracy': 0.5688}, 93.62716386700049)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:14,896 | server.py:173 | evaluate_round 2: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:15,699 | server.py:187 | evaluate_round 2 received 183 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:15,700 | server.py:222 | fit_round 3: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:16,329 | server.py:236 | fit_round 3 received 183 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:33:16,595 | server.py:125 | fit progress: (3, 0.8704222441384558, {'accuracy': 0.5807}, 95.33059314498678)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:16,597 | server.py:173 | evaluate_round 3: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:17,377 | server.py:187 | evaluate_round 3 received 183 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:17,378 | server.py:222 | fit_round 4: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:18,016 | server.py:236 | fit_round 4 received 183 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:33:18,398 | server.py:125 | fit progress: (4, 0.8537032443696182, {'accuracy': 0.5879}, 97.1335182490293)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:18,400 | server.py:173 | evaluate_round 4: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:19,170 | server.py:187 | evaluate_round 4 received 183 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:19,171 | server.py:222 | fit_round 5: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:19,777 | server.py:236 | fit_round 5 received 183 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:33:19,963 | server.py:125 | fit progress: (5, 0.8591325499392518, {'accuracy': 0.5904}, 98.69884337298572)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:19,967 | server.py:173 | evaluate_round 5: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:20,740 | server.py:187 | evaluate_round 5 received 183 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:20,740 | server.py:222 | fit_round 6: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:21,364 | server.py:236 | fit_round 6 received 183 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:33:21,661 | server.py:125 | fit progress: (6, 0.8450525916740149, {'accuracy': 0.593}, 100.39668186591007)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:21,663 | server.py:173 | evaluate_round 6: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:22,450 | server.py:187 | evaluate_round 6 received 183 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:22,452 | server.py:222 | fit_round 7: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:23,023 | server.py:236 | fit_round 7 received 183 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:33:23,296 | server.py:125 | fit progress: (7, 0.8542541532241925, {'accuracy': 0.5934}, 102.03107590088621)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:23,300 | server.py:173 | evaluate_round 7: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:24,066 | server.py:187 | evaluate_round 7 received 183 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:24,067 | server.py:222 | fit_round 8: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:24,682 | server.py:236 | fit_round 8 received 183 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:33:24,991 | server.py:125 | fit progress: (8, 0.8452690992589007, {'accuracy': 0.5883}, 103.72643754491583)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:24,993 | server.py:173 | evaluate_round 8: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:25,792 | server.py:187 | evaluate_round 8 received 183 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:25,793 | server.py:222 | fit_round 9: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:26,435 | server.py:236 | fit_round 9 received 183 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:33:26,789 | server.py:125 | fit progress: (9, 0.8490296420765969, {'accuracy': 0.5902}, 105.52479749987833)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:26,796 | server.py:173 | evaluate_round 9: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:27,816 | server.py:187 | evaluate_round 9 received 183 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:27,817 | server.py:222 | fit_round 10: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:28,471 | server.py:236 | fit_round 10 received 183 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:33:29,033 | server.py:125 | fit progress: (10, 0.8396665873731496, {'accuracy': 0.5906}, 107.76875783805735)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:29,046 | server.py:173 | evaluate_round 10: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:33:29,885 | server.py:187 | evaluate_round 10 received 183 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:33:29,886 | server.py:153 | FL finished in 108.6215608830098
+FedKrum Server | INFO flwr 2024-04-02 11:33:29,888 | app.py:226 | app_fit: losses_distributed [(1, 0.9740694880485534), (2, 0.8801927446016197), (3, 0.8734711460728463), (4, 0.850806788342898), (5, 0.8574842406752331), (6, 0.8433935046195984), (7, 0.8517251604241751), (8, 0.8455066071833418), (9, 0.8474198061911786), (10, 0.8411114271221265)]
+FedKrum Server | INFO flwr 2024-04-02 11:33:29,889 | app.py:227 | app_fit: metrics_distributed_fit {}
+FedKrum Server | INFO flwr 2024-04-02 11:33:29,890 | app.py:228 | app_fit: metrics_distributed {}
+FedKrum Server | INFO flwr 2024-04-02 11:33:29,891 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9576569354252799), (2, 0.8779454772290964), (3, 0.8704222441384558), (4, 0.8537032443696182), (5, 0.8591325499392518), (6, 0.8450525916740149), (7, 0.8542541532241925), (8, 0.8452690992589007), (9, 0.8490296420765969), (10, 0.8396665873731496)]
+FedKrum Server | INFO flwr 2024-04-02 11:33:29,891 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5801), (2, 0.5688), (3, 0.5807), (4, 0.5879), (5, 0.5904), (6, 0.593), (7, 0.5934), (8, 0.5883), (9, 0.5902), (10, 0.5906)]}
+FedKrum Server | INFO flwr 2024-04-02 11:33:35,807 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=10, round_timeout=None)
+FedKrum Server | INFO flwr 2024-04-02 11:33:35,824 | app.py:176 | Flower ECE: gRPC server running (10 rounds), SSL is disabled
+FedKrum Server | INFO flwr 2024-04-02 11:33:35,824 | server.py:89 | Initializing global parameters
+FedKrum Server | INFO flwr 2024-04-02 11:33:35,824 | server.py:276 | Requesting initial parameters from one random client
+FedKrum Server | INFO flwr 2024-04-02 11:36:25,399 | server.py:280 | Received initial parameters from one random client
+FedKrum Server | INFO flwr 2024-04-02 11:36:25,399 | server.py:91 | Evaluating initial parameters
+FedKrum Server | INFO flwr 2024-04-02 11:36:25,434 | server.py:94 | initial parameters (loss, other metrics): 1.0986122886681096, {'accuracy': 0.2894}
+FedKrum Server | INFO flwr 2024-04-02 11:36:25,439 | server.py:104 | FL starting
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:01,816 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 100)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:02,240 | server.py:236 | fit_round 1 received 2 results and 0 failures
+FedKrum Server | WARNING flwr 2024-04-02 11:38:02,241 | krum.py:153 | No fit_metrics_aggregation_fn provided
+FedKrum Server | INFO flwr 2024-04-02 11:38:02,270 | server.py:125 | fit progress: (1, 0.9555450860252206, {'accuracy': 0.5339}, 96.82919699396007)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:02,274 | server.py:173 | evaluate_round 1: strategy sampled 111 clients (out of 111)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:07,557 | server.py:187 | evaluate_round 1 received 111 results and 0 failures
+FedKrum Server | WARNING flwr 2024-04-02 11:38:07,558 | fedavg.py:281 | No evaluate_metrics_aggregation_fn provided
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:07,558 | server.py:222 | fit_round 2: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:08,705 | server.py:236 | fit_round 2 received 183 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:38:09,007 | server.py:125 | fit progress: (2, 0.9306435283305667, {'accuracy': 0.5728}, 103.56671920209192)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:09,009 | server.py:173 | evaluate_round 2: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:09,836 | server.py:187 | evaluate_round 2 received 183 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:09,837 | server.py:222 | fit_round 3: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:10,447 | server.py:236 | fit_round 3 received 183 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:38:10,722 | server.py:125 | fit progress: (3, 0.9305357737755774, {'accuracy': 0.5532}, 105.28141011111438)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:10,724 | server.py:173 | evaluate_round 3: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:11,524 | server.py:187 | evaluate_round 3 received 183 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:11,525 | server.py:222 | fit_round 4: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:12,143 | server.py:236 | fit_round 4 received 183 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:38:12,478 | server.py:125 | fit progress: (4, 0.8630913119690351, {'accuracy': 0.6001}, 107.0375962711405)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:12,481 | server.py:173 | evaluate_round 4: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:13,249 | server.py:187 | evaluate_round 4 received 183 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:13,250 | server.py:222 | fit_round 5: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:13,861 | server.py:236 | fit_round 5 received 183 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:38:14,157 | server.py:125 | fit progress: (5, 0.8507457309121, {'accuracy': 0.5898}, 108.71644214517437)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:14,159 | server.py:173 | evaluate_round 5: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:14,925 | server.py:187 | evaluate_round 5 received 183 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:14,925 | server.py:222 | fit_round 6: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:15,522 | server.py:236 | fit_round 6 received 183 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:38:15,684 | server.py:125 | fit progress: (6, 0.8386195694574715, {'accuracy': 0.6042}, 110.24391843099147)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:15,685 | server.py:173 | evaluate_round 6: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:16,461 | server.py:187 | evaluate_round 6 received 183 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:16,461 | server.py:222 | fit_round 7: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:17,036 | server.py:236 | fit_round 7 received 183 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:38:17,341 | server.py:125 | fit progress: (7, 0.8461533096601024, {'accuracy': 0.5924}, 111.9008978260681)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:17,345 | server.py:173 | evaluate_round 7: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:18,118 | server.py:187 | evaluate_round 7 received 183 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:18,120 | server.py:222 | fit_round 8: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:18,721 | server.py:236 | fit_round 8 received 183 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:38:18,923 | server.py:125 | fit progress: (8, 0.8348731661152792, {'accuracy': 0.6066}, 113.48216172098182)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:18,923 | server.py:173 | evaluate_round 8: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:19,702 | server.py:187 | evaluate_round 8 received 183 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:19,702 | server.py:222 | fit_round 9: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:20,505 | server.py:236 | fit_round 9 received 183 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:38:20,709 | server.py:125 | fit progress: (9, 0.8458456825596504, {'accuracy': 0.5938}, 115.26863773306832)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:20,711 | server.py:173 | evaluate_round 9: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:21,479 | server.py:187 | evaluate_round 9 received 183 results and 0 failures
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:21,480 | server.py:222 | fit_round 10: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:22,075 | server.py:236 | fit_round 10 received 183 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:38:22,375 | server.py:125 | fit progress: (10, 0.8351445512073383, {'accuracy': 0.6021}, 116.93504468211904)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:22,378 | server.py:173 | evaluate_round 10: strategy sampled 183 clients (out of 183)
+FedKrum Server | DEBUG flwr 2024-04-02 11:38:23,127 | server.py:187 | evaluate_round 10 received 183 results and 0 failures
+FedKrum Server | INFO flwr 2024-04-02 11:38:23,128 | server.py:153 | FL finished in 117.68715883116238
+FedKrum Server | INFO flwr 2024-04-02 11:38:23,128 | app.py:226 | app_fit: losses_distributed [(1, 0.9542376936019004), (2, 0.9489961624796924), (3, 0.9424236113907861), (4, 0.8579431290183562), (5, 0.8555215372413886), (6, 0.8383004466692606), (7, 0.8492759860278479), (8, 0.8357468244156551), (9, 0.8507187245973472), (10, 0.8367333816048877)]
+FedKrum Server | INFO flwr 2024-04-02 11:38:23,128 | app.py:227 | app_fit: metrics_distributed_fit {}
+FedKrum Server | INFO flwr 2024-04-02 11:38:23,129 | app.py:228 | app_fit: metrics_distributed {}
+FedKrum Server | INFO flwr 2024-04-02 11:38:23,129 | app.py:229 | app_fit: losses_centralized [(0, 1.0986122886681096), (1, 0.9555450860252206), (2, 0.9306435283305667), (3, 0.9305357737755774), (4, 0.8630913119690351), (5, 0.8507457309121), (6, 0.8386195694574715), (7, 0.8461533096601024), (8, 0.8348731661152792), (9, 0.8458456825596504), (10, 0.8351445512073383)]
+FedKrum Server | INFO flwr 2024-04-02 11:38:23,129 | app.py:230 | app_fit: metrics_centralized {'accuracy': [(0, 0.2894), (1, 0.5339), (2, 0.5728), (3, 0.5532), (4, 0.6001), (5, 0.5898), (6, 0.6042), (7, 0.5924), (8, 0.6066), (9, 0.5938), (10, 0.6021)]}
