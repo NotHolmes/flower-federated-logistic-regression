@@ -5,7 +5,7 @@ from flwr.common import NDArrays
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
-NUM_CLIENTS = 100
+NUM_CLIENTS = 3
 
 CREDIT_SCORE_CLASSES = {
     0: "Poor",
@@ -112,9 +112,15 @@ def load_random_dataset(dataset_path: str, random_state: int = None):
     
     return df.sample(frac=1, random_state=random_state).reset_index(drop=True)
 
-def load_dataset_for_client(client_id: int, df: pd.DataFrame):
+def load_dataset_for_client(client_id: int, df: pd.DataFrame, random_state: int = None):
     X = df.drop("Credit_Score", axis=1)
     y = df["Credit_Score"]
+    
+    
+    if len(X) % NUM_CLIENTS != 0:
+        drop_indices = np.random.choice(X.index, (len(X) % NUM_CLIENTS), replace=False, random_state=random_state)
+        X = X.drop(drop_indices)
+        y = y.drop(drop_indices)
 
     # Split for clients
     X_splits = np.split(X, NUM_CLIENTS)
