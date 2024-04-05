@@ -118,7 +118,8 @@ def load_dataset_for_client(client_id: int, df: pd.DataFrame, random_state: int 
     
     
     if len(X) % NUM_CLIENTS != 0:
-        drop_indices = np.random.choice(X.index, (len(X) % NUM_CLIENTS), replace=False, random_state=random_state)
+        np.random.seed(random_state)
+        drop_indices = np.random.choice(X.index, (len(X) % NUM_CLIENTS), replace=False)
         X = X.drop(drop_indices)
         y = y.drop(drop_indices)
 
